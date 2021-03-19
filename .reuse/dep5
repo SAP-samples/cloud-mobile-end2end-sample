@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: [YOUR REPO NAME]
-Upstream-Contact: [YOUR EMAIL ADDRESS]
-Source: https://github.com/sap-samples/[YOUR REPO NAME]
+Upstream-Name: cloud-mobile-end2end-sample
+Upstream-Contact: Pradyumn Upadhyay <pradyumn.upadhyay@sap.com>, Sandeep TDS <sandeep.tds@sap.com>, Chetali Shah <chetali.shah@sap.com>, Akarsh Sidhartha <akarsh.sidhartha@sap.com>, Sami Lechner <sami.lechner@sap.com>
+Source: https://github.com/sap-samples/cloud-mobile-end2end-sample
 Disclaimer: The code in this project may include calls to APIs (“API Calls”) of
  SAP or third-party products or services developed outside of this project
  (“External Products”).
@@ -25,5 +25,5 @@ Disclaimer: The code in this project may include calls to APIs (“API Calls”)
  parties the right to use of access any SAP External Product, through API Calls.
 
 Files: *
-Copyright: 2021 SAP SE or an SAP affiliate company and [YOUR REPO NAME] contributors
+Copyright: 2021 SAP SE or an SAP affiliate company and cloud-mobile-end2end-sample contributors
 License: Apache-2.0
