@@ -10,6 +10,10 @@
 
 ## How to obtain support
 
+[Create an issue](https://github.com/SAP-samples/btp-showcase-actuals-cap/issues) in this repository if you find a bug or have questions about the content.
+ 
+For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
+
 ## Contributing
 
 ## License
