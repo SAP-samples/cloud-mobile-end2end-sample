@@ -1,0 +1,120 @@
+{
+    "dataSets": [
+        {
+            "resourceIdentifier": "/MachineConfigurationSet(9)?$format=json&$expand=Order,MachineTyp,MachineColors",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "id": "MachineConfigurationSet(9L)",
+                        "uri": "MachineConfigurationSet(9L)"
+                    },
+                    "MachineColorsID": "10",
+                    "MachineConfigurationID": "9",
+                    "MachineID": "3",
+                    "OrderID": "13",
+                    "Pressure": "17,5",
+                    "MachineColors": {
+                        "__metadata": {
+                            "content_type": "image/png",
+                            "edit_media": "MachineColorsSet(10L)/$value",
+                            "id": "MachineColorsSet(10L)",
+                            "media_etag": "W/\"50C1B808701E486A82A267E025E7B4C4\"",
+                            "media_src": "MachineColorsSet(10L)/$value",
+                            "uri": "MachineColorsSet(10L)"
+                        },
+                        "Machine": {
+                            "__deferred": {
+                                "uri": "MachineColorsSet(10L)/Machine"
+                            }
+                        },
+                        "MachineColorsID": "10",
+                        "MachineConfiguration": {
+                            "__deferred": {
+                                "uri": "MachineColorsSet(10L)/MachineConfiguration"
+                            }
+                        },
+                        "MachineID": "3",
+                        "colorName": "red"
+                    },
+                    "MachineTyp": {
+                        "__metadata": {
+                            "content_type": "image/png",
+                            "edit_media": "MachineSet(3L)/$value",
+                            "id": "MachineSet(3L)",
+                            "media_etag": "W/\"B1CB368438894319893878A2F6A5B7B7\"",
+                            "media_src": "MachineSet(3L)/$value",
+                            "uri": "MachineSet(3L)"
+                        },
+                        "Colors": {
+                            "__deferred": {
+                                "uri": "MachineSet(3L)/Colors"
+                            }
+                        },
+                        "Description": "The Mahlwerk 5000S is the most wanted allrounder of all of our coffeemachines.",
+                        "MachineConfiguration": {
+                            "__deferred": {
+                                "uri": "MachineSet(3L)/MachineConfiguration"
+                            }
+                        },
+                        "MachineID": "3",
+                        "Name": "Mahlwerk 5000 S",
+                        "Task": {
+                            "__deferred": {
+                                "uri": "MachineSet(3L)/Task"
+                            }
+                        }
+                    },
+                    "Order": {
+                        "__metadata": {
+                            "id": "OrderSet(13L)",
+                            "uri": "OrderSet(13L)"
+                        },
+                        "Customer": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/Customer"
+                            }
+                        },
+                        "CustomerID": "1",
+                        "Description": "New Order",
+                        "DueDate": "/Date(1610721632000)/",
+                        "MachineConfiguration": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/MachineConfiguration"
+                            }
+                        },
+                        "OrderEvents": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/OrderEvents"
+                            }
+                        },
+                        "OrderID": "13",
+                        "OrderStatusID": "2",
+                        "Task": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/Task"
+                            }
+                        },
+                        "Title": "New Order"
+                    }
+                }
+            }
+        },
+        {
+            "resourceIdentifier": "/CustomerSet(1)",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "id": "CustomerSet(1L)",
+                        "uri": "CustomerSet(1L)"
+                    },
+                    "AddressID": "1",
+                    "CompanyName": "Pear Computing Services",
+                    "CustomerID": "1",
+                    "Email": "franklin.jones@pear-computing.com",
+                    "Name": "Franklin Jones",
+                    "Phone": "091239209300"
+                }
+            }
+        }
+    ]
+}

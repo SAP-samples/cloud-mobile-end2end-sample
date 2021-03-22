@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/view_task_jobs"
+            layout="@layout/item_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.sap.mobile.mahlwerk.view.NestedRecyclerView
+            android:id="@+id/recyclerView_task_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_job" />
+
+        <include
+            android:id="@+id/view_task_suggestedJobs"
+            layout="@layout/item_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.sap.mobile.mahlwerk.view.NestedRecyclerView
+            android:id="@+id/recyclerView_task_suggestedJobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_suggested_job" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

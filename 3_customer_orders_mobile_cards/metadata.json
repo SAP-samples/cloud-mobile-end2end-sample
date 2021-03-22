@@ -1,0 +1,117 @@
+{
+	"Name": "Orders",
+	"Version": "1.0",
+	"Connection": "<Enter the name of the destination you created for your Mahlwerk Backend OData Service>",
+	"Descriptions": [
+		{
+			"language": "EN",
+			"text": "Mahlwerk Orders"
+		}
+	],
+	"GatekeeperConfiguration": null,
+	"SortCardsWith": null,
+	"RefreshInterval": null,
+	"CustomType": "Query",
+	"QueryInterval": "P1D",
+	"AppLaunchUrl": null,
+	"UrlMatch": null,
+	"QueryURL": "/OrderSet?$orderby=OrderID%20desc&$top=3",
+	"QueryConfiguration": {
+		"QueryURLCollectionRoot": "$.d.results",
+		"QueryEntityKeyPaths": [
+			"$.d.__metadata.uri"
+		],
+		"EntityRootElement": "d",
+		"CacheQueryResult": false,
+		"RequestHttpMethod": "GET"
+	},
+	"QueryReturnsEntityCollection": true,
+	"NewsEnabled": false,
+	"AutoSubscribe": false,
+	"HiddenSubscription": false,
+	"SubscriptionParameters": [],
+	"ResourceIdentifiers": [
+		{
+			"Order": 0,
+			"Uri": "",
+			"Shared": false,
+			"ImagePaths": ""
+		},
+		{
+			"Order": 1,
+			"Uri": "/CustomerSet(${CustomerId})"
+		},
+		{
+			"Order": 2,
+			"Uri": "/AddressSet(${AdressSetID})"
+		},
+		{
+			"Order": 3,
+			"Uri": "/MachineConfigurationSet?$expand=MachineTyp,MachineColors&$filter=OrderID%20eq%20${OrderID}"
+		}
+	],
+	"Parameters": {
+		"Parameters": [
+			{
+				"Name": "CustomerId",
+				"Propagate": false,
+				"ResourceOrderNumber": 0,
+				"Value": "$.d.CustomerID",
+				"displayName": "SalesOrderId"
+			},
+			{
+				"Name": "OrderID",
+				"Value": "$.d.OrderID",
+				"ResourceOrderNumber": 0,
+				"Propagate": false
+			},
+			{
+				"Name": "AdressSetID",
+				"Value": "$.d.AddressID",
+				"ResourceOrderNumber": "1",
+				"Propagate": false
+			}
+		]
+	},
+	"APNSEnabled": true,
+	"NotificationMessages": {
+		"Messages": []
+	},
+	"NotificationRules": [],
+	"ActionConfiguration": {
+		"Category": "0978089F-655F-42BF-AA23-956B4AC99D18",
+		"XCSRFTokenUrl": "",
+		"Actions": [
+			{
+				"ActionName": "close",
+				"ActionUrl": "/OrderSet(${OrderID})",
+				"BehaviorAfterAction": "ACTIVE",
+				"HttpMethod": "PATCH",
+				"Nature": "Positive",
+				"EnabledForDeviceNotification": true,
+				"ActionBody": "{\"OrderStatusID\": \"3\"}",
+				"AddCarriageReturn": false,
+				"ActionHeaders": [],
+				"ActionParameters": [],
+				"Labels": [
+					{
+						"language": "EN",
+						"text": "Close"
+					}
+				]
+			}
+		]
+	},
+	"CardClass": "HtmlTemplate",
+	"SAPClientId": null,
+	"SubscribableTo": {
+		"Users": []
+	},
+	"CustomRequestProperties": {
+		"RequestHttpMethod": "GET",
+		"RequestBody": "",
+		"RequestHeaders": []
+	},
+	"DescriptionEnglish": "Mahlwerk Orders"
+}
+

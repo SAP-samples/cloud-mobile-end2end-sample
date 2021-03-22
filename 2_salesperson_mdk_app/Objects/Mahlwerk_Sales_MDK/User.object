@@ -1,0 +1,41 @@
+{
+	"Collection": [
+		"UserSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Task",
+			"_Type": "Task"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "Email",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "FirstNames",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "LastNames",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Phone",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": true,
+			"_Name": "UserID",
+			"_Type": "Edm.Int64"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "User"
+}

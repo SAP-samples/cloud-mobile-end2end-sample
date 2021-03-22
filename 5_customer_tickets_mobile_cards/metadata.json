@@ -1,0 +1,130 @@
+{
+	"Name": "Mahlwerk Tickets",
+	"Version": "1.0",
+	"Connection": "<Enter the name of the destination you created for your Mahlwerk Backend OData Service>", 
+	"Descriptions": [
+		{
+			"language": "EN",
+			"text": "Tickets Raised "
+		}
+	],
+	"GatekeeperConfiguration": null,
+	"SortCardsWith": null,
+	"RefreshInterval": null,
+	"CustomType": "Query",
+	"QueryInterval": "P1D",
+	"AppLaunchUrl": null,
+	"UrlMatch": null,
+	"QueryURL": "/TaskSet?$format=json&$expand=Order,Machine,User&$filter=AddressID%20eq%20${CustomerID}",
+	"QueryConfiguration": {
+		"QueryURLCollectionRoot": "$.d.results",
+		"QueryEntityKeyPaths": [
+			"$.d.__metadata.uri"
+		],
+		"EntityRootElement": "d",
+		"CacheQueryResult": false
+	},
+	"QueryReturnsEntityCollection": true,
+	"NewsEnabled": false,
+	"AutoSubscribe": false,
+	"HiddenSubscription": false,
+	"SubscriptionParameters": [
+		{
+			"name": "CustomerID",
+			"type": "Edm.String",
+			"maxLength": 255,
+			"isKey": false,
+			"nullable": false,
+			"label": [
+				{
+					"language": "EN",
+					"text": "Enter your Customer ID"
+				}
+			]
+		}
+	],
+	"ResourceIdentifiers": [
+		{
+			"ImagePaths": null,
+			"Order": 0,
+			"Shared": true,
+			"Uri": ""
+		},
+		{
+			"Order": 1,
+			"Uri": "/OrderSet(${OrderID})?$format=json&$expand=MachineConfiguration,Customer",
+			"ImagePaths": null,
+			"Shared": false
+		},
+		{
+			"ImagePaths": null,
+			"Order": 2,
+			"Shared": false,
+			"Uri": "/MachineConfigurationSet(${MachineConfigID})?$format=json&$expand=MachineColors"
+		}
+	],
+	"Parameters": {
+		"Parameters": [
+			{
+				"Name": "MachineConfigID",
+				"Propagate": false,
+				"ResourceOrderNumber": 1,
+				"Value": "$.d.MachineConfiguration.MachineConfigurationID"
+			},
+			{
+				"Name": "OrderID",
+				"Propagate": false,
+				"ResourceOrderNumber": 0,
+				"Value": "$.d.OrderID"
+			},
+			{
+				"Name": "TaskID",
+				"Value": "$.d.TaskID",
+				"ResourceOrderNumber": "0",
+				"Propagate": false
+			}
+		]
+	},
+	"APNSEnabled": true,
+	"NotificationMessages": {
+		"Messages": []
+	},
+	"NotificationRules": [],
+	"ActionConfiguration": {
+		"XCSRFTokenUrl": "",
+		"Actions": [
+			{
+				"ActionName": "closeTicket",
+				"ActionUrl": "/TaskSet(${TaskID})",
+				"BehaviorAfterAction": "INACTIVE",
+				"HttpMethod": "PATCH",
+				"Nature": "Positive",
+				"EnabledForDeviceNotification": false,
+				"ActionBody": "{\n\"TaskStatusID\":\"3\"\n}",
+				"AddCarriageReturn": false,
+				"ActionHeaders": [
+					{
+						"HeaderName": "If-Match",
+						"HeaderValue": "*"
+					}
+				],
+				"ActionParameters": [],
+				"Labels": [
+					{
+						"language": "EN",
+						"text": "Close Ticket"
+					}
+				]
+			}
+		]
+	},
+	"CustomRequestProperties": null,
+	"CardClass": "HtmlTemplate",
+	"HighAvailability": false,
+	"SAPClientId": null,
+	"SiteId": null,
+	"SubscribableTo": {
+		"Users": []
+	},
+	"SupportSharedSubscriptions": false
+}

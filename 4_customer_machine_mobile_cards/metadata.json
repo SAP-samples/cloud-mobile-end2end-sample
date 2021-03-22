@@ -1,0 +1,159 @@
+{
+	"Name": "Mahlwerk Machine Card",
+	"Version": "1.0",
+	"Connection": "<Enter the name of the destination you created for your Mahlwerk Backend OData Service>",
+	"Descriptions": [
+		{
+			"language": "EN",
+			"text": "Coffee Machine Details"
+		}
+	],
+	"GatekeeperConfiguration": null,
+	"GroupName": "GroupingParam",
+	"SortCardsWith": null,
+	"RefreshInterval": null,
+	"CustomType": "SingleInstance",
+	"QueryInterval": "P1D",
+	"AppLaunchUrl": null,
+	"UrlMatch": null,
+	"QueryURL": null,
+	"QueryConfiguration": {
+		"CacheQueryResult": false
+	},
+	"QueryReturnsEntityCollection": false,
+	"NewsEnabled": false,
+	"AutoSubscribe": false,
+	"HiddenSubscription": false,
+	"SubscriptionParameters": [
+		{
+			"name": "MachineConfigurationID",
+			"type": "Edm.String",
+			"maxLength": 255,
+			"isKey": false,
+			"nullable": false,
+			"label": [
+				{
+					"language": "EN",
+					"text": "Enter Machine Config ID"
+				}
+			]
+		}
+	],
+	"ResourceIdentifiers": [
+		{
+			"Order": 0,
+			"Uri": "/MachineConfigurationSet(${MachineConfigurationID})?$format=json&$expand=Order,MachineTyp,MachineColors",
+			"ImagePaths": null,
+			"Shared": true
+		},
+		{
+			"ImagePaths": "sandeep.tds@sap.com",
+			"Order": 1,
+			"Shared": true,
+			"Uri": "/CustomerSet(${CustomerID})"
+		}
+	],
+	"Parameters": {
+		"Parameters": [
+			{
+				"Name": "GroupingParam",
+				"Propagate": false,
+				"ResourceOrderNumber": 0,
+				"Value": "Mahlwerk Machines"
+			},
+			{
+				"Name": "MachineID",
+				"Propagate": false,
+				"ResourceOrderNumber": 0,
+				"Value": "$.d.MachineID"
+			},
+			{
+				"Name": "AddressID",
+				"Propagate": false,
+				"ResourceOrderNumber": 1,
+				"Value": "$.d.AddressID"
+			},
+			{
+				"Name": "OrderID",
+				"Propagate": false,
+				"ResourceOrderNumber": 0,
+				"Value": "$.d.OrderID"
+			},
+			{
+				"Name": "CustomerID",
+				"Propagate": false,
+				"ResourceOrderNumber": 0,
+				"Value": "$.d.Order.CustomerID"
+			}
+		]
+	},
+	"APNSEnabled": true,
+	"NotificationMessages": {
+		"Messages": []
+	},
+	"NotificationRules": [],
+	"ActionConfiguration": {
+		"XCSRFTokenUrl": "",
+		"Actions": [
+			{
+				"ActionName": "createTicket",
+				"ActionUrl": "/TaskSet",
+				"BehaviorAfterAction": "ACTIVE",
+				"HttpMethod": "POST",
+				"Nature": "Neutral",
+				"EnabledForDeviceNotification": false,
+				"ActionBody": "{\n   \"AddressID\":\"${AddressID}\",\n    \"CustomerID\":\"${CustomerID}\",\n   \"FinalReportStatusID\":\"0\",\n   \"MachineID\":\"${MachineID}\",\n   \"Notes\":\"${EnteredTicketDescription}\",\n   \"OrderID\":\"${OrderID}\",\n   \"ScheduledDate\": \"2021-04-11T17:00:00\",\n   \"TaskStatusID\": \"0\",\n   \"Title\": \"${EnteredTicketTitle}\",\n   \"UserID\": \"1\"\n}",
+				"ActionHeaders": [],
+				"ActionParameters": [
+					{
+						"defaultValue": null,
+						"enabledForDeviceNotification": false,
+						"isKey": false,
+						"maxLength": 1000,
+						"name": "EnteredTicketDescription",
+						"nullable": true,
+						"selectListProperties": null,
+						"type": "Edm.String",
+						"label": [
+							{
+								"language": "EN",
+								"text": "Issue Description"
+							}
+						]
+					},
+					{
+						"defaultValue": null,
+						"enabledForDeviceNotification": false,
+						"isKey": false,
+						"maxLength": 255,
+						"name": "EnteredTicketTitle",
+						"nullable": true,
+						"selectListProperties": null,
+						"type": "Edm.String",
+						"label": [
+							{
+								"language": "EN",
+								"text": "Issue Title"
+							}
+						]
+					}
+				],
+				"Labels": [
+					{
+						"language": "EN",
+						"text": "Create Ticket"
+					}
+				]
+			}
+		]
+	},
+	"CustomRequestProperties": null,
+	"CardClass": "HtmlTemplate",
+	"HighAvailability": false,
+	"SAPClientId": null,
+	"SiteId": null,
+	"SubscribableTo": {
+		"Users": []
+	},
+	"SupportSharedSubscriptions": false
+}

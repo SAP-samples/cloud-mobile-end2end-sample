@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Bem-vindo"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">Iniciar</string>
+
+    <!-- XBUT: Text of the Save button -->
+
+    <!-- XBUT: Text of the Update button -->
+
+    <!-- XBUT: Text of the Delete button -->
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Cancelar"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Sim"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Update menu item -->
+
+    <!-- XMIT: Delete menu item -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Falha no download"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Falha no download; tente reiniciar o aplicativo."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The Notification Text -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of an error dialog -->
+    <string name="configuration_invalid">"Configuração inválida"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="configuration_contained_malformed_url">"URL malformado na configuração: %s"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="secure_store_error">"Erro de repositório seguro"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="secure_store_open_default_error_detail">"Não foi possível abrir o repositório seguro com o código de segurança padrão."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="passcode_change_error">"Erro na alteração do código de segurança"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail">"Não foi possível alterar o código de segurança do repositório seguro. O aplicativo continuará funcionando com o código atual."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail_default">"Não foi possível definir o código de segurança padrão. O aplicativo continuará funcionando com o código de segurança mais recente do usuário."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_data_error_title">"Falha ao obter os dados de configuração do repositório persistente"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_field_description">"Falha ao extrair um campo de dados solicitado."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_service_url_description">"\"%s\" não é um URL de serviço válido."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Falha ao criar o objeto JSON."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_no_data_description">"Não há dados de configuração no repositório persistente."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_complete_error_title">"Falha ao carregar os dados de configuração"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"O carregador de configuração não conseguiu obter os dados de configuração."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_on_error_title">"Erro no provedor de configuração"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"O provedor de configuração \"%s\" encontrou um erro. %s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_corrupted_description">"Os dados salvos anteriormente estão corrompidos; não é possível carregá-los."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Erro de vinculação"</string>
+	
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Falha ao vincular com o serviço de sincronização OData offline."</string>
+    
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Erro na inicialização offline"</string>
+	
+ 	<!-- XMSG: Detailed error description -->   
+	<string name="offline_provider_error_detail">"Falha ao inicializar o provedor de OData offline."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Erro na abertura inicial offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Falha ao concluir a abertura inicial do repositório offline."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Falha na reinicialização do repositório offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Falha ao reinicializar/remover o repositório de dados offline."</string>
+    <!-- error messages -->
+
+    <!-- offline -->	
+	
+	<!-- XMSG: Advise user of delay when performing initial opening of offline store -->
+	<string name="initializing_offline_store">"Inicializando o repositório offline. Aguarde."</string>
+	
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+
+    <!-- offline -->
+	
+    <!-- XTIT: The title of the settings dialog -->
+    <!-- XTIT: The title of the settings menu -->
+
+    <!-- XTIT: The title of the passcode group -->
+    <!-- XTIT: The title of the change passcode menu item -->
+    <!-- XTIT: The summary of the change passcode menu item -->
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Reinicializar app"</string>
+    <!-- XTIT: The summary of the reset app menu item -->
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Todas as informações associadas com esse aplicativo serão removidas. Continuar?"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="invalid_passcode">"Código de segurança inválido"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XMSG: Detailed error description -->
+    <!-- XMSG: Detailed error description -->
+    <string name="invalid_passcode_detail">"Não foi possível utilizar o código de segurança fornecido para criar o repositório seguro."</string>
+    <!-- XTIT: The title of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required">"Necessário novo código de segurança"</string>
+    <!-- XMSG: The message of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required_detail">"O código de segurança expirou ou a política de código de segurança foi alterada. É preciso definir um novo código de segurança."</string>
+    <!-- XTIT: The title of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required">"Necessário código de segurança"</string>
+    <!-- XMSG: The message of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required_detail">"A política de código de segurança foi alterada. É preciso definir um código de segurança."</string>
+    <!-- XTIT: The title of a dialog informing the user the passcode policy has changed and they need to take action -->
+    <string name="policy_changed">"Política alterada"</string>
+    <!-- XMSG: The message of a dialog informing the user they can no longer use fingerprint to unlock the app because the new passcode policy doesn't allow it -->
+    <string name="fingerprint_no_longer_allowed">"Em conformidade com a nova política, a utilização de impressão digital foi desativada. Agora é preciso inserir um código de segurança para desbloquear o app."</string>
+    <!-- XTIT: The title of a dialog -->
+    <string name="max_retries_title">"Tentativas demais"</string>
+    <!-- XMSG: The message of a dialog -->
+    <string name="max_retries_message">"O número máximo de tentativas foi atingido; o app será reiniciado."</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"O nível de log padrão foi alterado da política de servidor para: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"A política de log não está definida no servidor; nível de log padrão definido como: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Nenhum"</string>
+    <!-- XTIT: Log level title -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Erro"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Aviso"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Informação"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Depuração"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Caminho"</string>
+    <!-- XMSG: Authentication error message -->
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL do serviço"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"O URL do serviço OData."</string>
+    <!-- restrictions -->
+
+    <!-- XBUT: Text of the Skip button on the Create Passcode Screen -->
+    <string name="skip_passcode">"Ignorar"</string>
+
+    <!-- XMSG: Detailed Usage data collection description -->
+    <!-- XTIT: The title of usage consent screen -->
+    <!-- XBUT: Text of a button -->
+    <!-- XBUT: Text of a button -->
+    <!-- XTIT: The header of usage consent screen -->
+
+    <!-- XBUT: Text of the Skip button on the Fingerprint Screen -->
+    <string name="skip_fingerprint">"Ignorar impressão digital"</string>
+    <!-- XBUT: button text giving the option to use a passcode (instead of a fingerprint) to unlock the app -->
+    <string name="use_passcode">"Utilizar código de segurança"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+</resources>

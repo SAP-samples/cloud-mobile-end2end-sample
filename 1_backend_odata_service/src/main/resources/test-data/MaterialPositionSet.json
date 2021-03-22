@@ -1,0 +1,14 @@
+[
+    {
+        "JobID": "1234567890123",
+        "MaterialID": "1234567890123",
+        "MaterialPositionID": "601",
+        "Quantity": 32767
+    },
+    {
+        "JobID": "9876543210987",
+        "MaterialID": "9876543210987",
+        "MaterialPositionID": "602",
+        "Quantity": 0
+    }
+]

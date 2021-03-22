@@ -1,0 +1,36 @@
+{
+	"Collection": [
+		"MachineColorsSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Machine",
+			"_Type": "Machine"
+		},
+		{
+			"Key": false,
+			"_Name": "MachineConfiguration",
+			"_Type": "Collection(MachineConfiguration)"
+		}
+	],
+	"Properties": [
+		{
+			"Key": true,
+			"_Name": "MachineColorsID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "MachineID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "colorName",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "MachineColors"
+}

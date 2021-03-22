@@ -1,0 +1,61 @@
+{
+	"Collection": [
+		"OrderSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Customer",
+			"_Type": "Customer"
+		},
+		{
+			"Key": false,
+			"_Name": "MachineConfiguration",
+			"_Type": "MachineConfiguration"
+		},
+		{
+			"Key": false,
+			"_Name": "OrderEvents",
+			"_Type": "Collection(OrderEvents)"
+		},
+		{
+			"Key": false,
+			"_Name": "Task",
+			"_Type": "Task"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "CustomerID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Description",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "DueDate",
+			"_Type": "Edm.DateTime"
+		},
+		{
+			"Key": true,
+			"_Name": "OrderID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "OrderStatusID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Title",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "Order"
+}

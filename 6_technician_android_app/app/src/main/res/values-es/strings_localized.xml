@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Bienvenido"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">Empezar</string>
+
+    <!-- XBUT: Text of the Save button -->
+
+    <!-- XBUT: Text of the Update button -->
+
+    <!-- XBUT: Text of the Delete button -->
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Cancelar"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Sí"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Update menu item -->
+
+    <!-- XMIT: Delete menu item -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Descarga fallida"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Operación de descarga fallida, intente reiniciar la aplicación."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The Notification Text -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of an error dialog -->
+    <string name="configuration_invalid">"Configuración no válida"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="configuration_contained_malformed_url">"La configuración incluía una URL incorrecta: %s"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="secure_store_error">"Error de memoria segura"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="secure_store_open_default_error_detail">"No se ha podido abrir la memoria segura con código de acceso predeterminado."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="passcode_change_error">"Error al modificar código de acceso"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail">"No se ha podido modificar el código de acceso de la memoria segura. La aplicación seguirá funcionando con el anterior."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail_default">"No se ha podido fijar el código de acceso predeterminado. La aplicación seguirá funcionando con el último código de acceso del usuario."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_data_error_title">"Error al obtener datos de configuración del almacén persistente"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_field_description">"Error al extraer un dato solicitado."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_service_url_description">"El valor para el URL de servicio, \"%s\", no es un URL válido."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Error al crear el objeto JSON."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_no_data_description">"Los datos de configuración no estaban presentes en el almacén persistente."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_complete_error_title">"Error al cargar los datos de configuración"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Error del cargador de configuración para obtener datos de configuración."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_on_error_title">"Error del proveedor de configuración"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"El proveedor de configuración, \"%s\", ha encontrado un error. %s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_corrupted_description">"Los datos guardados previamente son corruptos y no se pueden cargar."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Error de vinculación"</string>
+	
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Error al vincular con el servicio de sincronización OData offline."</string>
+    
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Error de inicialización offline"</string>
+	
+ 	<!-- XMSG: Detailed error description -->   
+	<string name="offline_provider_error_detail">"Error al inicializar el proveedor OData offline"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Error en la apertura inicial offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Error al completar la apertura inicial del almacén offline."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Error de restablecimiento de almacén offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Error al restablecer/eliminar el almacén de datos offline."</string>
+    <!-- error messages -->
+
+    <!-- offline -->	
+	
+	<!-- XMSG: Advise user of delay when performing initial opening of offline store -->
+	<string name="initializing_offline_store">"Inicializando el almacén offline, espere."</string>
+	
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+
+    <!-- offline -->
+	
+    <!-- XTIT: The title of the settings dialog -->
+    <!-- XTIT: The title of the settings menu -->
+
+    <!-- XTIT: The title of the passcode group -->
+    <!-- XTIT: The title of the change passcode menu item -->
+    <!-- XTIT: The summary of the change passcode menu item -->
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Restablecer aplicación"</string>
+    <!-- XTIT: The summary of the reset app menu item -->
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Toda la información asociada con esta aplicación se eliminará. ¿Desea continuar?"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="invalid_passcode">"Código de acceso no válido"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XMSG: Detailed error description -->
+    <!-- XMSG: Detailed error description -->
+    <string name="invalid_passcode_detail">"No se ha podido utilizar el código de acceso proporcionado para crear la memoria segura."</string>
+    <!-- XTIT: The title of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required">"Se requiere un nuevo código de acceso"</string>
+    <!-- XMSG: The message of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required_detail">"El código de acceso ha expirado o política de código de acceso ha cambiado. Debe establecer uno nuevo."</string>
+    <!-- XTIT: The title of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required">"Código de acceso obligatorio"</string>
+    <!-- XMSG: The message of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required_detail">"Se ha modificado la política de códigos de acceso. Debe definir un código de acceso."</string>
+    <!-- XTIT: The title of a dialog informing the user the passcode policy has changed and they need to take action -->
+    <string name="policy_changed">"Política modificada"</string>
+    <!-- XMSG: The message of a dialog informing the user they can no longer use fingerprint to unlock the app because the new passcode policy doesn't allow it -->
+    <string name="fingerprint_no_longer_allowed">"Se ha deshabilitado el uso de la huella para desbloquear esta aplicación según la nueva política. A partir de ahora debe introducir un código de acceso en su lugar."</string>
+    <!-- XTIT: The title of a dialog -->
+    <string name="max_retries_title">"Demasiados intentos"</string>
+    <!-- XMSG: The message of a dialog -->
+    <string name="max_retries_message">"Se ha alcanzado la cantidad máxima de reintentos, se restablecerá la aplicación."</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"El nivel de log predeterminado cambió de la política de servidor a: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"La política de log no se ha establecido en el servidor, el nivel de log predeterminado se ha establecido en: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Ninguno"</string>
+    <!-- XTIT: Log level title -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Error"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Advertencia"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Información"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Depurar"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Vía de acceso"</string>
+    <!-- XMSG: Authentication error message -->
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL de servicio"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"La URL del servicio OData."</string>
+    <!-- restrictions -->
+
+    <!-- XBUT: Text of the Skip button on the Create Passcode Screen -->
+    <string name="skip_passcode">"Omitir"</string>
+
+    <!-- XMSG: Detailed Usage data collection description -->
+    <!-- XTIT: The title of usage consent screen -->
+    <!-- XBUT: Text of a button -->
+    <!-- XBUT: Text of a button -->
+    <!-- XTIT: The header of usage consent screen -->
+
+    <!-- XBUT: Text of the Skip button on the Fingerprint Screen -->
+    <string name="skip_fingerprint">"Omitir huella"</string>
+    <!-- XBUT: button text giving the option to use a passcode (instead of a fingerprint) to unlock the app -->
+    <string name="use_passcode">"Usar código de acceso"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+</resources>

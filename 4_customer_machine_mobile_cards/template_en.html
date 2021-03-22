@@ -1,0 +1,102 @@
+<body>
+    <div id="mySimpleTemplate" class="myTemplate" data-type="text/x-handlebars-template">
+        <div class="header">
+            <br>
+            <div style="text-align: left;">
+                <span id="view-title">
+                    {{dataSets.[0].data.d.MachineTyp.Name}}
+                </span>
+            </div>
+        </div>
+        <br>
+        <div class="machine-image">
+            <span>
+                {{machineImage dataSets.[0].data.d.MachineColors.colorName dataSets.[0].data.d.MachineTyp.Name}}
+            </span>
+        </div>
+        <br>
+        <div class="card-content">
+            <div class="listitem">
+                <div class="listitem-label">
+                    <span>
+                        Machine Configuration ID
+                    </span>
+                </div>
+                <br>
+                <div class="listitem-value">
+                    <span id="description">
+                        {{dataSets.[0].data.d.MachineConfigurationID}}
+                    </span>
+                </div>
+            </div>
+            <div class="listitem">
+                <div class="listitem-label">
+                    <span>
+                        Machine ID
+                    </span>
+                </div>
+                <br>
+                <div class="listitem-value">
+                    <span id="description">
+                        {{dataSets.[0].data.d.MachineID}}
+                    </span>
+                </div>
+            </div>
+            <br>
+                        <div class="listitem">
+                <div class="listitem-label">
+                    <span>
+                        Order ID
+                    </span>
+                </div>
+                <br>
+                <div class="listitem-value">
+                    <span id="description">
+                        {{dataSets.[0].data.d.Order.OrderID}}
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="listitem">
+                <div class="listitem-label">
+                    <span>
+                        Machine Description
+                    </span>
+                </div>
+                <br>
+                <div class="listitem-value">
+                    <span id="description">
+                        {{dataSets.[0].data.d.MachineTyp.Description}}
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="listitem">
+                <div class="listitem-label">
+                    <span>
+                        Machine Pressure
+                    </span>
+                </div>
+                <br>
+                <div class="listitem-value">
+                    <span id="description">
+                        {{dataSets.[0].data.d.Pressure}}
+                    </span>
+                </div>
+            </div>
+            <div class="listitem">
+                <div class="listitem-label">
+                    <span>
+                        Machine Color
+                    </span>
+                </div>
+                <br>
+                <div class="listitem-value">
+                    <span id="description">
+                        {{machineColorImage dataSets.[0].data.d.MachineColors.colorName}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

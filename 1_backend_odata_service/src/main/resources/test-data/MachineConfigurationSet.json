@@ -1,0 +1,16 @@
+[
+    {
+        "Color": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "CustomerID": "201",
+        "MachineConfigurationID": "501",
+        "MachineID": "501",
+        "Pressure": "15,0"
+    },
+    {
+        "Color": "BCDEFGHIJKLMNOPQRSTUVWXYZA",
+        "CustomerID": "202",
+        "MachineConfigurationID": "502",
+        "MachineID": "502",
+        "Pressure": null
+    }
+]

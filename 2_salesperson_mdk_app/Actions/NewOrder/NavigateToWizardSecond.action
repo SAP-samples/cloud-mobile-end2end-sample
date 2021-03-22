@@ -1,0 +1,6 @@
+{
+	"ModalPage": true,
+	"NavigationType": "Cross",
+	"PageToOpen": "/Mahlwerk_Sales/Pages/NewOrder/Wizard_SECOND.page",
+	"_Type": "Action.Type.Navigation"
+}

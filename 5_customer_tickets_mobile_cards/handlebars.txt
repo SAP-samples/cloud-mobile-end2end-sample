@@ -1,0 +1,123 @@
+registerHelper('c2gEdmDateTime', function(format, dateStr) {
+    try {
+        var a = /\/Date\((d|.*)\)\//.exec(dateStr);
+        if (a) {
+            var b = a[1].split(/[-+,.]/);
+            var jsDate = new Date(+b[0]);
+            var oDateFormat = sap.ui.core.format.DateFormat.getDateTimeInstance({
+                pattern: format
+            });
+            return oDateFormat.format(jsDate);
+        }
+        // the date str is not a valid JSON formatted date, just return the value
+        return dateStr;
+    } catch (e) {
+        // some error ... just return what was supplied
+        return dateStr;
+    }
+});
+
+registerHelper('determineTaskStatusName', function(id) {
+    var status = "Done";
+    if(id==0){
+        status = "Open";
+        return status;
+    }
+    if(id==1){
+        status = "Scheduled";
+        return status;
+    }
+    if(id==2){
+        status = "Active";
+        return status;
+    }
+    return status;
+});
+
+registerHelper("machineImage", function(machineColor, machineName) {
+
+    var out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk2000.greystandard.png\" style=' width: 90px; height: 90px;'>");
+
+    if (machineName.includes("Mahlwerk 9000 X")) {
+
+        if (machineColor.includes("blue")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk9000X.blue.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("orange")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk9000X.orange.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("red")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk9000X.red.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+    }
+
+    if (machineName.includes("Mahlwerk 2000")) {
+
+        if (machineColor.includes("blue")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk2000.blue.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("orange")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk2000.orange.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("red")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk2000.red.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+    }
+
+    if (machineName.includes("Mahlwerk 5000 S")) {
+
+        if (machineColor.includes("blue")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk5000S.blue.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("orange")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk5000S.orange.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("red")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk5000S.red.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+    }
+
+    if (machineName.includes("Mahlwerk 1000 L")) {
+
+        if (machineColor.includes("blue")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk4000&Mahlwerk1000L.blue.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("orange")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk4000&Mahlwerk1000L.orange.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("red")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk4000&Mahlwerk1000L.red.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+    }
+
+    if (machineName.includes("Mahlwerk 4000")) {
+
+        if (machineColor.includes("blue")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk4000&Mahlwerk1000L.blue.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("orange")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk4000&Mahlwerk1000L.orange.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+        if (machineColor.includes("red")) {
+            out = new Handlebars.SafeString("<img src=\"assets/machine-images/Mahlwerk4000&Mahlwerk1000L.red.png\" style=' width: 90px; height: 90px;'>");
+        }
+
+    }
+
+    return out;
+
+});

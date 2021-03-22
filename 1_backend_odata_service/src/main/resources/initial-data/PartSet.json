@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Water Pump",
+        "PartID": 1
+        },
+    {
+        "Name": "Heater Unit",
+        "PartID": 2
+    },
+    {
+        "Name": "Water Supply",
+        "PartID": 3
+    },
+    {
+        "Name": "Coffee Mill",
+        "PartID": 4
+    },
+    {
+        "Name": "Power Supply",
+        "PartID": 5
+    },
+    {
+        "Name": "Control Unit",
+        "PartID": 6
+    }
+]

@@ -1,0 +1,7 @@
+{
+  "ServiceUrl" : "<Enter your Server URL Here>",
+  "appID":"<Enter your app id here>",
+  "protocol": "https",
+  "port": 443,
+  "connectionID" : "<Enter your app id here>"
+}

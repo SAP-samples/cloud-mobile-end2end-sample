@@ -1,0 +1,66 @@
+<div id="mySimpleTemplate" class="myTemplate" data-type="text/x-handlebars-template">
+    <div class="header">
+        <h1>
+            Order ID: {{dataSets.[0].data.d.OrderID }}
+        </h1>
+        <span class="name">
+            {{dataSets.[0].data.d.Description}}
+        </span>
+    </div>
+    <div class="card-content">
+        <div class="all">
+            <br>
+            <div class="title-content">
+                <span class="title">
+                    Order Created at
+                </span>
+                <br>
+                <span class="content">
+                    {{c2gEdmDateTime "M/d/yyyy" dataSets.[0].data.d.DueDate}}
+                </span>
+            </div>
+            <div class="title-content">
+                <span class="title">
+                    Order Status
+                </span>
+                <br>
+                <span class="content">
+                    {{StatusHelper dataSets.[0].data.d.OrderStatusID}}
+                </span>
+            </div>
+            <div>
+            {{machineImage dataSets.[3].data.d.results.[0].MachineColors.colorName dataSets.[3].data.d.results.[0].MachineTyp.Name}}
+            </div>
+        </div>
+    </div>
+    <div class="desciprtion">
+        <span class="d-title">
+            Contact:
+        </span>
+        <br>
+        <span class="content">
+            {{dataSets.[1].data.d.Name}}
+        </span>
+        <br><br>
+        <span class="d-title">
+            Email:
+        </span>
+        <br>
+        <span class="content">
+            {{dataSets.[1].data.d.Email}}
+        </span>
+        <br><br>
+        <span class="d-title">
+            Address:
+        </span>
+        <br>
+        <span class="content">
+            {{dataSets.[2].data.d.Country}}
+            <br>
+            {{dataSets.[2].data.d.PostalCode}} {{dataSets.[2].data.d.Town}}
+            <br>
+            {{dataSets.[2].data.d.Street}} {{dataSets.[2].data.d.HouseNumber}}
+        </span>
+        <br>
+    </div>
+</div>

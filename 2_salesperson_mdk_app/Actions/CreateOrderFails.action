@@ -1,0 +1,6 @@
+{
+	"Message": "Failed to create new order {#ActionResults:CreateOrder/error}",
+	"OKCaption": "OK",
+	"Title": "Error",
+	"_Type": "Action.Type.Message"
+}

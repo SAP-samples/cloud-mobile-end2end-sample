@@ -1,0 +1,83 @@
+.myTemplate {
+background: #fafafa;
+color: #212121;
+font-family: Helvetica, Arial;
+height: 100vh;
+}
+
+.header {
+display: flex;
+padding: 1rem;
+}
+
+.header h1{
+font-size: 1.5rem;
+margin-top: 0.5rem;
+color: #613524;
+font-weight: bold;
+line-height: 2.5rem;
+flex: 1 1;
+white-space: nowrap;
+}
+
+.header .name{
+font-weight: normal;
+margin-top: 1.25rem;
+font-size: 1rem;
+display: block;
+text-align: right;
+white-space: normal;
+}
+
+.card-content {
+width: 80%;
+background-color: rgba(0,0,0,0.05);
+display: flex;
+height: 8rem;
+padding: 1rem;
+margin-bottom: 2rem;
+margin-left: 7%;
+justify-content: space-between;
+}
+
+#image{
+float: right;
+margin-top: -25%;
+width: 30%;
+}
+
+.card-content .title-content{
+margin-bottom:1.25rem;
+}
+
+.card-content .title{
+font-size: 0.75rem;
+}
+
+.card-content .content{
+font-size: 1rem;
+color: #613524;
+}
+
+hr{
+border-color: #613524;
+}
+
+.desciprtion{
+padding:1rem;
+margin-left: 5%;
+}
+
+.desciprtion .d-title{
+font-weight: bold;
+}
+
+.desciprtion .d-title-a{
+font-weight: bold;
+float:right;
+}
+
+.desciprtion .content{
+font-size: 1rem;
+color: #613524;
+}

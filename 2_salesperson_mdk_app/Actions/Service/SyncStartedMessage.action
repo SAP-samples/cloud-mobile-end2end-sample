@@ -1,0 +1,8 @@
+{
+	"Message": "Upload in progress...",
+	"CompletionMessage": "Upload Successful",
+	"CompletionTimeout": 7,
+	"OnSuccess": "/Mahlwerk_Sales/Actions/Service/UploadOffline.action",
+	"OnFailure": "/Mahlwerk_Sales/Actions/Service/SyncFailureMessage.action",
+	"_Type": "Action.Type.ProgressBanner"
+}

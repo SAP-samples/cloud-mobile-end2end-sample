@@ -1,0 +1,6 @@
+{
+	"Message": "Failed to create new machine configuration {{#ActionResults:CreateConfiguration/#Property:error}}",
+	"OKCaption": "OK",
+	"Title": "Error",
+	"_Type": "Action.Type.Message"
+}

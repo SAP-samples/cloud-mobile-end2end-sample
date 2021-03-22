@@ -1,0 +1,5 @@
+{
+	"ModalPage": true,
+	"PageToOpen": "/Mahlwerk_Sales/Pages/NewOrder/Wizard_THIRD.page",
+	"_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,47 @@
+<resources>
+    <style name="AppTheme" parent="FioriTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="objectCellStyle">@style/TestObjectCell</item>
+        <item name="actionModeStyle">@style/ContextActionMode</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="FioriTheme.AppBarOverlay" />
+
+    <style name="AppTheme.PopupOverlay" parent="FioriTheme.PopupOverlay" />
+
+    <style name="splashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_centered</item>
+    </style>
+
+    <style name="ContextActionMode" parent="@style/Widget.AppCompat.ActionMode">
+    </style>
+
+    <style name="TestObjectCell" parent="ObjectCell">
+        <item name="headlineTextAppearance">@style/Test.ObjectCell.Headline</item>
+    </style>
+
+    <style name="Test.ObjectCell.Headline" parent="TextAppearance.Fiori.ObjectCell.Headline">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="FioriAlertDialogStyle" />
+
+</resources>

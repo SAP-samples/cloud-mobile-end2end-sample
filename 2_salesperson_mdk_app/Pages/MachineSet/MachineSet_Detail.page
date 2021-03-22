@@ -1,0 +1,87 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "left",
+                "Text": "Back",
+				"Visible": true,
+                "Icon": "sap-icon://arrow-left",
+				"OnPress": "/Mahlwerk_Sales/Actions/CloseModalPage_Cancel.action"
+			},
+            {
+				"Position": "right",
+				"Text": "Order",
+				"Visible": true,
+				"OnPress": "/Mahlwerk_Sales/Actions/NewOrder/NavigateToWizardFirst.action"
+			}
+		]
+	},
+	"Caption": "Machine Details",
+
+	"Controls": [{
+		"Sections": [{
+				"EmptySection": {
+					"FooterVisible": false
+				},
+				"ImageCells": [{
+					"ImageCell": {
+						"Image": "/Mahlwerk_Sales/Rules/Product/GetDetailImage.js",
+						"ImageIsCircular": false,
+						"Visible": true,
+						"Title": "{Name}"
+					}
+				}],
+				"Layout": {
+					"LayoutType": "HorizontalFit"
+				},
+				"Visible": true,
+				"_Name": "SectionImageCollection0",
+				"_Type": "Section.Type.ImageCollection"
+			},
+
+			{
+				"EmptySection": {
+					"FooterVisible": false
+				},
+				"KeyAndValues": [{
+					"KeyName": "Model Nr.",
+					
+					"Value": "{MachineID}",
+					"Visible": true
+				}],
+				"Layout": {
+					"NumberOfColumns": 1
+				},
+				"MaxItemCount": 1,
+				"_Name": "SectionKeyValue0",
+				"_Type": "Section.Type.KeyValue"
+			},
+			{
+				"EmptySection": {
+					"FooterVisible": false
+				},
+				"KeyAndValues": [{
+					"KeyName": "Description",
+					
+					"Value": "{Description}",
+					"Visible": true
+				}],
+				"Layout": {
+					"NumberOfColumns": 1
+				},
+				"MaxItemCount": 1,
+				"Visible": true,
+				"_Name": "SectionKeyValue2",
+				"_Type": "Section.Type.KeyValue"
+			}
+		],
+		
+		"_Name": "SectionedTable",
+		"_Type": "Control.Type.SectionedTable"
+	}],
+	"OnLoaded": "/Mahlwerk_Sales/Rules/SaveMachineInformation.js",
+	
+	"_Name": "MachineSet_Detail",
+	"_Type": "Page"
+
+}

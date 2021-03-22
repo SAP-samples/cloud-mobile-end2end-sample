@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"환영"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">시작하다</string>
+
+    <!-- XBUT: Text of the Save button -->
+
+    <!-- XBUT: Text of the Update button -->
+
+    <!-- XBUT: Text of the Delete button -->
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"취소"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"확인"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"예"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Update menu item -->
+
+    <!-- XMIT: Delete menu item -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"다운로드 실패"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"다운로드 작업에 실패했습니다. 어플리케이션을 다시 시작해 보십시오."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The Notification Text -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of an error dialog -->
+    <string name="configuration_invalid">"구성이 잘못됨"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="configuration_contained_malformed_url">"구성에 포함된 URL %s의 형식이 잘못되었습니다."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="secure_store_error">"보안 저장소 오류"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="secure_store_open_default_error_detail">"기본 패스코드로 보호된 보안 저장소를 열 수 없습니다."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="passcode_change_error">"패스코드 변경 오류"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail">"보안 저장소 패스코드를 변경할 수 없습니다. 어플리케이션에는 가장 최근 패스코드가 계속 사용됩니다."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail_default">"기본 패스코드를 설정할 수 없습니다. 어플리케이션에는 가장 최근 패스코드가 계속 사용됩니다."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_data_error_title">"영구 저장소에서 구성 데이터를 가져올 수 없음"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_field_description">"요청한 데이터 필드를 추출할 수 없습니다."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_service_url_description">"서비스 URL 값 \"%s\"이(가) 유효한 URL이 아닙니다."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"JSON 오브젝트를 작성하지 못했습니다."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_no_data_description">"구성 데이터가 영구 저장소에 없습니다."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_complete_error_title">"구성 데이터 로드 실패"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"구성 로더에서 구성 데이터를 가져오지 못했습니다."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_on_error_title">"구성 프로바이더 오류"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"구성 프로바이더 \"%s\"에서 오류가 발생했습니다. %s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_corrupted_description">"이전에 저장된 데이터가 손상되어 로드할 수 없습니다."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"바인딩 오류"</string>
+	
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"오프라인 OData 동기화 서비스에 바인딩할 수 없습니다."</string>
+    
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"오프라인 초기화 오류"</string>
+	
+ 	<!-- XMSG: Detailed error description -->   
+	<string name="offline_provider_error_detail">"오프라인 OData 프로바이더를 초기화하지 못했습니다."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"오프라인 개시 오류"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"오프라인 저장소 개시를 완료하지 못했습니다."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"오프라인 저장소 재설정 실패"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"오프라인 데이터 저장소를 재설정/제거하지 못했습니다."</string>
+    <!-- error messages -->
+
+    <!-- offline -->	
+	
+	<!-- XMSG: Advise user of delay when performing initial opening of offline store -->
+	<string name="initializing_offline_store">"오프라인 저장소를 초기화하는 중입니다. 잠시 기다려 주십시오."</string>
+	
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+
+    <!-- offline -->
+	
+    <!-- XTIT: The title of the settings dialog -->
+    <!-- XTIT: The title of the settings menu -->
+
+    <!-- XTIT: The title of the passcode group -->
+    <!-- XTIT: The title of the change passcode menu item -->
+    <!-- XTIT: The summary of the change passcode menu item -->
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"앱 재설정"</string>
+    <!-- XTIT: The summary of the reset app menu item -->
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"이 어플리케이션과 연관된 모든 정보가 제거됩니다. 계속하시겠습니까?"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="invalid_passcode">"잘못된 패스코드"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XMSG: Detailed error description -->
+    <!-- XMSG: Detailed error description -->
+    <string name="invalid_passcode_detail">"입력된 패스코드로 보안 저장소를 생성할 수 없습니다."</string>
+    <!-- XTIT: The title of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required">"신규 패스코드 필요"</string>
+    <!-- XMSG: The message of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required_detail">"패스코드가 만료되었거나 패스코드 정책이 변경되어 패스코드를 새로 설정해야 합니다."</string>
+    <!-- XTIT: The title of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required">"패스코드 필요"</string>
+    <!-- XMSG: The message of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required_detail">"패스코드 정책이 변경되어 패스코드를 설정해야 합니다."</string>
+    <!-- XTIT: The title of a dialog informing the user the passcode policy has changed and they need to take action -->
+    <string name="policy_changed">"정책 변경됨"</string>
+    <!-- XMSG: The message of a dialog informing the user they can no longer use fingerprint to unlock the app because the new passcode policy doesn't allow it -->
+    <string name="fingerprint_no_longer_allowed">"새로운 정책에 따라 더 이상 이 앱을 지문으로 잠금 해제할 수 없습니다. 지금부터는 패스코드를 입력해야 합니다."</string>
+    <!-- XTIT: The title of a dialog -->
+    <string name="max_retries_title">"너무 많은 시도"</string>
+    <!-- XMSG: The message of a dialog -->
+    <string name="max_retries_message">"재시도할 수 있는 최대 횟수에 도달하여 앱이 지금 재설정됩니다."</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"기본 로그 레벨이 서버 정책에서 %s(으)로 변경되었습니다."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"서버에 로그 정책이 설정되지 않아 기본 로그 레벨이 %s(으)로 설정됩니다."</string>
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"없음"</string>
+    <!-- XTIT: Log level title -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"오류"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"경고"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"정보"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"디버그"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"경로"</string>
+    <!-- XMSG: Authentication error message -->
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"서비스 URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"OData 서버의 URL입니다."</string>
+    <!-- restrictions -->
+
+    <!-- XBUT: Text of the Skip button on the Create Passcode Screen -->
+    <string name="skip_passcode">"건너뛰기"</string>
+
+    <!-- XMSG: Detailed Usage data collection description -->
+    <!-- XTIT: The title of usage consent screen -->
+    <!-- XBUT: Text of a button -->
+    <!-- XBUT: Text of a button -->
+    <!-- XTIT: The header of usage consent screen -->
+
+    <!-- XBUT: Text of the Skip button on the Fingerprint Screen -->
+    <string name="skip_fingerprint">"지문 생략"</string>
+    <!-- XBUT: button text giving the option to use a passcode (instead of a fingerprint) to unlock the app -->
+    <string name="use_passcode">"패스코드 사용"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+</resources>

@@ -1,0 +1,6 @@
+/sql
+/logs
+/target
+/vocabularies
+/src/main/java/com/sap/odata/base
+/src/main/java/com/sap/odata/proxy

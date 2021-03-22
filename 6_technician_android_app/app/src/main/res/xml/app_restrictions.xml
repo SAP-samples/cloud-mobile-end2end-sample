@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <restriction
+        android:key="ServiceUrl"
+        android:title="@string/restriction_service_url_title"
+        android:restrictionType="string"
+        android:description="@string/restriction_service_url_description"
+        android:defaultValue="<Enter your Service URL here without https:// >" />
+
+</restrictions>

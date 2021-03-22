@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Välkommen"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">Komma igång</string>
+
+    <!-- XBUT: Text of the Save button -->
+
+    <!-- XBUT: Text of the Update button -->
+
+    <!-- XBUT: Text of the Delete button -->
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Avbryt"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Ja"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog -->
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Refresh menu item -->
+
+    <!-- XMIT: Update menu item -->
+
+    <!-- XMIT: Delete menu item -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Nedläsning misslyckades"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Nedläsning misslyckades. Försök att starta om applikationen."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The title of the delete dialog -->
+
+    <!-- XTIT: The Notification Text -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of an error dialog -->
+    <string name="configuration_invalid">"Ogiltig konfiguration"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="configuration_contained_malformed_url">"Konfiguration innehöll felaktigt utformad URL: %s"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="secure_store_error">"Fel för säker lagring"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="secure_store_open_default_error_detail">"Säker lagring med standardlösenkod kunde inte öppnas."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="passcode_change_error">"Fel vid ändring av lösenkod"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail">"Lösenkod för säker lagring kunde inte ändras. Applikationen fungerar fortfarande med den senaste."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail_default">"Standardlösenod kunde inte anges. Applikationen fungerar fortfarande med den senaste användarlösenkoden."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_data_error_title">"Konfigurationsdata kunde inte hämtas från persistent lagring"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_field_description">"Begärt datafält kunde inte extraheras."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_service_url_description">"Värdet för tjänst-URL \"%s\" är inte en giltig URL."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"JSON-objekt kunde inte skapas."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_no_data_description">"Konfigurationsdata fanns inte i persistent lagring."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_complete_error_title">"Konfigurationsdata kunde inte läsas in"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Konfigurationsinläsarekunde inte hämta konfigurationsdata."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_on_error_title">"Konfigurationsleverantörsfel"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Konfigurationsleverantör \"%s\" stötte på ett fel. %s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_corrupted_description">"Tidigare sparade data är skadade och kan inte läsas in."</string>
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Anslutningsfel"</string>
+	
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Det gick inte att ansluta till OData-offlinesynkroniseringsservice."</string>
+    
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Offlineinitialiseringsfel"</string>
+	
+ 	<!-- XMSG: Detailed error description -->   
+	<string name="offline_provider_error_detail">"Offline-OData-leverantör kunde inte initialiseras."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Fel vid initial öppning offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Initial öppning av externt arkiv kunde inte slutföras."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+
+    <!-- XMSG: Detailed error description -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Fel vid återställning av externt arkiv"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Externt dataarkiv kunde inte återställas/tas bort."</string>
+    <!-- error messages -->
+
+    <!-- offline -->	
+	
+	<!-- XMSG: Advise user of delay when performing initial opening of offline store -->
+	<string name="initializing_offline_store">"Externt arkiv initialiseras. Vänta."</string>
+	
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+
+    <!-- offline -->
+	
+    <!-- XTIT: The title of the settings dialog -->
+    <!-- XTIT: The title of the settings menu -->
+
+    <!-- XTIT: The title of the passcode group -->
+    <!-- XTIT: The title of the change passcode menu item -->
+    <!-- XTIT: The summary of the change passcode menu item -->
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Återställ app"</string>
+    <!-- XTIT: The summary of the reset app menu item -->
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"All information som associeras med applikationen tas bort. Vill du fortsätta?"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="invalid_passcode">"Ogiltig lösenkod"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XTIT: The title of an error dialog -->
+    <!-- XMSG: Detailed error description -->
+    <!-- XMSG: Detailed error description -->
+    <string name="invalid_passcode_detail">"Angivet lösenkod kunde inte användas för att skapa säker lagring."</string>
+    <!-- XTIT: The title of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required">"Ny lösenkod krävs"</string>
+    <!-- XMSG: The message of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required_detail">"Lösenkoden har gått ut eller så har lösenkodspolicyn ändrats. Du måste ange en ny lösenkod."</string>
+    <!-- XTIT: The title of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required">"Lösenkod krävs"</string>
+    <!-- XMSG: The message of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required_detail">"Lösenkodspolicyn har ändrats. Du måste ange en ny lösenkod."</string>
+    <!-- XTIT: The title of a dialog informing the user the passcode policy has changed and they need to take action -->
+    <string name="policy_changed">"Policy har ändrats"</string>
+    <!-- XMSG: The message of a dialog informing the user they can no longer use fingerprint to unlock the app because the new passcode policy doesn't allow it -->
+    <string name="fingerprint_no_longer_allowed">"Användning av fingeravtryck för att låsa upp appen har inaktiverats i enlighet med den nya policyn. Från och med nu måste du ange en lösenkod i stället."</string>
+    <!-- XTIT: The title of a dialog -->
+    <string name="max_retries_title">"För många försök"</string>
+    <!-- XMSG: The message of a dialog -->
+    <string name="max_retries_message">"Maximalt antal försök har uppnåtts. Appen återställs nu."</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu group -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Standardloggnivå har ändrats från serverpolicy till: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Loggpolicy har inte angetts på server, standardloggnivå sätts till: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: The description of a menu item -->
+    <!-- XTIT: The title of a menu item -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Ingen"</string>
+    <!-- XTIT: Log level title -->
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Fel"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Varning"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Info"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Felsökning"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Sökväg"</string>
+    <!-- XMSG: Authentication error message -->
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Tjänst-URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL för OData-service."</string>
+    <!-- restrictions -->
+
+    <!-- XBUT: Text of the Skip button on the Create Passcode Screen -->
+    <string name="skip_passcode">"Hoppa över"</string>
+
+    <!-- XMSG: Detailed Usage data collection description -->
+    <!-- XTIT: The title of usage consent screen -->
+    <!-- XBUT: Text of a button -->
+    <!-- XBUT: Text of a button -->
+    <!-- XTIT: The header of usage consent screen -->
+
+    <!-- XBUT: Text of the Skip button on the Fingerprint Screen -->
+    <string name="skip_fingerprint">"Hoppa över fingeravtryck"</string>
+    <!-- XBUT: button text giving the option to use a passcode (instead of a fingerprint) to unlock the app -->
+    <string name="use_passcode">"Använd lösenkod"</string>
+
+    <!-- XMSG: Detailed error description -->
+
+</resources>

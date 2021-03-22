@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ep2-vw-M9w">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TasksViewController-->
+        <scene sceneID="VeQ-NP-PM8">
+            <objects>
+                <tableViewController id="Z86-bO-EtH" userLabel="TasksViewController" customClass="TasksViewController" customModule="Mahlwerk" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="yUk-xe-Tzi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TaskCell" editingAccessoryType="detailButton" rowHeight="80" id="9Uy-u0-UAB" customClass="TaskCell" customModule="Mahlwerk" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Uy-u0-UAB" id="NAL-bS-Fou">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o30-GB-Bbm">
+                                            <rect key="frame" x="339" y="10" width="44" height="18"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Due on 01.01.2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1x-eZ-MZq">
+                                            <rect key="frame" x="20" y="54" width="111" height="16"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aes-dd-ZZ4">
+                                            <rect key="frame" x="20" y="34" width="48.5" height="17"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="addressLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-Bn-ACS">
+                                            <rect key="frame" x="20" y="10" width="311" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Aes-dd-ZZ4" firstAttribute="top" secondItem="JV6-Bn-ACS" secondAttribute="bottom" constant="3" id="BXT-Uy-qmZ"/>
+                                        <constraint firstItem="o30-GB-Bbm" firstAttribute="leading" secondItem="JV6-Bn-ACS" secondAttribute="trailing" constant="8" id="DDn-sZ-rF8"/>
+                                        <constraint firstItem="W1x-eZ-MZq" firstAttribute="top" secondItem="Aes-dd-ZZ4" secondAttribute="bottom" constant="3" id="GQx-3j-vG1"/>
+                                        <constraint firstItem="W1x-eZ-MZq" firstAttribute="leading" secondItem="NAL-bS-Fou" secondAttribute="leading" constant="20" id="TlY-0s-PoJ"/>
+                                        <constraint firstItem="Aes-dd-ZZ4" firstAttribute="leading" secondItem="NAL-bS-Fou" secondAttribute="leading" constant="20" id="X4t-rA-br6"/>
+                                        <constraint firstItem="JV6-Bn-ACS" firstAttribute="leading" secondItem="NAL-bS-Fou" secondAttribute="leading" constant="20" id="c4o-xx-Tw4"/>
+                                        <constraint firstItem="JV6-Bn-ACS" firstAttribute="top" secondItem="NAL-bS-Fou" secondAttribute="top" constant="10" id="mVv-eC-l6g"/>
+                                        <constraint firstAttribute="bottom" secondItem="W1x-eZ-MZq" secondAttribute="bottom" constant="10" id="o2Z-hZ-Qxp"/>
+                                        <constraint firstItem="o30-GB-Bbm" firstAttribute="top" secondItem="NAL-bS-Fou" secondAttribute="top" constant="10" id="pvY-pL-w1K"/>
+                                        <constraint firstAttribute="trailing" secondItem="o30-GB-Bbm" secondAttribute="trailing" id="zY6-ze-Jdo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier=" "/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="addressLabel" destination="Aes-dd-ZZ4" id="p68-yg-E5q"/>
+                                    <outlet property="dateLabel" destination="W1x-eZ-MZq" id="ngY-dK-ZCe"/>
+                                    <outlet property="statusLabel" destination="o30-GB-Bbm" id="knU-Sy-CXQ"/>
+                                    <outlet property="titleLabel" destination="JV6-Bn-ACS" id="fkV-Xu-Wqe"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" editingAccessoryType="detailButton" textLabel="CMC-f2-0E6" style="IBUITableViewCellStyleDefault" id="nMl-4Q-Pky">
+                                <rect key="frame" x="0.0" y="135.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nMl-4Q-Pky" id="HIt-Rj-prh" customClass="HistoryCell" customModule="Mahlwerk" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tasks History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CMC-f2-0E6">
+                                            <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier=" "/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <segue destination="woq-cN-rP5" kind="show" identifier="taskHistorySegue" id="CW4-6A-abf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z86-bO-EtH" id="ofk-bS-nV3"/>
+                            <outlet property="delegate" destination="Z86-bO-EtH" id="Esu-km-VgU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tasks" id="BtO-mA-lBA">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="wbO-E6-pGE">
+                            <connections>
+                                <segue destination="1oE-Gz-P78" kind="show" id="vsl-sD-zoB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="eQj-cC-2bB" id="BZa-uS-kIn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2x-j9-YNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="eQj-cC-2bB">
+                    <connections>
+                        <outlet property="delegate" destination="Z86-bO-EtH" id="8G0-xd-hUj"/>
+                        <outlet property="searchContentsController" destination="Z86-bO-EtH" id="ZlF-de-cmS"/>
+                        <outlet property="searchResultsDataSource" destination="Z86-bO-EtH" id="gvo-Lm-nql"/>
+                        <outlet property="searchResultsDelegate" destination="Z86-bO-EtH" id="8wr-g9-iyU"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="-837.05357142857144"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="A3B-9u-FTQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="1oE-Gz-P78" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAZ-Yd-ia4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="-340"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="aqv-oO-W6P">
+            <objects>
+                <navigationController id="ep2-vw-M9w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tasks" id="aDN-RN-6La"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CeY-Ux-s3i" customClass="NavigationBar" customModule="Mahlwerk" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Z86-bO-EtH" kind="relationship" relationship="rootViewController" id="XJC-AE-oql"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMC-Yz-gcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="-837"/>
+        </scene>
+        <!--Task History-->
+        <scene sceneID="T8K-0b-RoG">
+            <objects>
+                <tableViewController title="Task History" id="woq-cN-rP5" customClass="TaskHistoryViewController" customModule="Mahlwerk" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="peP-0S-3Li">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TaskCell" editingAccessoryType="detailButton" rowHeight="80" id="CYo-zz-47Q" customClass="TaskCell" customModule="Mahlwerk" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CYo-zz-47Q" id="PBi-m6-JGc">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMG-vR-vg1">
+                                            <rect key="frame" x="339" y="10" width="44" height="18"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Due on 01.01.2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsh-0Z-afj">
+                                            <rect key="frame" x="20" y="54" width="111" height="16"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-6H-1e5">
+                                            <rect key="frame" x="20" y="34" width="48.5" height="17"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="addressLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvk-Fu-7q1">
+                                            <rect key="frame" x="20" y="10" width="311" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="z1y-6H-1e5" firstAttribute="leading" secondItem="PBi-m6-JGc" secondAttribute="leading" constant="20" id="35L-xC-Ov6"/>
+                                        <constraint firstItem="LMG-vR-vg1" firstAttribute="leading" secondItem="pvk-Fu-7q1" secondAttribute="trailing" constant="8" id="540-lx-r5a"/>
+                                        <constraint firstItem="pvk-Fu-7q1" firstAttribute="leading" secondItem="PBi-m6-JGc" secondAttribute="leading" constant="20" id="NIX-Fw-fOw"/>
+                                        <constraint firstItem="tsh-0Z-afj" firstAttribute="leading" secondItem="PBi-m6-JGc" secondAttribute="leading" constant="20" id="UiE-ea-Fwi"/>
+                                        <constraint firstItem="LMG-vR-vg1" firstAttribute="top" secondItem="PBi-m6-JGc" secondAttribute="top" constant="10" id="WXE-RS-nAL"/>
+                                        <constraint firstAttribute="trailing" secondItem="LMG-vR-vg1" secondAttribute="trailing" id="aAv-EL-95v"/>
+                                        <constraint firstAttribute="bottom" secondItem="tsh-0Z-afj" secondAttribute="bottom" constant="10" id="jkL-to-JUx"/>
+                                        <constraint firstItem="z1y-6H-1e5" firstAttribute="top" secondItem="pvk-Fu-7q1" secondAttribute="bottom" constant="3" id="kLg-eb-8Kd"/>
+                                        <constraint firstItem="pvk-Fu-7q1" firstAttribute="top" secondItem="PBi-m6-JGc" secondAttribute="top" constant="10" id="t7i-Lz-TzJ"/>
+                                        <constraint firstItem="tsh-0Z-afj" firstAttribute="top" secondItem="z1y-6H-1e5" secondAttribute="bottom" constant="3" id="ypp-Za-U3H"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier=" "/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="addressLabel" destination="z1y-6H-1e5" id="YiE-7D-WlC"/>
+                                    <outlet property="dateLabel" destination="tsh-0Z-afj" id="Jbk-d0-ilJ"/>
+                                    <outlet property="statusLabel" destination="LMG-vR-vg1" id="yYp-7W-Wbd"/>
+                                    <outlet property="titleLabel" destination="pvk-Fu-7q1" id="4cU-C6-Aul"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="woq-cN-rP5" id="wh4-7W-vTc"/>
+                            <outlet property="delegate" destination="woq-cN-rP5" id="SOR-C7-ak5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Task History" id="NuT-aC-M6P"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUV-av-N0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="-1538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

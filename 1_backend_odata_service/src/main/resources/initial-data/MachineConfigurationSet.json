@@ -1,0 +1,42 @@
+[
+    {
+        "Color": "Rot",
+        "MachineConfigurationID": "1",
+        "MachineID": "1",
+        "OrderID": "1",
+        "Pressure": "17,5",
+        "MachineColorsID": 4
+    },
+    {
+        "Color": "Blau",
+        "MachineConfigurationID": "2",
+        "MachineID": "2",
+        "OrderID": "2",
+        "Pressure": "12,5",
+        "MachineColorsID": 8
+    },
+    {
+        "Color": "Rot",
+        "MachineConfigurationID": "3",
+        "MachineID": "3",
+        "OrderID": "3",
+        "Pressure": "20,0",
+        "MachineColorsID": 10
+    },
+    {
+        "Color": "Orange",
+        "MachineConfigurationID": "4",
+        "MachineID": "4",
+        "OrderID": "4",
+        "Pressure": "17,5",
+        "MachineColorsID": 3
+    },
+    {
+        "Color": "Blau",
+        "MachineConfigurationID": "5",
+        "MachineID": "5",
+        "OrderID": "5",
+        "Pressure": "15,666",
+        "MachineColorsID": 14
+    }
+]

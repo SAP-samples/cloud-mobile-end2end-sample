@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/fragment_task">
+
+    <fragment
+        android:id="@+id/fragment_task"
+        android:name="com.sap.mobile.mahlwerk.fragment.TasksFragment"
+        tools:layout="@layout/fragment_tasks">
+        <action
+            android:id="@+id/action_fragment_tasks_to_fragment_taskDetail"
+            app:destination="@id/fragment_taskDetail" />
+        <action
+            android:id="@+id/action_fragment_tasks_to_fragment_tasksHistory"
+            app:destination="@id/fragment_tasksHistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="com.sap.mobile.mahlwerk.fragment.MapFragment"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/fragment_orders"
+        android:name="com.sap.mobile.mahlwerk.fragment.OrdersFragment"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_fragment_orders_to_fragment_orderDetail"
+            app:destination="@id/fragment_orderDetail" />
+        <action
+            android:id="@+id/action_fragment_orders_to_fragment_ordersHistory"
+            app:destination="@id/fragment_orders_history" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_taskDetail"
+        android:name="com.sap.mobile.mahlwerk.fragment.TaskDetailFragment"
+        tools:layout="@layout/fragment_task_detail" />
+    <fragment
+        android:id="@+id/fragment_tasksHistory"
+        android:name="com.sap.mobile.mahlwerk.fragment.TasksHistoryFragment">
+        <action
+            android:id="@+id/action_fragment_tasksHistory_to_fragment_taskDetail"
+            app:destination="@id/fragment_taskDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_orderDetail"
+        android:name="com.sap.mobile.mahlwerk.fragment.OrderDetailFragment"
+        android:label="fragment_order_detail"
+        tools:layout="@layout/fragment_order_detail" />
+    <fragment
+        android:id="@+id/fragment_orders_history"
+        android:name="com.sap.mobile.mahlwerk.fragment.OrdersHistoryFragment"
+        android:label="OrdersHistoryFragment" >
+        <action
+            android:id="@+id/action_fragment_ordersHistory_to_fragment_orderDetail"
+            app:destination="@id/fragment_orderDetail" />
+    </fragment>
+</navigation>

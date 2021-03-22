@@ -1,0 +1,36 @@
+{
+	"Collection": [
+		"PartsToChangeSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Job",
+			"_Type": "Job"
+		},
+		{
+			"Key": false,
+			"_Name": "Part",
+			"_Type": "Part"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "JobID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "PartID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": true,
+			"_Name": "PartsToChangeID",
+			"_Type": "Edm.Int64"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "PartsToChange"
+}

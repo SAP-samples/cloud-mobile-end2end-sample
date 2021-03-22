@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="acj-Vl-L1P">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Final Report View Controller-->
+        <scene sceneID="huz-k3-rCg">
+            <objects>
+                <tableViewController id="acj-Vl-L1P" customClass="FinalReportViewController" customModule="Mahlwerk" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="M2i-dx-YFh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FinalReportCell" rowHeight="129" id="DFg-M1-K7r" customClass="FinalReportCell" customModule="Mahlwerk" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="129"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DFg-M1-K7r" id="NZA-ui-nFN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Jobtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVt-fw-c1i">
+                                            <rect key="frame" x="15" y="5" width="61" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="3XU-P9-MPZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FgW-NM-CFi">
+                                            <rect key="frame" x="0.0" y="31" width="414" height="97.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FinalReportMaterialCell" rowHeight="24" id="fyx-HE-zJx" customClass="FinalReportMaterialCell" customModule="Mahlwerk" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="28" width="414" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fyx-HE-zJx" id="Av1-33-CgL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-2P-a1e">
+                                                                <rect key="frame" x="20" y="2" width="269" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 x" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luc-gj-0Dg">
+                                                                <rect key="frame" x="378" y="2" width="21" height="19.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="luc-gj-0Dg" firstAttribute="top" secondItem="Av1-33-CgL" secondAttribute="top" constant="2" id="2qx-6s-B4J"/>
+                                                            <constraint firstAttribute="trailing" secondItem="luc-gj-0Dg" secondAttribute="trailing" constant="15" id="Ds6-9y-pbj"/>
+                                                            <constraint firstItem="bdI-2P-a1e" firstAttribute="leading" secondItem="Av1-33-CgL" secondAttribute="leading" constant="20" id="Nyj-f8-QHT"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bdI-2P-a1e" secondAttribute="bottom" constant="2" id="Qvc-7k-glP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="luc-gj-0Dg" secondAttribute="bottom" constant="2" id="Qxe-WI-Ps7"/>
+                                                            <constraint firstItem="bdI-2P-a1e" firstAttribute="top" secondItem="Av1-33-CgL" secondAttribute="top" constant="2" id="za4-8s-K3j"/>
+                                                        </constraints>
+                                                    </tableViewCellContentView>
+                                                    <accessibility key="accessibilityConfiguration" identifier="FinalReportMaterialCell"/>
+                                                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <connections>
+                                                        <outlet property="amountLabel" destination="luc-gj-0Dg" id="hNm-yB-itA"/>
+                                                        <outlet property="nameLabel" destination="bdI-2P-a1e" id="79y-gS-4jL"/>
+                                                    </connections>
+                                                </tableViewCell>
+                                            </prototypes>
+                                        </tableView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="0 hrs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tl-8M-5cj">
+                                            <rect key="frame" x="369" y="5" width="35" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FgW-NM-CFi" firstAttribute="leading" secondItem="NZA-ui-nFN" secondAttribute="leading" id="Gjq-Zc-Yo7"/>
+                                        <constraint firstAttribute="trailing" secondItem="FgW-NM-CFi" secondAttribute="trailing" id="I8O-VP-7sN"/>
+                                        <constraint firstAttribute="trailing" secondItem="0Tl-8M-5cj" secondAttribute="trailing" constant="10" id="IgF-If-K6q"/>
+                                        <constraint firstAttribute="bottom" secondItem="FgW-NM-CFi" secondAttribute="bottom" id="LSe-Ek-YiL"/>
+                                        <constraint firstItem="oVt-fw-c1i" firstAttribute="leading" secondItem="NZA-ui-nFN" secondAttribute="leading" constant="15" id="NBT-e1-8Qe"/>
+                                        <constraint firstItem="0Tl-8M-5cj" firstAttribute="top" secondItem="NZA-ui-nFN" secondAttribute="top" constant="5" id="PqD-3M-cNY"/>
+                                        <constraint firstItem="oVt-fw-c1i" firstAttribute="top" secondItem="NZA-ui-nFN" secondAttribute="top" constant="5" id="W7C-C2-DF0"/>
+                                        <constraint firstItem="FgW-NM-CFi" firstAttribute="top" secondItem="oVt-fw-c1i" secondAttribute="bottom" constant="5" id="Zj4-Eb-Z6r"/>
+                                        <constraint firstItem="FgW-NM-CFi" firstAttribute="top" secondItem="0Tl-8M-5cj" secondAttribute="bottom" constant="5" id="s2H-v9-4vm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="FinalReportCell"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="durationLabel" destination="0Tl-8M-5cj" id="qZN-nU-pYe"/>
+                                    <outlet property="jobTitleLabel" destination="oVt-fw-c1i" id="9eC-HC-PpT"/>
+                                    <outlet property="materialsTableView" destination="FgW-NM-CFi" id="FQV-aM-KgB"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FinalReportSumCell" rowHeight="24" id="kcG-Xt-Zka" customClass="FinalReportSumCell" customModule="Mahlwerk" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="184.5" width="414" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kcG-Xt-Zka" id="kiN-OS-f8f">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="23.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Sum: 0 hrs" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMS-4n-H43">
+                                            <rect key="frame" x="330" y="5" width="74" height="13.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="uMS-4n-H43" firstAttribute="top" secondItem="kiN-OS-f8f" secondAttribute="top" constant="5" id="0re-XL-OsY"/>
+                                        <constraint firstAttribute="trailing" secondItem="uMS-4n-H43" secondAttribute="trailing" constant="10" id="Cpn-Sd-5KC"/>
+                                        <constraint firstAttribute="bottom" secondItem="uMS-4n-H43" secondAttribute="bottom" constant="5" id="mry-qr-OcJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="FinalReportSumCell"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="sumLabel" destination="uMS-4n-H43" id="Uxv-kd-T8K"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="acj-Vl-L1P" id="SAW-Dg-eex"/>
+                            <outlet property="delegate" destination="acj-Vl-L1P" id="dYG-AQ-pcS"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuA-f9-MeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50.724637681159422" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+</document>

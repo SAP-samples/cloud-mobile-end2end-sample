@@ -1,0 +1,97 @@
+[
+    {
+        "JobID": "1",
+        "Name": "Unplug Coffe Machine",
+        "StepID": "1"
+    },
+    {
+        "JobID": "1",
+        "Name": "Open Espresso unit backpart 1",
+        "StepID": "2"
+    },
+    {
+        "JobID": "1",
+        "Name": "Take screws 6 & 7 out",
+        "StepID": "3"
+    },
+    {
+        "JobID": "1",
+        "Name": "Exchange espresso grinder",
+        "StepID": "4"
+    },
+    {
+        "JobID": "1",
+        "Name": "Put screw 6 & 7 back",
+        "StepID": "5"
+    },
+    {
+        "JobID": "1",
+        "Name": "Close Espresso unit backpart 1",
+        "StepID": "6"
+    },
+    {
+        "JobID": "1",
+        "Name": "Plug Coffee machine back into power outlet",
+        "StepID": "7"
+    },
+    {
+        "JobID": "1",
+        "Name": "drink espresso and check that grinder works correct",
+        "StepID": "8"
+    },
+    {
+        "JobID": "2",
+        "Name": "service Filter",
+        "StepID": "9"
+    },
+    {
+        "JobID": "2",
+        "Name": "look busy",
+        "StepID": "10"
+    },
+    {
+        "JobID": "2",
+        "Name": "drink cofee and check that grinder works correct",
+        "StepID": "11"
+    }, 
+      {
+        "JobID": "3",
+        "Name": "unplug Coffe Machine",
+        "StepID": "11"
+    },
+    {
+        "JobID": "3",
+        "Name": "Open Coffee unit backpart 1",
+        "StepID": "12"
+    },
+    {
+        "JobID": "3",
+        "Name": "Take screws 16 & 17 out",
+        "StepID": "13"
+    },
+    {
+        "JobID": "3",
+        "Name": "Service coffee grinder",
+        "StepID": "14"
+    },
+    {
+        "JobID": "3",
+        "Name": "Put screw 16 & 17 back",
+        "StepID": "15"
+    },
+    {
+        "JobID": "3",
+        "Name": "Close Coffee unit backpart 1",
+        "StepID": "16"
+    },
+    {
+        "JobID": "3",
+        "Name": "Plug Coffee machine back into power outlet",
+        "StepID": "17"
+    },
+    {
+        "JobID": "3",
+        "Name": "Drink coffee and check that grinder works correct",
+        "StepID": "18"
+    }
+]

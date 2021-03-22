@@ -1,0 +1,76 @@
+{
+	"Collection": [
+		"JobSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "MaterialPosition",
+			"_Type": "Collection(MaterialPosition)"
+		},
+		{
+			"Key": false,
+			"_Name": "PartsToChange",
+			"_Type": "PartsToChange"
+		},
+		{
+			"Key": false,
+			"_Name": "Step",
+			"_Type": "Collection(Step)"
+		},
+		{
+			"Key": false,
+			"_Name": "Task",
+			"_Type": "Task"
+		},
+		{
+			"Key": false,
+			"_Name": "ToolPosition",
+			"_Type": "Collection(ToolPosition)"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "ActualWorkHours",
+			"_Type": "Edm.Int16"
+		},
+		{
+			"Key": false,
+			"_Name": "DoneDate",
+			"_Type": "Edm.DateTimeOffset"
+		},
+		{
+			"Key": true,
+			"_Name": "JobID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "JobStatusID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "PredictedWorkHours",
+			"_Type": "Edm.Int16"
+		},
+		{
+			"Key": false,
+			"_Name": "Suggested",
+			"_Type": "Edm.Boolean"
+		},
+		{
+			"Key": false,
+			"_Name": "TaskID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Title",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "Job"
+}

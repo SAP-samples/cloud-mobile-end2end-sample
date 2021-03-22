@@ -1,0 +1,23 @@
+{
+		"ActionBar": {
+		"Items": [
+						{
+				"Icon": "sap-icon://action",
+				"OnPress": "/Mahlwerk_Sales/Actions/UserMenu/ActionItemPopover.action",
+				"Position": "Right",
+				"Text": "User",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Overview_Section",
+	"Controls": [
+		{
+			"Sections": [],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Overview_Section",
+	"_Type": "Page"
+}

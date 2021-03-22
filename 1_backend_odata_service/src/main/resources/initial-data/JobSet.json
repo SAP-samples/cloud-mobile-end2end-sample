@@ -1,0 +1,137 @@
+[
+    {
+        "ActualWorkHours": null,
+        "JobID": "0",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "1",
+        "Title": "Clean grinder"
+    },    {
+        "ActualWorkHours": null,
+        "JobID": "1",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "1",
+        "Title": "Exchange seals"
+    },
+    {
+        "ActualWorkHours": null,
+        "JobID": "2",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": true,
+        "TaskID": "1",
+        "Title": "Exchange filter"
+    },
+    {
+        "ActualWorkHours": null,
+        "JobID": "3",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "2",
+        "Title": "Clean grinder"
+    },    {
+        "ActualWorkHours": null,
+        "JobID": "4",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "2",
+        "Title": "Exchange seals"
+    },
+    {
+        "ActualWorkHours": null,
+        "JobID": "5",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": true,
+        "TaskID": "2",
+        "Title": "Exchange filter"
+    },
+    {
+        "ActualWorkHours": null,
+        "JobID": "6",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "3",
+        "Title": "Clean grinder"
+    },    {
+        "ActualWorkHours": null,
+        "JobID": "7",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "3",
+        "Title": "Exchange seals"
+    },
+    {
+        "ActualWorkHours": null,
+        "JobID": "8",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": true,
+        "TaskID": "3",
+        "Title": "Exchange filter"
+    },
+    {
+        "ActualWorkHours": 2,
+        "JobID": "9",
+        "JobStatusID": "1",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "4",
+        "Title": "Clean grinder"
+    },    {
+        "ActualWorkHours": null,
+        "JobID": "10",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "4",
+        "Title": "Exchange seals"
+    },
+    {
+        "ActualWorkHours": null,
+        "JobID": "11",
+        "JobStatusID": "0",
+        "PredictedWorkHours": 1,
+        "Suggested": true,
+        "TaskID": "4",
+        "Title": "Exchange filter"
+    },
+    {
+        "ActualWorkHours": 1,
+        "JobID": "12",
+        "JobStatusID": "1",
+        "DoneDate": "2014-01-13T13:47:08.174Z",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "5",
+        "PartID": "1",
+        "Title": "Clean grinder"
+    },    {
+        "ActualWorkHours": 1,
+        "JobID": "13",
+        "JobStatusID": "1",
+        "DoneDate": "2014-03-13T13:47:08.174Z",
+        "PredictedWorkHours": 1,
+        "Suggested": false,
+        "TaskID": "5",
+        "PartID": "4",
+        "Title": "Exchange seals"
+    },
+    {
+        "ActualWorkHours": 1,
+        "JobID": "14",
+        "JobStatusID": "1",
+        "DoneDate": "2019-02-13T13:47:08.174Z",
+        "PredictedWorkHours": 1,
+        "Suggested": true,
+        "TaskID": "5",
+        "Title": "Exchange filter"
+    }
+]

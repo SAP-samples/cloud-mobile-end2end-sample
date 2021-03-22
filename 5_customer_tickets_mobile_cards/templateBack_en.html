@@ -1,0 +1,48 @@
+<div id="mySimpleTemplate" class="myTemplate" data-type="text/x-handlebars-template">
+         <div class="header">
+             <h1>
+                Technician Details
+             </h1>
+         </div>
+         <div class="card-contentBack">
+             <div class="all">
+                                  <div class="title-content">
+                     <span class="title">
+                         ID
+                     </span>
+                     <br>
+                     <span class="content">
+                         {{dataSets.[0].data.d.User.UserID}}
+                     </span>
+                 </div>
+                 <div class="title-content">
+                     <span class="title">
+                         Name
+                     </span>
+                     <br>
+                     <span class="content">
+                         {{dataSets.[0].data.d.User.FirstNames}} {{dataSets.[0].data.d.User.LastNames}}
+                     </span>
+                 </div>
+                 <div class="title-content">
+                     <span class="title">
+                         Email Address
+                     </span>
+                     <br>
+                     <span class="content c2g_email">
+                         {{dataSets.[0].data.d.User.Email}}
+                     </span>
+                 </div>
+                 <div class="title-content">
+                     <span class="title">
+                         Phone Number
+                     </span>
+                     <br>
+                     <span class="content c2g_phoneNumber">
+                         {{dataSets.[0].data.d.User.Phone}}
+                     </span>
+                 </div>
+             </div>
+          </div>
+     </div>
+</div>

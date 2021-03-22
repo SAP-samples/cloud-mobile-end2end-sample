@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/Mahlwerk_Sales/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/Mahlwerk_Sales/Actions/Service/CloseOfflineFailureMessage.action"
+}

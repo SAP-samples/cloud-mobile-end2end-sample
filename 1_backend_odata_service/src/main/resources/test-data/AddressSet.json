@@ -1,0 +1,16 @@
+[
+    {
+        "AddressID": "101",
+        "Country": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "HouseNumber": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "Street": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "Town": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    {
+        "AddressID": "102",
+        "Country": "XYZ",
+        "HouseNumber": "XYZ",
+        "Street": "XYZ",
+        "Town": "XYZ"
+    }
+]

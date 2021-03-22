@@ -1,0 +1,41 @@
+{
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"DataSubscriptions": [
+						"CustomerSet"
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"UseTopPadding": true
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImageIsCircular": false,
+						"OnPress": "/Mahlwerk_Sales/Actions/CustomerSet/NavToCustomerSet_Detail.action",
+						"PreserveIconStackSpacing": false,
+						"Title": "{CompanyName}"
+					},
+					"Search": {
+						"MinimumCharacterThreshold": 2
+					},
+					"Target": {
+						"EntitySet": "CustomerSet",
+						"QueryOptions": "$expand=Address",
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable3",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customer",
+	"_Type": "Page"
+}

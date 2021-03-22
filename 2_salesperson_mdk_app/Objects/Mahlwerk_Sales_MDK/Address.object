@@ -1,0 +1,51 @@
+{
+	"Collection": [
+		"AddressSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Customer",
+			"_Type": "Customer"
+		},
+		{
+			"Key": false,
+			"_Name": "Task",
+			"_Type": "Task"
+		}
+	],
+	"Properties": [
+		{
+			"Key": true,
+			"_Name": "AddressID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Country",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "HouseNumber",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "PostalCode",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Street",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "Town",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "Address"
+}

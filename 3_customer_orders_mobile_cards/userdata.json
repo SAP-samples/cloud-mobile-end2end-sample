@@ -1,0 +1,158 @@
+{
+    "dataSets": [
+        {
+            "resourceIdentifier": "OrderSet(10L)",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "etag": "W/\"1\"",
+                        "id": "OrderSet(10L)",
+                        "uri": "OrderSet(10L)"
+                    },
+                    "Customer": {
+                        "__deferred": {
+                            "uri": "OrderSet(10L)/Customer"
+                        }
+                    },
+                    "CustomerID": "3",
+                    "Description": "New Order",
+                    "DueDate": "/Date(1612137600000)/",
+                    "MachineConfiguration": {
+                        "__deferred": {
+                            "uri": "OrderSet(10L)/MachineConfiguration"
+                        }
+                    },
+                    "OrderEvents": {
+                        "__deferred": {
+                            "uri": "OrderSet(10L)/OrderEvents"
+                        }
+                    },
+                    "OrderID": "10",
+                    "OrderStatusID": "2",
+                    "Task": {
+                        "__deferred": {
+                            "uri": "OrderSet(10L)/Task"
+                        }
+                    },
+                    "Title": "New Order"
+                }
+            }
+        },
+        {
+            "resourceIdentifier": "/CustomerSet(3)",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "etag": "W/\"1\"",
+                        "id": "CustomerSet(3L)",
+                        "uri": "CustomerSet(3L)"
+                    },
+                    "AddressID": "3",
+                    "CompanyName": "Delbont",
+                    "CustomerID": "3",
+                    "Email": "maria.brown@delbont.com",
+                    "Name": "Maria Brown",
+                    "Phone": "0944193943300",
+                    "TaskID": "0"
+                }
+            }
+        },
+        {
+            "resourceIdentifier": "/AddressSet(3)",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "etag": "W/\"1\"",
+                        "id": "AddressSet(3L)",
+                        "uri": "AddressSet(3L)"
+                    },
+                    "AddressID": "3",
+                    "Country": "Germany",
+                    "HouseNumber": "7",
+                    "PostalCode": "69190",
+                    "Street": "Hasso-Plattner-Ring",
+                    "Town": "Walldorf"
+                }
+            }
+        },
+        {
+            "resourceIdentifier": "/MachineConfigurationSet?$expand=MachineTyp,MachineColors&$filter=OrderID%20eq%2010",
+            "data": {
+                "d": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "etag": "W/\"1\"",
+                                "id": "MachineConfigurationSet(10L)",
+                                "uri": "MachineConfigurationSet(10L)"
+                            },
+                            "MachineColorsID": "14",
+                            "MachineConfigurationID": "10",
+                            "MachineID": "5",
+                            "OrderID": "10",
+                            "Pressure": "15,666",
+                            "MachineColors": {
+                                "__metadata": {
+                                    "content_type": "image/png",
+                                    "edit_media": "MachineColorsSet(14L)/$value",
+                                    "etag": "W/\"2\"",
+                                    "id": "MachineColorsSet(14L)",
+                                    "media_etag": "W/\"E9C9AF49A53347C486F5281493146451\"",
+                                    "media_src": "MachineColorsSet(14L)/$value",
+                                    "uri": "MachineColorsSet(14L)"
+                                },
+                                "Machine": {
+                                    "__deferred": {
+                                        "uri": "MachineColorsSet(14L)/Machine"
+                                    }
+                                },
+                                "MachineColorsID": "14",
+                                "MachineConfiguration": {
+                                    "__deferred": {
+                                        "uri": "MachineColorsSet(14L)/MachineConfiguration"
+                                    }
+                                },
+                                "MachineID": "5",
+                                "colorName": "blue"
+                            },
+                            "MachineTyp": {
+                                "__metadata": {
+                                    "content_type": "image/png",
+                                    "edit_media": "MachineSet(5L)/$value",
+                                    "etag": "W/\"2\"",
+                                    "id": "MachineSet(5L)",
+                                    "media_etag": "W/\"CCA72F77A7A3460395D3DA8433626604\"",
+                                    "media_src": "MachineSet(5L)/$value",
+                                    "uri": "MachineSet(5L)"
+                                },
+                                "Colors": {
+                                    "__deferred": {
+                                        "uri": "MachineSet(5L)/Colors"
+                                    }
+                                },
+                                "Description": "The Mahlwerk 9000X is a professional coffeemachine which comes with all of the functions.",
+                                "MachineConfiguration": {
+                                    "__deferred": {
+                                        "uri": "MachineSet(5L)/MachineConfiguration"
+                                    }
+                                },
+                                "MachineID": "5",
+                                "Name": "Mahlwerk 9000 X",
+                                "Task": {
+                                    "__deferred": {
+                                        "uri": "MachineSet(5L)/Task"
+                                    }
+                                }
+                            },
+                            "Order": {
+                                "__deferred": {
+                                    "uri": "MachineConfigurationSet(10L)/Order"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

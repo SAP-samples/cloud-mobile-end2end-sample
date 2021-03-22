@@ -1,0 +1,26 @@
+[
+    {
+        "MaterialID": "0",
+        "Name": "Fresh-water (500ml)"
+    },
+    {
+        "MaterialID": "1",
+        "Name": "Wipes"
+    },
+    {
+        "MaterialID": "2",
+        "Name": "Torx 5X35/24"
+    },
+    {
+        "MaterialID": "3",
+        "Name": "Seal XL"
+    },
+    {
+        "MaterialID": "4",
+        "Name": "Torx 1X35/22"
+    },
+    {
+        "MaterialID": "5",
+        "Name": "Filter M100"
+    }
+]

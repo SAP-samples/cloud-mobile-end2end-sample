@@ -1,0 +1,6 @@
+{
+	"NavigationType": "Cross",
+	"OuterNavigation": true,
+	"PageToOpen": "/Mahlwerk_Sales/Pages/CustomerMachine.page",
+	"_Type": "Action.Type.Navigation"
+}

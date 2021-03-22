@@ -1,0 +1,34 @@
+[
+    {
+        "AddressID": "0",
+        "CustomerID": "1",
+        "Email": "franklin.jones@pear-computing.com",
+        "Name": "Franklin Jones",
+        "CompanyName" : "Pear Computing Services",
+        "Phone": "091239209300"
+    },
+    {
+        "AddressID": "1",
+        "CustomerID": "2",
+        "Email": "viola.gains@itelo.info",
+        "Name": "Viola Gains",
+        "CompanyName" : "ITelO",
+        "Phone": "0911903490200"
+    },
+    {
+        "AddressID": "2",
+        "CustomerID": "3",
+        "Email": "maria.brown@delbont.com",
+        "Name": "Maria Brown",
+        "CompanyName" : "Delbont",
+        "Phone": "0944193943300"
+    },
+    {
+        "AddressID": "3",
+        "CustomerID": "4",
+        "Email": "theodor.monathy@anavideon.com",
+        "Name": "Theodor Monathy",
+        "CompanyName" : "Anavideon",
+        "Phone": "0952927729100"
+    }
+]

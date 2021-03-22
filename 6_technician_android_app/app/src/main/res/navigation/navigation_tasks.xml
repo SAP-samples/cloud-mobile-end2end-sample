@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_tasks"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.TasksFragment"
+        android:label="TasksFragment" >
+        <action
+            android:id="@+id/action_tasksFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_tasksHistoryFragment"
+            app:destination="@+id/tasksHistoryFragment"
+            app:popUpTo="@+id/tasksFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.TaskDetailFragment"
+        android:label="TaskDetailFragment" >
+        <action
+            android:id="@+id/action_taskDetailFragment_to_jobDetailFragment"
+            app:destination="@id/jobDetailFragment" />
+        <action
+            android:id="@+id/action_taskDetailFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+        <action
+            android:id="@+id/action_taskDetailFragment_to_finalReportFragment"
+            app:destination="@id/finalReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksHistoryFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.TasksHistoryFragment"
+        android:label="TasksHistoryFragment" >
+        <action
+            android:id="@+id/action_tasksHistoryFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobDetailFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.JobDetailFragment"
+        android:label="JobDetailFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.CustomerFragment"
+        android:label="CustomerFragment" />
+    <fragment
+        android:id="@+id/finalReportFragment"
+        android:name="com.sap.mobile.mahlwerk.fragment.FinalReportFragment"
+        android:label="FinalReportFragment" />
+</navigation>

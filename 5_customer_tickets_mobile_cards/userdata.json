@@ -1,0 +1,218 @@
+{
+    "dataSets": [
+        {
+            "resourceIdentifier": "TaskSet(10L)",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "id": "TaskSet(10L)",
+                        "uri": "TaskSet(10L)"
+                    },
+                    "AddressID": "2",
+                    "FinalReportStatusID": "0",
+                    "MachineID": "2",
+                    "Notes": "Custom User ID Test",
+                    "OrderID": "13",
+                    "ScheduledDate": "/Date(1577887200000)/",
+                    "TaskID": "10",
+                    "TaskStatusID": "0",
+                    "Title": "ItelO Repair",
+                    "UserID": "1",
+                    "Address": {
+                        "__deferred": {
+                            "uri": "TaskSet(10L)/Address"
+                        }
+                    },
+                    "Job": {
+                        "__deferred": {
+                            "uri": "TaskSet(10L)/Job"
+                        }
+                    },
+                    "Machine": {
+                        "__metadata": {
+                            "content_type": "image/png",
+                            "edit_media": "MachineSet(2L)/$value",
+                            "id": "MachineSet(2L)",
+                            "media_etag": "W/\"487DA0DFDE5B42F180BC4DC6A1E1292A\"",
+                            "media_src": "MachineSet(2L)/$value",
+                            "uri": "MachineSet(2L)"
+                        },
+                        "Colors": {
+                            "__deferred": {
+                                "uri": "MachineSet(2L)/Colors"
+                            }
+                        },
+                        "Description": "The Mahlwerk 4000 is the bigger brother of the Mahlwerk 1000 L.",
+                        "MachineConfiguration": {
+                            "__deferred": {
+                                "uri": "MachineSet(2L)/MachineConfiguration"
+                            }
+                        },
+                        "MachineID": "2",
+                        "Name": "Mahlwerk 4000",
+                        "Task": {
+                            "__deferred": {
+                                "uri": "MachineSet(2L)/Task"
+                            }
+                        }
+                    },
+                    "Order": {
+                        "__metadata": {
+                            "id": "OrderSet(13L)",
+                            "uri": "OrderSet(13L)"
+                        },
+                        "Customer": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/Customer"
+                            }
+                        },
+                        "CustomerID": "1",
+                        "Description": "New Order",
+                        "DueDate": "/Date(1610721632000)/",
+                        "MachineConfiguration": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/MachineConfiguration"
+                            }
+                        },
+                        "OrderEvents": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/OrderEvents"
+                            }
+                        },
+                        "OrderID": "13",
+                        "OrderStatusID": "2",
+                        "Task": {
+                            "__deferred": {
+                                "uri": "OrderSet(13L)/Task"
+                            }
+                        },
+                        "Title": "New Order"
+                    },
+                    "User": {
+                        "__metadata": {
+                            "id": "UserSet(1L)",
+                            "uri": "UserSet(1L)"
+                        },
+                        "Email": "ulrich.scholz@mahlwerk.de",
+                        "FirstNames": "Ulrich",
+                        "LastNames": "Scholz",
+                        "Phone": "+49 176 3102050749",
+                        "Task": {
+                            "__deferred": {
+                                "uri": "UserSet(1L)/Task"
+                            }
+                        },
+                        "UserID": "1"
+                    }
+                }
+            }
+        },
+        {
+            "resourceIdentifier": "/OrderSet(13)?$format=json&$expand=MachineConfiguration",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "id": "OrderSet(13L)",
+                        "uri": "OrderSet(13L)"
+                    },
+                    "CustomerID": "1",
+                    "Description": "New Order",
+                    "DueDate": "/Date(1610721632000)/",
+                    "OrderID": "13",
+                    "OrderStatusID": "2",
+                    "Title": "New Order",
+                    "Customer": {
+                        "__deferred": {
+                            "uri": "OrderSet(13L)/Customer"
+                        }
+                    },
+                    "MachineConfiguration": {
+                        "__metadata": {
+                            "id": "MachineConfigurationSet(9L)",
+                            "uri": "MachineConfigurationSet(9L)"
+                        },
+                        "MachineColors": {
+                            "__deferred": {
+                                "uri": "MachineConfigurationSet(9L)/MachineColors"
+                            }
+                        },
+                        "MachineColorsID": "10",
+                        "MachineConfigurationID": "9",
+                        "MachineID": "3",
+                        "MachineTyp": {
+                            "__deferred": {
+                                "uri": "MachineConfigurationSet(9L)/MachineTyp"
+                            }
+                        },
+                        "Order": {
+                            "__deferred": {
+                                "uri": "MachineConfigurationSet(9L)/Order"
+                            }
+                        },
+                        "OrderID": "13",
+                        "Pressure": "17,5"
+                    },
+                    "OrderEvents": {
+                        "__deferred": {
+                            "uri": "OrderSet(13L)/OrderEvents"
+                        }
+                    },
+                    "Task": {
+                        "__deferred": {
+                            "uri": "OrderSet(13L)/Task"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "resourceIdentifier": "/MachineConfigurationSet(9)?$format=json&$expand=MachineColors",
+            "data": {
+                "d": {
+                    "__metadata": {
+                        "id": "MachineConfigurationSet(9L)",
+                        "uri": "MachineConfigurationSet(9L)"
+                    },
+                    "MachineColorsID": "10",
+                    "MachineConfigurationID": "9",
+                    "MachineID": "3",
+                    "OrderID": "13",
+                    "Pressure": "17,5",
+                    "MachineColors": {
+                        "__metadata": {
+                            "content_type": "image/png",
+                            "edit_media": "MachineColorsSet(10L)/$value",
+                            "id": "MachineColorsSet(10L)",
+                            "media_etag": "W/\"50C1B808701E486A82A267E025E7B4C4\"",
+                            "media_src": "MachineColorsSet(10L)/$value",
+                            "uri": "MachineColorsSet(10L)"
+                        },
+                        "Machine": {
+                            "__deferred": {
+                                "uri": "MachineColorsSet(10L)/Machine"
+                            }
+                        },
+                        "MachineColorsID": "10",
+                        "MachineConfiguration": {
+                            "__deferred": {
+                                "uri": "MachineColorsSet(10L)/MachineConfiguration"
+                            }
+                        },
+                        "MachineID": "3",
+                        "colorName": "red"
+                    },
+                    "MachineTyp": {
+                        "__deferred": {
+                            "uri": "MachineConfigurationSet(9L)/MachineTyp"
+                        }
+                    },
+                    "Order": {
+                        "__deferred": {
+                            "uri": "MachineConfigurationSet(9L)/Order"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

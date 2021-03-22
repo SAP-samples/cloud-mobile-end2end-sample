@@ -1,0 +1,86 @@
+{
+	"Collection": [
+		"TaskSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Address",
+			"_Type": "Address"
+		},
+		{
+			"Key": false,
+			"_Name": "Job",
+			"_Type": "Collection(Job)"
+		},
+		{
+			"Key": false,
+			"_Name": "Machine",
+			"_Type": "Machine"
+		},
+		{
+			"Key": false,
+			"_Name": "Order",
+			"_Type": "Order"
+		},
+		{
+			"Key": false,
+			"_Name": "User",
+			"_Type": "User"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "AddressID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "FinalReportStatusID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "MachineID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Notes",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "OrderID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "ScheduledDate",
+			"_Type": "Edm.DateTime"
+		},
+		{
+			"Key": true,
+			"_Name": "TaskID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "TaskStatusID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Title",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": false,
+			"_Name": "UserID",
+			"_Type": "Edm.Int64"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "Task"
+}

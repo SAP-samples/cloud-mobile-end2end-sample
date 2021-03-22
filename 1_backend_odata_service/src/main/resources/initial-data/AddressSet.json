@@ -1,0 +1,42 @@
+[
+    {
+        "AddressID": "0",
+        "Country": "Germany",
+        "HouseNumber": "16",
+        "Street": "Dietmar-Hopp-Allee",
+        "Town": "Walldorf",
+        "PostalCode" :"69190"
+    },
+    {
+        "AddressID": "1",
+        "Country": "Germany",
+        "HouseNumber": "9",
+        "Street": "Otto-Hahn-Straße",
+        "Town": "Walldorf",
+        "PostalCode" :"69190"
+    },
+    {
+        "AddressID": "2",
+        "Country": "Germany",
+        "HouseNumber": "7",
+        "Street": "Hasso-Plattner-Ring",
+        "Town": "Walldorf",
+        "PostalCode" :"69190"
+    },
+    {
+        "AddressID": "3",
+        "Country": "Germany",
+        "HouseNumber": "6",
+        "Street": "Opelstraße",
+        "Town": "St. Leon-Rot",
+        "PostalCode" :"68789"
+    },
+    {
+        "AddressID": "4",
+        "Country": "Germany",
+        "HouseNumber": "45",
+        "Street": "Raiffeisenstraße",
+        "Town": "St. Leon-Rot",
+        "PostalCode" :"68789"
+    }
+]

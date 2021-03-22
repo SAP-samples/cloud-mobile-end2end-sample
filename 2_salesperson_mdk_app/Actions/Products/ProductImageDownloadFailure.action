@@ -1,0 +1,6 @@
+{
+	"Animated": true,
+	"Duration": 0,
+	"Message": "Failed to download product image",
+	"_Type": "Action.Type.BannerMessage"
+}

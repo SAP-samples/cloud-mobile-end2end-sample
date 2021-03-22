@@ -1,0 +1,43 @@
+{
+	"Caption": "Configuration",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Please select a color for the coffee machine",
+						"UseTopPadding": true
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImage": "/Mahlwerk_Sales/Rules/GetColorImage.js",
+						"DetailImageIsCircular": true,
+						"OnPress": "/Mahlwerk_Sales/Rules/SaveSelectedColorGOTHIRD.js",
+						"PreserveIconStackSpacing": false,
+						"Title": "{colorName}"
+					},
+					"Target": {
+						"EntitySet": "MachineColorsSet",
+						"QueryOptions": "$filter=MachineID eq {#Page:MachineSet_Detail/#ClientData/SavedMachineID}",
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectCollection0",
+					"_Type": "Section.Type.ObjectCollection"
+				}
+			],
+			
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	
+	"_Name": "Wizard_SECOND",
+	"_Type": "Page"
+}

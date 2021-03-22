@@ -1,0 +1,9 @@
+{
+	"OnFailure": "/Mahlwerk_Sales/Actions/Products/ProductImageDownloadFailure.action",
+	"Target": {
+		"EntitySet": "MachineSet",
+		"ReadLink": "/Mahlwerk_Sales/Rules/Product/GetProductReadLink.js",
+		"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+	},
+	"_Type": "Action.Type.ODataService.DownloadMedia"
+}

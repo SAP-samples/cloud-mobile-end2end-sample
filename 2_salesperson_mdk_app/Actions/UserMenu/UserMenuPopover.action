@@ -1,0 +1,19 @@
+{
+	"PopoverItems": [
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://synchronize",
+			"OnPress": "/Mahlwerk_Sales/Actions/Service/UploadOffline.action",
+			"Title": "Sync Changes",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://log",
+			"OnPress": "/Mahlwerk_Sales/Actions/Logout.action",
+			"Title": "Logout",
+			"Visible": true
+		}
+	],
+	"_Type": "Action.Type.PopoverMenu"
+}

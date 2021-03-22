@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_bottom_navigation_selected">#F44336</color>
+    <color name="item_bottom_navigation_unselected">#FFFFFF</color>
+    <color name="status_open">#427cac</color>
+    <color name="status_scheduled">#E9730C</color>
+    <color name="status_active">#107E3E</color>
+    <color name="status_done">#787878</color>
+</resources>

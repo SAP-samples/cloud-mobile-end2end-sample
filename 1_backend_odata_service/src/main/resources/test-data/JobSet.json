@@ -1,0 +1,22 @@
+[
+    {
+        "ActualTime": 32767,
+        "Description": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "JobID": "301",
+        "JobStatusID": "1234567890123",
+        "PredictedTime": 32767,
+        "Suggested": false,
+        "TaskID": "1234567890123",
+        "Title": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    {
+        "ActualTime": null,
+        "Description": null,
+        "JobID": "302",
+        "JobStatusID": "9876543210987",
+        "PredictedTime": 0,
+        "Suggested": true,
+        "TaskID": "9876543210987",
+        "Title": "XYZ"
+    }
+]

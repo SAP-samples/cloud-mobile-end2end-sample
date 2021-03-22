@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>auth</key>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>oauth2</string>
+			<key>config</key>
+			<dict>
+				<key>oauth2.clients</key>
+				<array>
+					<dict>
+						<key>clientID</key>
+						<string></string>
+						<key>redirectURL</key>
+						<string></string>
+						<key>grantType</key>
+						<string>authorization_code</string>
+					</dict>
+				</array>
+				<key>oauth2.endUserUI</key>
+				<string></string>
+				<key>oauth2.authorizationEndpoint</key>
+				<string></string>
+				<key>oauth2.tokenEndpoint</key>
+				<string></string>
+			</dict>
+			<key>requireOtp</key>
+			<false/>
+		</dict>
+	</array>
+	<key>protocol</key>
+	<string>https</string>
+	<key>host</key>
+	<string></string>
+	<key>port</key>
+	<integer>443</integer>
+	<key>appID</key>
+	<string>demo.mahlwerk.technician</string>
+</dict>
+</plist>

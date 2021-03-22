@@ -1,0 +1,26 @@
+{
+	"Collection": [
+		"PartSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "PartsToChange",
+			"_Type": "Collection(PartsToChange)"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "Name",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": true,
+			"_Name": "PartID",
+			"_Type": "Edm.Int64"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "Part"
+}

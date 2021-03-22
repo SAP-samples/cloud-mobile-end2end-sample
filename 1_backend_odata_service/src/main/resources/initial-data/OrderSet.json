@@ -1,0 +1,42 @@
+[
+    {
+        "CustomerID": "1",
+        "DueDate": "2019-07-25T13:32:37.895",
+        "Description": "Getting an espresso lets smoke come out of the machine.",
+        "OrderID": "1",
+        "OrderStatusID": "1",
+        "Title": "Machine is smoking"
+    },
+    {
+        "CustomerID": "2",
+        "DueDate": "2019-07-25T13:32:37.895",
+        "Description": "Every morning there is a puddle in front of our coffee machine.",
+        "OrderID": "2",
+        "OrderStatusID": "1",
+        "Title": "Machine loses water"
+    },
+    {
+        "CustomerID": "3",
+        "DueDate": "2019-07-24T13:32:37.895",
+        "Description": "The grinder of our coffee machine is blocking since Monday.",
+        "OrderID": "3",
+        "OrderStatusID": "2",
+        "Title": "Grinder is blocking"
+    },
+    {
+        "CustomerID": "4",
+        "DueDate": "2019-07-24T13:32:37.895",
+        "Description": "We need an service technician who will do the yearly maintenance of our coffee machine.",
+        "OrderID": "4",
+        "OrderStatusID": "2",
+        "Title": "Yearly maintenance for 2019"
+    },
+    {
+        "CustomerID": "1",
+        "DueDate": "2019-07-23T08:45:00.000",
+        "Description": "The maintenance of our coffee machine is overdue.",
+        "OrderID": "5",
+        "OrderStatusID": "3",
+        "Title": "Overdue maintenance for 2019"
+    }
+]

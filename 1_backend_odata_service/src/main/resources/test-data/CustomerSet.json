@@ -1,0 +1,16 @@
+[
+    {
+        "AddressID": "1234567890123",
+        "CustomerID": "201",
+        "Email": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "Name": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "Phone": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    {
+        "AddressID": "9876543210987",
+        "CustomerID": "202",
+        "Email": "XYZ",
+        "Name": "XYZ",
+        "Phone": "XYZ"
+    }
+]

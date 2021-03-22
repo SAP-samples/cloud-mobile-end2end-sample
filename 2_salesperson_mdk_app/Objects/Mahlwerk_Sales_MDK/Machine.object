@@ -1,0 +1,41 @@
+{
+	"Collection": [
+		"MachineSet"
+	],
+	"NavigationProperties": [
+		{
+			"Key": false,
+			"_Name": "Colors",
+			"_Type": "Collection(MachineColors)"
+		},
+		{
+			"Key": false,
+			"_Name": "MachineConfiguration",
+			"_Type": "Collection(MachineConfiguration)"
+		},
+		{
+			"Key": false,
+			"_Name": "Task",
+			"_Type": "Task"
+		}
+	],
+	"Properties": [
+		{
+			"Key": false,
+			"_Name": "Description",
+			"_Type": "Edm.String"
+		},
+		{
+			"Key": true,
+			"_Name": "MachineID",
+			"_Type": "Edm.Int64"
+		},
+		{
+			"Key": false,
+			"_Name": "Name",
+			"_Type": "Edm.String"
+		}
+	],
+	"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+	"_Name": "Machine"
+}

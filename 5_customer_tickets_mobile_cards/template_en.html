@@ -1,0 +1,86 @@
+<div id="mySimpleTemplate" class="myTemplate" data-type="text/x-handlebars-template">
+    <div class="header">
+        <h1>
+            {{dataSets.[0].data.d.Title}}
+        </h1>
+        <span class="name">
+            Ticket ID: {{dataSets.[0].data.d.TaskID}}
+        </span>
+    </div>
+    <div class="card-content1">
+        <div class="title-content">
+            <span class="title">
+                Machine Name
+            </span>
+            <br>
+            <span class="content">
+                {{dataSets.[0].data.d.Machine.Name}}
+            </span>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="all">
+            <div class="title-content">
+                <span class="title">
+                    Ticket Description
+                </span>
+                <br>
+                <span class="content">
+                    {{dataSets.[0].data.d.Notes}}
+                </span>
+            </div>
+            <div class="title-content">
+                <span class="title">
+                    Status
+                </span>
+                <br>
+                <span class="content">
+                    {{determineTaskStatusName dataSets.[0].data.d.TaskStatusID}}
+                </span>
+            </div>
+            <div class="title-content">
+                <span class="title">
+                    Scheduled Date
+                </span>
+                <br>
+                <span class="content">
+                    {{c2gEdmDateTime "M/d/yyyy" dataSets.[0].data.d.ScheduledDate}}
+                </span>
+            </div>
+        </div>
+        <div style="float: right;">
+            <span style="display: block;margin-top:25%;">
+                {{machineImage dataSets.[2].data.d.MachineColors.colorName dataSets.[0].data.d.Machine.Name}}
+            </span>
+        </div>
+    </div>
+    <div class="card-content1">
+        <div class="title-content">
+            <span class="title">
+                Customer ID
+            </span>
+            <br>
+            <span class="content">
+                {{dataSets.[1].data.d.Customer.CustomerID}}
+            </span>
+        </div>
+        <div class="title-content">
+            <span class="title">
+                Customer Name
+            </span>
+            <br>
+            <span class="content">
+                {{dataSets.[1].data.d.Customer.Name}}
+            </span>
+        </div>
+        <div class="title-content">
+            <span class="title">
+                Company Name
+            </span>
+            <br>
+            <span class="content">
+                {{dataSets.[1].data.d.Customer.CompanyName}}
+            </span>
+        </div>
+    </div>
+</div>
