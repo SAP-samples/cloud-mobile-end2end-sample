@@ -2,11 +2,11 @@
 
 ## Description
 
-SAP Mobile Services provides multiple offerings for you to mobilize your data. However, when the options are aplenty, choosing the correct offering becomes crucial. Thus, we have defined a custom use-case and built mobile solutions using all of our offerings. Experiencing these applications on your own devices will help you identify the right product for you.
+SAP Mobile Services provides multiple offerings for you to mobilize your data. However, when the options are aplenty, choosing the correct offering becomes crucial. Thus, we have defined a custom use case and built mobile solutions using all of our offerings. Experiencing these applications on your own devices will help you identify the right product for you.
 
 ### Use Case
 
-Mahlwerk is a Coffee Machine Vendor and sells the machines through retail stores. Mahlwerk wants to use Mobile Technologies to coordinate its services with the Customer, Salesperson and Technician.
+Mahlwerk is a coffee machine vendor and sells the machines through retail stores. Mahlwerk wants to use mobile technologies to coordinate its services with the customer, salesperson, and technician.
 
 ![Mahlwerk Description Image](images/mahlwerk.png)
 
@@ -53,11 +53,11 @@ To download and install the applications, follow the instructions given in the R
 
 ## How to obtain support
 
-Open an issue in this repository if you find a bug or have questions about the content.
+Open an [issue](https://github.com/SAP-samples/cloud-mobile-end2end-sample/issues) in this repository if you find a bug or have questions about the content.
 
 ## Contributing
 
-The repository is open for contribution. To contribute to the repository you can create a  fork, and then create a Pull Request with all your changes. The administrator of the repository will look into the Pull Request and will merge your changes.
+The repository is open for contribution. To contribute to the repository you can create a fork, and then create a Pull Request with all your changes. The administrator of the repository will look into the Pull Request and will merge your changes.
 
 ## To-Do (upcoming changes)
 
