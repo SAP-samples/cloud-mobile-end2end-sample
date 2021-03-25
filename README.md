@@ -1,5 +1,7 @@
 # Mahlwerk
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-mobile-end2end-sample)](https://api.reuse.software/info/github.com/SAP-samples/cloud-mobile-end2end-sample)
+
 ## Description
 
 SAP Mobile Services provides multiple offerings for you to mobilize your data. However, when the options are aplenty, choosing the correct offering becomes crucial. Thus, we have defined a custom use case and built mobile solutions using all of our offerings. Experiencing these applications on your own devices will help you identify the right product for you.
