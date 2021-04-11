@@ -43,38 +43,37 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 
 ## Screenshots
 
-<center>
-<img align="center" src="images/Tasks.png" width="35%">
+<p align="center">
+  <b>Browse different tasks:</b><br>
+  <img src="images/Tasks.png" width="35%">
+</p>
+<br><br>
 
-Browse different tasks
-</center>
-<br>
-<center>
-<img align="center" src="images/ScheduledTask.png" width="35%">
+<p align="center">
+  <b>View task details:</b><br>
+  <img src="images/ScheduledTask.png" width="35%">
+</p>
+<br><br>
 
-View task details
-</center>
-<br>
-<center>
-<img align="center" src="images/ChangeStatus.png" width="35%">
+<p align="center">
+  <b>Update task status:</b><br>
+  <img src="images/ChangeStatus.png" width="35%">
+</p>
+<br><br>
 
-Update task status
-</center>
-<br>
-<center>
-<img align="center" src="images/Navigation.png" width="35%">
+<p align="center">
+  <b>View location of task:</b><br>
+  <img src="images/Navigation.png" width="35%">
+</p>
+<br><br>
 
-Display location of task
-</center>
-<br>
-<center>
-<img align="center" src="images/MapTasks.png" width="35%">
+<p align="center">
+  <b>View locations of all tasks:</b><br>
+  <img src="images/MapTasks.png" width="35%">
+</p>
+<br><br>
 
-Display locations of all tasks
-</center>
-<br>
-<center>
-<img align="center" src="images/Profile.png" width="35%">
-
-View customer details
-</center>
+<p align="center">
+  <b>View customer details:</b><br>
+  <img src="images/Profile.png" width="35%">
+</p>
