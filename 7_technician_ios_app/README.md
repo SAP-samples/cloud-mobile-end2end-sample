@@ -1,6 +1,6 @@
 # Mahlwerk - Technician iOS App
 
-![Header Image](images/Header_iOS.png)
+![Header Image](images/Header_ios.png)
 
 ## Overview 
 
