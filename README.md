@@ -1,4 +1,4 @@
-# Mahlwerk
+# Mahlwerk: Cloud Mobile End-to-End Sample
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-mobile-end2end-sample)](https://api.reuse.software/info/github.com/SAP-samples/cloud-mobile-end2end-sample)
 
