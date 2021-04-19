@@ -13,11 +13,15 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 - *SAP BTP SDK for iOS* is used for User Authentication, Fiori UI Controls, Onboarding and Offline Data Synchronization. 
 
 ## Build Setup
-- Install the [SAP BTP SDK for iOS](https://developers.sap.com/tutorials/fiori-ios-hcpms-install-sdk.html) version 5 or newer.
-- Clone this repository and execute `sh scripts/refreshframeworks.sh` in the this directory.
-- Open `Mahlwerk.xcodeproj` in Xcode.
 
-## Configure App to your Mobile services Credentials
+- Install [Cocoapods](https://cocoapods.org/) dependency manager.
+- Install Apple Xcode IDE.
+- Clone the repository and run `pod install` in this directory.
+- Open `Mahlwerk.xcworkspace` in Xcode.
+
+ > [CocoaPods specifications](https://github.com/SAP-samples/cloud-sdk-ios-specs) for frameworks in the *SAP BTP SDK for iOS*.
+
+### Configure App to your Mobile services Credentials
 
 -  Copy the *App ID* from Mobile services cockpit:
 ![Application Details AppID](images/AppId.png)

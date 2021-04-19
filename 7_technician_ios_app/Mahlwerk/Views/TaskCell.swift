@@ -29,7 +29,7 @@ class TaskCell: UITableViewCell {
             }
             statusLabel.text = taskStatus?.text
             statusLabel.textColor = taskStatus?.color
-            dateLabel.text = "Due on \(task.order?.dueDate?.utc()!.format() ?? "")"
+            dateLabel.text = "Due on \(task.order?.dueDate?.utc().format() ?? "")"
         }
     }
     

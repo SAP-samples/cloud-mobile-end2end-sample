@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		2AD4E7BAB4890A79E9BA2A35 /* Pods_Mahlwerk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41911AF25C92E708666EC00B /* Pods_Mahlwerk.framework */; };
 		45ABF1AE23FAD8E500ED29BD /* OdataServiceMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABF19623FAD8E500ED29BD /* OdataServiceMetadataParser.swift */; };
 		45ABF1AF23FAD8E500ED29BD /* OdataServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABF19723FAD8E500ED29BD /* OdataServiceFactory.swift */; };
 		45ABF1B023FAD8E500ED29BD /* OdataServiceMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABF19823FAD8E500ED29BD /* OdataServiceMetadataChanges.swift */; };
@@ -67,18 +68,6 @@
 		4D9164142479B65F0047739A /* MKPointAnnotationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9164132479B65F0047739A /* MKPointAnnotationExtensions.swift */; };
 		4D93D59422E7309500FCFFA4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D93D59322E7309500FCFFA4 /* ProfileViewController.swift */; };
 		4D93D59922E8480600FCFFA4 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D93D59822E8480600FCFFA4 /* LocationCell.swift */; };
-		4DA5CE80252B2D08001F8AA7 /* SAPCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7A252B2D07001F8AA7 /* SAPCommon.xcframework */; };
-		4DA5CE81252B2D08001F8AA7 /* SAPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7A252B2D07001F8AA7 /* SAPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4DA5CE82252B2D08001F8AA7 /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7B252B2D07001F8AA7 /* SAPOData.xcframework */; };
-		4DA5CE83252B2D08001F8AA7 /* SAPOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7B252B2D07001F8AA7 /* SAPOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4DA5CE84252B2D08001F8AA7 /* SAPFiori.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7C252B2D07001F8AA7 /* SAPFiori.xcframework */; };
-		4DA5CE85252B2D08001F8AA7 /* SAPFiori.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7C252B2D07001F8AA7 /* SAPFiori.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4DA5CE86252B2D08001F8AA7 /* SAPFioriFlows.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7D252B2D08001F8AA7 /* SAPFioriFlows.xcframework */; };
-		4DA5CE87252B2D08001F8AA7 /* SAPFioriFlows.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7D252B2D08001F8AA7 /* SAPFioriFlows.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4DA5CE88252B2D08001F8AA7 /* SAPOfflineOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7E252B2D08001F8AA7 /* SAPOfflineOData.xcframework */; };
-		4DA5CE89252B2D08001F8AA7 /* SAPOfflineOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7E252B2D08001F8AA7 /* SAPOfflineOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4DA5CE8A252B2D08001F8AA7 /* SAPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7F252B2D08001F8AA7 /* SAPFoundation.xcframework */; };
-		4DA5CE8B252B2D08001F8AA7 /* SAPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA5CE7F252B2D08001F8AA7 /* SAPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4DACF33822F2FAC9008BC4AF /* MapDetailPanelContentControllerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DACF33722F2FAC9008BC4AF /* MapDetailPanelContentControllerObject.swift */; };
 		4DB83C6C22EEBD2400004B52 /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB83C6B22EEBD2400004B52 /* Customer.storyboard */; };
 		4DB83C7522EF050700004B52 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB83C7422EF050700004B52 /* CustomerViewController.swift */; };
@@ -99,12 +88,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4DA5CE87252B2D08001F8AA7 /* SAPFioriFlows.xcframework in Embed Frameworks */,
-				4DA5CE83252B2D08001F8AA7 /* SAPOData.xcframework in Embed Frameworks */,
-				4DA5CE8B252B2D08001F8AA7 /* SAPFoundation.xcframework in Embed Frameworks */,
-				4DA5CE81252B2D08001F8AA7 /* SAPCommon.xcframework in Embed Frameworks */,
-				4DA5CE89252B2D08001F8AA7 /* SAPOfflineOData.xcframework in Embed Frameworks */,
-				4DA5CE85252B2D08001F8AA7 /* SAPFiori.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +96,8 @@
 
 /* Begin PBXFileReference section */
 		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
+		376163DC8E1D1CE596CB0E76 /* Pods-Mahlwerk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahlwerk.release.xcconfig"; path = "Target Support Files/Pods-Mahlwerk/Pods-Mahlwerk.release.xcconfig"; sourceTree = "<group>"; };
+		41911AF25C92E708666EC00B /* Pods_Mahlwerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahlwerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ABF19623FAD8E500ED29BD /* OdataServiceMetadataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdataServiceMetadataParser.swift; sourceTree = "<group>"; };
 		45ABF19723FAD8E500ED29BD /* OdataServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdataServiceFactory.swift; sourceTree = "<group>"; };
 		45ABF19823FAD8E500ED29BD /* OdataServiceMetadataChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdataServiceMetadataChanges.swift; sourceTree = "<group>"; };
@@ -172,12 +157,6 @@
 		4D9164132479B65F0047739A /* MKPointAnnotationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointAnnotationExtensions.swift; sourceTree = "<group>"; };
 		4D93D59322E7309500FCFFA4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4D93D59822E8480600FCFFA4 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
-		4DA5CE7A252B2D07001F8AA7 /* SAPCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPCommon.xcframework; sourceTree = SOURCE_ROOT; };
-		4DA5CE7B252B2D07001F8AA7 /* SAPOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPOData.xcframework; sourceTree = SOURCE_ROOT; };
-		4DA5CE7C252B2D07001F8AA7 /* SAPFiori.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPFiori.xcframework; sourceTree = SOURCE_ROOT; };
-		4DA5CE7D252B2D08001F8AA7 /* SAPFioriFlows.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPFioriFlows.xcframework; sourceTree = SOURCE_ROOT; };
-		4DA5CE7E252B2D08001F8AA7 /* SAPOfflineOData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPOfflineOData.xcframework; sourceTree = SOURCE_ROOT; };
-		4DA5CE7F252B2D08001F8AA7 /* SAPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SAPFoundation.xcframework; sourceTree = SOURCE_ROOT; };
 		4DACF33722F2FAC9008BC4AF /* MapDetailPanelContentControllerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailPanelContentControllerObject.swift; sourceTree = "<group>"; };
 		4DB83C6B22EEBD2400004B52 /* Customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Customer.storyboard; sourceTree = "<group>"; };
 		4DB83C7422EF050700004B52 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
@@ -190,8 +169,7 @@
 		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7A5744B521DE553600E58C7F /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
-		7A5744B721DE553700E58C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55D62B1ACAF8060ECC074A6 /* Pods-Mahlwerk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahlwerk.debug.xcconfig"; path = "Target Support Files/Pods-Mahlwerk/Pods-Mahlwerk.debug.xcconfig"; sourceTree = "<group>"; };
 		C69FBF3B25ECECDA00350A3B /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,12 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DA5CE86252B2D08001F8AA7 /* SAPFioriFlows.xcframework in Frameworks */,
-				4DA5CE82252B2D08001F8AA7 /* SAPOData.xcframework in Frameworks */,
-				4DA5CE8A252B2D08001F8AA7 /* SAPFoundation.xcframework in Frameworks */,
-				4DA5CE80252B2D08001F8AA7 /* SAPCommon.xcframework in Frameworks */,
-				4DA5CE88252B2D08001F8AA7 /* SAPOfflineOData.xcframework in Frameworks */,
-				4DA5CE84252B2D08001F8AA7 /* SAPFiori.xcframework in Frameworks */,
+				2AD4E7BAB4890A79E9BA2A35 /* Pods_Mahlwerk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,19 +229,6 @@
 				45ABF1AD23FAD8E500ED29BD /* Job.swift */,
 			);
 			path = public;
-			sourceTree = "<group>";
-		};
-		45FC3B7F23FFDC1D0078BFC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DA5CE7A252B2D07001F8AA7 /* SAPCommon.xcframework */,
-				4DA5CE7C252B2D07001F8AA7 /* SAPFiori.xcframework */,
-				4DA5CE7D252B2D08001F8AA7 /* SAPFioriFlows.xcframework */,
-				4DA5CE7F252B2D08001F8AA7 /* SAPFoundation.xcframework */,
-				4DA5CE7B252B2D07001F8AA7 /* SAPOData.xcframework */,
-				4DA5CE7E252B2D08001F8AA7 /* SAPOfflineOData.xcframework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		4D2803D522F9681C009E2E78 /* OData */ = {
@@ -421,14 +381,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4EA95D9E28B1FE577E3BE095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41911AF25C92E708666EC00B /* Pods_Mahlwerk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CDE50D14A6958BC1C8FEEEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C55D62B1ACAF8060ECC074A6 /* Pods-Mahlwerk.debug.xcconfig */,
+				376163DC8E1D1CE596CB0E76 /* Pods-Mahlwerk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7A1315AC1D4B982000A5DA56 = {
 			isa = PBXGroup;
 			children = (
 				7A16F06C1FD1B3C700D2FABD /* README.md */,
 				7A1315B71D4B982000A5DA56 /* Mahlwerk */,
 				7A1315B61D4B982000A5DA56 /* Products */,
-				7A5744B421DE553600E58C7F /* UITests */,
-				45FC3B7F23FFDC1D0078BFC4 /* Frameworks */,
+				5CDE50D14A6958BC1C8FEEEA /* Pods */,
+				4EA95D9E28B1FE577E3BE095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -458,15 +435,6 @@
 			path = Mahlwerk;
 			sourceTree = "<group>";
 		};
-		7A5744B421DE553600E58C7F /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				7A5744B521DE553600E58C7F /* UITests.swift */,
-				7A5744B721DE553700E58C7F /* Info.plist */,
-			);
-			path = UITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,11 +442,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "Mahlwerk" */;
 			buildPhases = (
-				237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */,
+				97D2DF1A6206912231B22A23 /* [CP] Check Pods Manifest.lock */,
 				7A1315B11D4B982000A5DA56 /* Sources */,
 				7A1315B21D4B982000A5DA56 /* Frameworks */,
 				7A1315B31D4B982000A5DA56 /* Resources */,
 				4DA85BBD243A58F000532B20 /* Embed Frameworks */,
+				DFAE78973206145FD456D5A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -547,7 +516,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */ = {
+		97D2DF1A6206912231B22A23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -555,15 +524,46 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Refresh SAP Cloud Platform SDK for iOS Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mahlwerk-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "sh ./scripts/refreshframeworks.sh\n";
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFAE78973206145FD456D5A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mahlwerk/Pods-Mahlwerk-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SAPCommon/SAPCommon.framework/SAPCommon",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SAPFiori/SAPFiori.framework/SAPFiori",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SAPFioriFlows/SAPFioriFlows.framework/SAPFioriFlows",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SAPFoundation/SAPFoundation.framework/SAPFoundation",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SAPOData/SAPOData.framework/SAPOData",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SAPOfflineOData/SAPOfflineOData.framework/SAPOfflineOData",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAPCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAPFiori.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAPFioriFlows.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAPFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAPOData.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAPOfflineOData.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mahlwerk/Pods-Mahlwerk-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -762,8 +762,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -772,6 +771,7 @@
 		};
 		7A1315CA1D4B982000A5DA56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55D62B1ACAF8060ECC074A6 /* Pods-Mahlwerk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
@@ -788,10 +788,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Mahlwerk/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sap.mobile.mahlwerk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -803,6 +800,7 @@
 		};
 		7A1315CB1D4B982000A5DA56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376163DC8E1D1CE596CB0E76 /* Pods-Mahlwerk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
@@ -819,10 +817,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Mahlwerk/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sap.mobile.mahlwerk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
