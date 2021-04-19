@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		2AD4E7BAB4890A79E9BA2A35 /* Pods_Mahlwerk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41911AF25C92E708666EC00B /* Pods_Mahlwerk.framework */; };
 		45ABF1AE23FAD8E500ED29BD /* OdataServiceMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABF19623FAD8E500ED29BD /* OdataServiceMetadataParser.swift */; };
 		45ABF1AF23FAD8E500ED29BD /* OdataServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABF19723FAD8E500ED29BD /* OdataServiceFactory.swift */; };
 		45ABF1B023FAD8E500ED29BD /* OdataServiceMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABF19823FAD8E500ED29BD /* OdataServiceMetadataChanges.swift */; };
@@ -96,6 +97,7 @@
 /* Begin PBXFileReference section */
 		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
 		376163DC8E1D1CE596CB0E76 /* Pods-Mahlwerk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mahlwerk.release.xcconfig"; path = "Target Support Files/Pods-Mahlwerk/Pods-Mahlwerk.release.xcconfig"; sourceTree = "<group>"; };
+		41911AF25C92E708666EC00B /* Pods_Mahlwerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mahlwerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ABF19623FAD8E500ED29BD /* OdataServiceMetadataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdataServiceMetadataParser.swift; sourceTree = "<group>"; };
 		45ABF19723FAD8E500ED29BD /* OdataServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdataServiceFactory.swift; sourceTree = "<group>"; };
 		45ABF19823FAD8E500ED29BD /* OdataServiceMetadataChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdataServiceMetadataChanges.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD4E7BAB4890A79E9BA2A35 /* Pods_Mahlwerk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +381,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4EA95D9E28B1FE577E3BE095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41911AF25C92E708666EC00B /* Pods_Mahlwerk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5CDE50D14A6958BC1C8FEEEA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +405,7 @@
 				7A1315B71D4B982000A5DA56 /* Mahlwerk */,
 				7A1315B61D4B982000A5DA56 /* Products */,
 				5CDE50D14A6958BC1C8FEEEA /* Pods */,
+				4EA95D9E28B1FE577E3BE095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
