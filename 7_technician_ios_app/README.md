@@ -16,8 +16,8 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 
 - Install [Cocoapods](https://cocoapods.org/) dependency manager.
 - Install Apple Xcode IDE.
-- Clone the repository and run `pod install` in this directory.
 - [Configure your machine](https://github.com/SAP-samples/cloud-sdk-ios-specs#obtaining-technical-user--password) for securely downloading the SAP BTP SDK for iOS frameworks
+- Clone the repository and run `pod install` in this directory.
 - Open `Mahlwerk.xcworkspace` in Xcode.
 
 ### Configure App to your Mobile services Credentials
