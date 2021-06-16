@@ -2,28 +2,27 @@
 
 ![Header Image](images/Header_ios.png)
 
-## Overview 
+## Overview
 
 This native iOS application is used by Mahlwerk's Technician to view and process various tasks.  
 
-This application consumes Mahlwerk's Backend's Odata Service for fetching the task details and for all of its operations. 
+This application consumes Mahlwerk's Backend's Odata Service for fetching the task details and for all of its operations.
 
 ## Architecture
 
-- *SAP BTP SDK for iOS* is used for User Authentication, Fiori UI Controls, Onboarding and Offline Data Synchronization. 
+- *SAP BTP SDK for iOS* is used for User Authentication, Fiori UI Controls, Onboarding and Offline Data Synchronization.
 
 ## Build Setup
 
 - Install [Cocoapods](https://cocoapods.org/) dependency manager.
 - Install Apple Xcode IDE.
 - Clone the repository and run `pod install` in this directory.
+- [Configure your machine](https://github.com/SAP-samples/cloud-sdk-ios-specs#obtaining-technical-user--password) for securely downloading the SAP BTP SDK for iOS frameworks
 - Open `Mahlwerk.xcworkspace` in Xcode.
-
- > [CocoaPods specifications](https://github.com/SAP-samples/cloud-sdk-ios-specs) for frameworks in the *SAP BTP SDK for iOS*.
 
 ### Configure App to your Mobile services Credentials
 
--  Copy the *App ID* from Mobile services cockpit:
+- Copy the *App ID* from Mobile services cockpit:
 ![Application Details AppID](images/AppId.png)
 
 - Put the *App ID* into the highlighted place in *OnboardingFlowProvider.swift*:
@@ -32,7 +31,7 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 - Copy the *App Id* (see first step) & *Server URL* (from API Tab) from Mobile services cockpit and paste it in *ODataOnBoardingStep.swift*.
 ![ODataOnBoardingStep.swift](images/OOS.png)
 
-- Change the *AppId, Redirect URL , Authorization End Point, Client Id, Token EndPoint* to your Application credentials in Mobile Services Cockpit. 
+- Change the *AppId, Redirect URL , Authorization End Point, Client Id, Token EndPoint* to your Application credentials in Mobile Services Cockpit.
 ![Mobile Services Security Tab](images/Authorization.png)
 
 - Copy *Client ID, Redirect Url, OAuth Authorization URL, OAuth Token URL* from Security Tab in SAP Mobile Services cockpit.
