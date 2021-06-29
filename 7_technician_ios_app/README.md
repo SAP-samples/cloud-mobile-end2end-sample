@@ -34,13 +34,15 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 - Change the *AppId, Redirect URL , Authorization End Point, Client Id, Token EndPoint* to your Application credentials in Mobile Services Cockpit.
 ![Mobile Services Security Tab](images/Authorization.png)
 
-- Copy *Client ID, Redirect Url, OAuth Authorization URL, OAuth Token URL* from Security Tab in SAP Mobile Services cockpit.
-
-- Paste these credentials in *ConfigurationsProvider.plist* file
-- Redirect URL in *OAUTH_REDIRECT_URL* & *endUserUI*
-- Client Id in *OAUTH_CLIENT_ID*
-- OAuth Authorization URL in *AUTH_END_POINT*
-- OAuth Token URL in *TOKEN_END_POINT*
+| P List Label | Copy Value | Cockpit Location |
+| --- | --- | --- |
+| `clientID` | Client ID | Security Tab |
+| `redirectURL` | Redirect URL | Security Tab |
+| `oauth2.endUserUI` | Redirect URL | Security Tab |
+| `oauth2.authorizationEndpoint` | OAuth Authorization URL | Security Tab |
+| `oauth2.tokenEndpoint` | OAuth Token URL | Security Tab |
+| `host` | Redirect URL without the https protocol | Security Tab |
+| `appID` | ID | Info Tab |
 
 ![ConfigurationProvider.plist file](images/ConfigProvider.png)
 
