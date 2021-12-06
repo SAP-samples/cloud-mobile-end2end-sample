@@ -1,11 +1,11 @@
 {
-		"ActionBar": {
+	"ActionBar": {
 		"Items": [
-						{
+			{
 				"Icon": "sap-icon://action",
 				"OnPress": "/Mahlwerk_Sales/Actions/UserMenu/ActionItemPopover.action",
 				"Position": "Right",
-				"Text": "User",
+				"Caption": "User",
 				"Visible": true
 			}
 		]

@@ -1,4 +1,4 @@
-let fs = require('tns-core-modules/file-system');
+let fs = require('@nativescript/core/file-system');
 // keyProperty is the name of the property to be used as the filename
 // imageGroup is a name that will be used as a folder to keep all related images together
 export function imageToPath(bindingObject, keyProperty, imageGroup) {

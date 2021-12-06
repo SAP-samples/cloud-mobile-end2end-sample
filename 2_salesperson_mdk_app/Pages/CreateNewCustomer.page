@@ -4,11 +4,11 @@
 			{
 				"OnPress": "/Mahlwerk_Sales/Actions/CustomerSet/CreateCustomerEntity.action",
 				"Position": "Right",
-				"Text": "Save",
+				"Caption": "Save",
 				"Visible": true,
 				"SystemItem": "Save"
 			},
-						{
+			{
 				"OnPress": "/Mahlwerk_Sales/Actions/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"Visible": true,
@@ -22,9 +22,7 @@
 			"Sections": [
 				{
 					"Caption": " ",
-					"Controls": [
-					],
-					
+					"Controls": [],
 					"Visible": true
 				},
 				{
@@ -35,19 +33,15 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"PlaceHolder": "Enter the Company Nane",
-							
 							"_Name": "FormCellSimplePropertyCN",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
-					
 					"Visible": true
 				},
 				{
 					"Caption": " ",
-					"Controls": [
-					],
-					
+					"Controls": [],
 					"Visible": true
 				},
 				{
@@ -58,7 +52,6 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"PlaceHolder": "First Name and Last Name",
-							
 							"_Name": "FormCellSimplePropertyAP",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -67,7 +60,6 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"PlaceHolder": "email@gmail.com",
-							
 							"_Name": "FormCellSimplePropertyEM",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						},
@@ -76,21 +68,17 @@
 							"IsEditable": true,
 							"IsVisible": true,
 							"PlaceHolder": "0123456789",
-							
 							"_Name": "FormCellSimplePropertyTN",
 							"_Type": "Control.Type.FormCell.SimpleProperty"
 						}
 					],
-					
 					"Visible": true
 				}
 			],
-			
 			"_Name": "FormCellContainer0",
 			"_Type": "Control.Type.FormCellContainer"
 		}
 	],
-	
 	"_Name": "CreateNewCustomer",
 	"_Type": "Page"
 }
