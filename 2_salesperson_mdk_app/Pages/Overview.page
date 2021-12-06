@@ -5,15 +5,14 @@
 				"Icon": "sap-icon://key-user-settings",
 				"OnPress": "/Mahlwerk_Sales/Actions/UserMenu/UserMenuPopover.action",
 				"Position": "Left",
-				"Text": "User",
+				"Caption": "User",
 				"Visible": true
 			},
-						{
+			{
 				"Icon": "sap-icon://action",
 				"OnPress": "/Mahlwerk_Sales/Actions/UserMenu/ActionItemPopover.action",
-				"_OnPress": "/Mahlwerk_Sales/Rules/CheckForProductScanMatchTemp.js",
 				"Position": "Right",
-				"Text": "User",
+				"Caption": "User",
 				"Visible": true
 			}
 		]

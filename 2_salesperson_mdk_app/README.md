@@ -1,12 +1,14 @@
 # Salesperson App
-This application is used by Mahlwerk Store's Sales Persons to place Orders on the Customer's behalf. The salesperson can scan the Machine's Barcode from the template and show the machine details to the customers. The salesperson can also add customers through this application.  
+This application is used by Mahlwerk Store's Sales Persons to place Orders on the Customer's behalf. The salesperson can scan the Machine's Barcode from the template and show the machine details to the customers. The salesperson can also add customers through this application.
 
 ## Overview
-Mahlwerk Sales Person appllication is a cross platform mobile application  built using SAP Mobile Development Kit.
+Mahlwerk Sales Person application is a cross platform mobile application built using SAP Mobile Development Kit.
 
 ## Architecture
 This application fetches data using the OData end points form Mahlwerk's Mobile Backend. SAP Mobile Services handles the user Authentication and Identitiy management for this application
 
+### MDK Client Version
+MDK 6.1 or higher
 
 ## Setup & Run
 

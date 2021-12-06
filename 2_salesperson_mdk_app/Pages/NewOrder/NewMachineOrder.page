@@ -5,8 +5,8 @@
 				"Icon": "sap-icon://accept",
 				"IsIconCircular": false,
 				"OnPress": "/Mahlwerk_Sales/Actions/CreateNewOrder.action",
-				"Position": "right",
-				"Text": "Item",
+				"Position": "Right",
+				"Caption": "Item",
 				"Visible": true
 			}
 		]
@@ -17,8 +17,7 @@
 			"Sections": [
 				{
 					"Caption": " ",
-					"Controls": [
-					],
+					"Controls": [],
 					"Visible": true
 				},
 				{
@@ -65,8 +64,7 @@
 				},
 				{
 					"Caption": " ",
-					"Controls": [
-					],
+					"Controls": [],
 					"Visible": true
 				},
 				{

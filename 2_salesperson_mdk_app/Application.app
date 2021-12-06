@@ -8,5 +8,6 @@
 	"OnWillUpdate": "/Mahlwerk_Sales/Rules/OnWillUpdate.js",
 	"Styles": "/Mahlwerk_Sales/Styles/Styles.less",
 	"Version": "/Mahlwerk_Sales/Globals/AppDefinition_Version.global",
-	"_Name": "Mahlwerk_Sales"
+	"_Name": "Mahlwerk_Sales",
+	"_SchemaVersion": "6.1"
 }

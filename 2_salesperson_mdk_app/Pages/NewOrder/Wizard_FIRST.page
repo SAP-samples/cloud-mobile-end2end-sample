@@ -3,11 +3,10 @@
 		"Items": [
 			{
 				"OnPress": "/Mahlwerk_Sales/Actions/CloseModalPage_Cancel.action",
-				"Position": "left",
+				"Position": "Left",
 				"SystemItem": "Cancel",
-				"Text": "Cancel",
+				"Caption": "Cancel",
 				"Visible": true
-				
 			}
 		]
 	},
