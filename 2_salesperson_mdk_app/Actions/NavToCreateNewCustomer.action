@@ -1,6 +1,0 @@
-{
-	"ModalPage": true,
-	"NavigationType": "Cross",
-	"PageToOpen": "/Mahlwerk_Sales/Pages/CreateNewCustomer.page",
-	"_Type": "Action.Type.Navigation"
-}

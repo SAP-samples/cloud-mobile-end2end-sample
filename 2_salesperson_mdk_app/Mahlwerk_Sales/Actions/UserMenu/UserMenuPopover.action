@@ -1,0 +1,47 @@
+{
+	"PopoverItems": [
+				{
+			"Enabled": true,
+			"Icon": "sap-icon://validate",
+			"OnPress": "/Mahlwerk_Sales/Actions/Application/AppUpdateProgressBanner.action",
+			"Title": "Check for Updates",
+			"Visible": "$(PLT,true,true,false)"
+		},
+        {
+			"Enabled": true,
+			"Icon": "sap-icon://synchronize",
+			"OnPress": "/Mahlwerk_Sales/Actions/Service/SyncStartedMessage.action",
+			"Title": "Sync Changes",
+			"Visible": "$(PLT,true,true,false)"
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://headset",
+			"OnPress": "/Mahlwerk_Sales/Actions/Application/NavToSupport.action",
+			"Title": "Support",
+			"Visible": true
+		},
+				{
+			"Enabled": true,
+			"Icon": "sap-icon://message-information",
+			"OnPress": "/Mahlwerk_Sales/Actions/Application/NavToAbout.action",
+			"Title": "About",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://reset",
+			"OnPress": "/Mahlwerk_Sales/Actions/Application/ResetConfirmation.action",
+			"Title": "Reset",
+			"Visible": true
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://log",
+			"OnPress": "/Mahlwerk_Sales/Actions/Application/Logout.action",
+			"Title": "Logout",
+			"Visible": "/Mahlwerk_Sales/Rules/Application/ShowLogout.js"
+		}
+	],
+	"_Type": "Action.Type.PopoverMenu"
+}

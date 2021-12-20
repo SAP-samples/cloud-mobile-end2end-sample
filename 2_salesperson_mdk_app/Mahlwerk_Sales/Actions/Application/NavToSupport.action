@@ -1,0 +1,6 @@
+{
+	"ModalPage": true,
+	"NavigationType": "Cross",
+	"PageToOpen": "/Mahlwerk_Sales/Pages/Application/Support.page",
+	"_Type": "Action.Type.Navigation"
+}

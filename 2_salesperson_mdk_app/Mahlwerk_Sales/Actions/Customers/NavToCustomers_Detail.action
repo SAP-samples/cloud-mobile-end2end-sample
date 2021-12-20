@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "CustomerMachine"
+	},
+	"PageToOpen": "/Mahlwerk_Sales/Pages/Customers/Customers_tab.page",
+	"OuterNavigation": true,
+	"NavigationType": "Cross"
+}

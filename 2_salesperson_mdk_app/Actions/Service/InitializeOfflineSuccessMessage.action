@@ -1,8 +1,0 @@
-{
-	"Animated": true,
-	"Duration": 2,
-	"IsIconHidden": true,
-	"Message": "Application data service initialized",
-	"OnSuccess": "/Mahlwerk_Sales/Rules/Product/GetAllProductImages.js",
-	"_Type": "Action.Type.ToastMessage"
-}

@@ -1,0 +1,60 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+						"EntitySet": "CustomerSet",
+						"QueryOptions": "$expand=Address"
+					},
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No customer found!",
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": [
+							]
+						},
+						"DetailImage": "",
+						"Headline": "{Name}",
+						"Subheadline": "Company Name: {CompanyName}",
+						"Description": "",
+						"OnPress": "/Mahlwerk_Sales/Actions/Customers/NavToCustomers_Detail.action",
+						"ActivityItems": [
+							{
+								"_Name": "SectionContactCell0ActivityItems0",
+								"ActivityType": "Phone",
+								"ActivityValue": "{Phone}"
+							},
+							{
+								"_Name": "SectionContactCell0ActivityItems1",
+								"ActivityType": "Email",
+								"ActivityValue": "{Email}"
+							},
+							{
+								"_Name": "SectionContactCell0ActivityItems2",
+								"ActivityType": "Message",
+								"ActivityValue": "{Phone}"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customer",
+	"Caption": "Customers"
+}

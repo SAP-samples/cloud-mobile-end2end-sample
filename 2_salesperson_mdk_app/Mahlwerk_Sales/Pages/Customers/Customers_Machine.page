@@ -1,0 +1,54 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader0",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"DataSubscriptions": [
+						"CustomerSet",
+						"MachineConfigurationSet",
+						"OrderSet",
+						"MachineSet"
+					],
+					"Target": {
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+						"EntitySet": "{@odata.readLink}/Order",
+						"QueryOptions": "$expand=MachineConfiguration,MachineConfiguration/MachineTyp&$orderby=DueDate desc"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No machine has been ordered!",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{MachineConfiguration/MachineTyp/Name}",
+						"DetailImage": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{MachineConfiguration/MachineTyp/@odata.readLink}/$value",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "disclosureIndicator",
+						"OnPress": "/Mahlwerk_Sales/Actions/Customers/NavToCustomers_MachineDetail.action"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"DataSubscriptions": [
+		"CustomerSet",
+		"OrderSet",
+		"MachineConfigurationSet"
+	],
+	"_Name": "CustomerSet_Machine",
+	"Caption": "Customer Machines"
+}

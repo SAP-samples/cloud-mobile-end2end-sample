@@ -1,0 +1,157 @@
+{
+	
+	"ActionBar": {
+		"Items": [
+			{
+				"Icon": "sap-icon://accept",
+				"IsIconCircular": false,
+				"OnPress": "/Mahlwerk_Sales/Actions/Orders/Orders_CreateEntity.action",
+				"Position": "Right",
+				"Caption": "Item",
+				"Visible": true
+			},
+				{
+				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Cancel",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Order Summary",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": " ",
+					"Controls": [],
+					"Visible": true
+				},
+				{
+					"Caption": "Customer",
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Selected Customer",
+							"DataSubscriptions": [
+								"CustomerSet"
+							],
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{CompanyName}",
+								"ReturnValue": "{CustomerID}",
+								"Target": {
+									"EntitySet": "CustomerSet",
+									"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+								}
+							},
+							"PickerPrompt": "Please select a customer…",
+							"Value": [
+								"#Page:Wizard_FIRST/#ClientData/SavedSelectedCustomer"
+							],
+							"_Name": "FormCellListPicker0",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Delivery & Installation",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Date",
+							"_Name": "FormCellDatePicker0",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Caption": " ",
+					"Controls": [],
+					"Visible": true
+				},
+				{
+					"Caption": "Coffeemachine",
+					"Controls": [
+						{
+							"Caption": "Selected Machine",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Value": "#Page:MachineSet_Detail/#ClientData/SavedMachineName",
+							"_Name": "FormCellSimplePropertyName",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"validationProperties": {
+								"SeparatorIsHidden": true
+							}
+						},
+						{
+							"Caption": "Model Nr.",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Value": "#Page:MachineSet_Detail/#ClientData/SavedMachineID",
+							"_Name": "FormCellSimplePropertyID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Selected Color",
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": {
+								"DisplayValue": "{colorName}",
+								"ReturnValue": "{MachineColorsID}",
+								"Target": {
+									"EntitySet": "MachineColorsSet",
+									"QueryOptions": "$filter=MachineID eq {#Page:CoffeeMachine/#ClientData/SavedMachineID}",
+									"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+								}
+							},
+							"PickerPrompt": "Please select color…",
+							"Value": [
+								"#Page:Wizard_SECOND/#ClientData/SavedSelectedColor"
+							],
+							"_Name": "FormCellListPicker1",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Selected Pressure (in Bar)",
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								"12,5",
+								"15,666",
+								"17,5",
+								"20,0"
+							],
+							"PickerPrompt": "Please select max. pressure (in Bar)…",
+							"Value": [
+								"#Page:Wizard_THIRD/#ClientData/SavedSelectedPressure"
+							],
+							"_Name": "FormCellListPicker2",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "NewMachineOrder",
+	"_Type": "Page"
+}

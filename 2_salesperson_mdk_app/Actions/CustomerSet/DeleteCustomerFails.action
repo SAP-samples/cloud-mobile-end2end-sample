@@ -1,6 +1,0 @@
-{
-	"Message": "Failed to delete customer {#ActionResults:DeleteORDER/error}",
-	"OKCaption": "OK",
-	"Title": "Deleting Order",
-	"_Type": "Action.Type.Message"
-}

@@ -1,0 +1,89 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ImageCollection",
+					"_Name": "SectionImageCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ImageCells": [
+						{
+							"ImageCell": {
+								"_Name": "SectionImageCell0",
+								"Title": "{Name}",
+								"Image": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{@odata.readLink}/$value",
+								"ImageIsCircular": false,
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "HorizontalFit"
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Name}",
+							"_Name": "KeyValue0",
+							"KeyName": "Coffee machine",
+							"Visible": true
+						},
+						{
+							"Value": "{MachineID}",
+							"_Name": "KeyValue1",
+							"KeyName": "Model Nr.",
+							"Visible": true
+						},
+						{
+							"Value": "{Description}",
+							"_Name": "KeyValue2",
+							"KeyName": "Description",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MachineSet_Detail",
+	"Caption": "Machine Details",
+	"OnLoaded": "/Mahlwerk_Sales/Rules/Orders/SaveMachineInformation.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Back",
+				"Icon": "sap-icon://arrow-left",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Order",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Mahlwerk_Sales/Actions/Orders/NavToOrders_FirstWizard.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

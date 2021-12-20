@@ -1,0 +1,12 @@
+{
+
+	"OnFailure": "/Mahlwerk_Sales/Actions/BarcodeScan/OpenBarcodeScannerFailure.action",
+	"OnSuccess": "/Mahlwerk_Sales/Rules/BarcodeScan/CheckForProductScanMatch.js",
+	"_Type": "Action.Type.OpenBarcodeScanner",
+	"ActionResult" : {
+		"_Name": "BarcodeScan"
+	}
+
+}
+
+

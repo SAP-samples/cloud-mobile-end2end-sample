@@ -1,0 +1,35 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateOrder"
+	},
+		"OnFailure": {
+		"Name": "/Mahlwerk_Sales/Actions/Others/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Failed to create new order {#ActionResults:CreateOrder/error}",
+			"Title": "Creating Order"
+		}
+	},
+	"OnSuccess": "/Mahlwerk_Sales/Actions/Orders/Orders_CreateMachineConfig.action",
+	"Target": {
+		"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+		"EntitySet": "OrderSet"
+	},
+	"Properties": {
+		"CustomerID": "#Control:FormCellListPicker0/#SelectedValue",
+		"Description": "New Order",
+		"DueDate": "#Control:FormCellDatePicker0/#Value",
+		"OrderStatusID": 2,
+		"Title": "New Order"
+	},
+	"CreateLinks": [
+		{
+			"Property": "Customer",
+			"Target": {
+				"EntitySet": "CustomerSet",
+				"QueryOptions": "$filter=CustomerID eq {{#Control:FormCellListPicker0/#SelectedValue}}"
+			},
+			"_Enabled": true
+		}
+	]
+}

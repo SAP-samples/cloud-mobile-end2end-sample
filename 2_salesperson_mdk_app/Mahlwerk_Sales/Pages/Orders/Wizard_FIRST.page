@@ -1,0 +1,55 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Cancel",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "New Order",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"DataSubscriptions": [
+						"CustomerSet"
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Please select a customer…",
+						"UseTopPadding": true
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImageIsCircular": false,
+						"OnPress": "/Mahlwerk_Sales/Rules/Orders/SaveSelectedCustomerGOSCND.js",
+						"PreserveIconStackSpacing": false,
+						"Title": "{Name}",
+						"Subhead": "Company: {CompanyName}"
+					},
+					"Search": {
+						"MinimumCharacterThreshold": 2
+					},
+					"Target": {
+						"EntitySet": "CustomerSet",
+						"QueryOptions": "",
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Wizard_FIRST",
+	"_Type": "Page"
+}

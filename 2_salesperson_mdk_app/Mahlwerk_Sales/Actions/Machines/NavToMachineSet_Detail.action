@@ -1,0 +1,6 @@
+{
+	"ModalPage": true,
+	"NavigationType": "Outer",
+	"PageToOpen": "/Mahlwerk_Sales/Pages/Machines/Machines_Detail.page",
+	"_Type": "Action.Type.Navigation"
+}
