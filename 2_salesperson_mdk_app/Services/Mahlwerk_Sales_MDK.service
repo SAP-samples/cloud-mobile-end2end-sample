@@ -1,9 +1,0 @@
-{
-	"AppId": "com.sap.mobile.mahlwerk.sales",
-	"DestinationName": "com.sap.mdk.sales.mahlwerk",
-	"LanguageURLParam": "sap-language",
-	"OfflineEnabled": true,
-	"RestService": false,
-	"ServiceUrl": "/destinations/mobileservices_workzone_production",
-	"SourceType": "Mobile"
-}

@@ -1,0 +1,40 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ImageCollection",
+					"Target": {
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service",
+						"EntitySet": "MachineSet",
+						"QueryOptions": "$expand=Colors,MachineConfiguration"
+					},
+					"_Name": "SectionImageCollection0",
+					"Header": {
+						"_Name": "SectionHeader1",
+						"UseTopPadding": false
+					},
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No Coffee Machine is available!",
+						"FooterVisible": false
+					},
+					"ImageCell": {
+						"Title": "{Name}",
+						"Image": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{@odata.readLink}/$value",
+						"ImageIsCircular": false,
+						"OnPress": "/Mahlwerk_Sales/Actions/Machines/NavToMachineSet_Detail.action"
+					},
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CoffeeMachine",
+	"Caption": "Coffee Machines"
+}

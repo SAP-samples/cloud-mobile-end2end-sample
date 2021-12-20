@@ -1,0 +1,88 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{Address/HouseNumber} {Address/Street}",
+							"_Name": "KeyValue1",
+							"KeyName": "Address",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/Town}",
+							"_Name": "KeyValue2",
+							"KeyName": "City",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/PostalCode}",
+							"_Name": "KeyValue0",
+							"KeyName": "Postal Code",
+							"Visible": true
+						},
+						{
+							"Value": "{Address/Country}",
+							"_Name": "KeyValue4",
+							"KeyName": "Country / Region",
+							"Visible": true
+						},
+						{
+							"Value": "{Phone}",
+							"_Name": "KeyValue3",
+							"KeyName": "Phone",
+							"Visible": true
+						},
+						{
+							"Value": "{Email}",
+							"_Name": "KeyValue5",
+							"KeyName": "Email",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "/Mahlwerk_Sales/Rules/Customers/FormatAddress.js",
+							"_Name": "KeyValue6",
+							"KeyName": "Full Address",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"DataSubscriptions": [
+		"CustomerSet",
+		"OrderSet",
+		"MachineConfigurationSet"
+	],
+	"_Name": "CustomerSet_Address",
+	"Caption": "Customers_Address"
+}

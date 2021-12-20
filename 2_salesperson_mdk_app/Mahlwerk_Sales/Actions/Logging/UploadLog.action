@@ -1,0 +1,10 @@
+{
+	"ActionResult": {
+		"_Name": "UploadLog"
+	},
+	"ActivityIndicatorText": "Uploading...",
+	"OnFailure": "/Mahlwerk_Sales/Actions/Logging/LogUploadFailure.action",
+	"OnSuccess": "/Mahlwerk_Sales/Actions/Logging/LogUploadSuccessful.action",
+	"ShowActivityIndicator": false,
+	"_Type": "Action.Type.Logger.Upload"
+}

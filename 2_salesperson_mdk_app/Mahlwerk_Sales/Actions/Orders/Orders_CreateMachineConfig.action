@@ -1,0 +1,54 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateConfiguration"
+	},
+		"OnFailure": {
+		"Name": "/Mahlwerk_Sales/Actions/Others/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Failed to create new machine configuration {#ActionResults:CreateConfiguration/error}",
+			"Title": "Creating Customer"
+		}
+	},
+	"OnSuccess": {
+		"Name": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Complete.action",
+		"Properties": {
+			"OnSuccess": "/Mahlwerk_Sales/Actions/Service/SyncStartedMessage.action"
+		}
+	},
+	"Target": {
+		"EntitySet": "MachineConfigurationSet",
+		"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+	},
+	"Properties": {
+		"MachineColorsID": "#Control:FormCellListPicker1/#SelectedValue",
+		"MachineID": "#Control:FormCellSimplePropertyID/#Value",
+		"Pressure": "#Control:FormCellListPicker2/#SelectedValue"
+	},
+	"CreateLinks": [
+		{
+			"Property": "MachineColors",
+			"Target": {
+				"EntitySet": "MachineColorsSet",
+				"QueryOptions": "$filter=MachineColorsID eq {{#Control:FormCellListPicker1/#SelectedValue}}"
+			},
+			"_Enabled": true
+		},
+		{
+			"Property": "MachineTyp",
+			"Target": {
+				"EntitySet": "MachineSet",
+				"QueryOptions": "$filter=MachineID eq {{#Control:FormCellSimplePropertyID/#Value}}"
+			},
+			"_Enabled": true
+		},
+		{
+			"Property": "Order",
+			"Target": {
+				"EntitySet": "OrderSet",
+				"ReadLink": "#ActionResults:CreateOrder/#Property:data/#Property:@odata.readLink"
+			},
+			"_Enabled": true
+		}
+	]
+}

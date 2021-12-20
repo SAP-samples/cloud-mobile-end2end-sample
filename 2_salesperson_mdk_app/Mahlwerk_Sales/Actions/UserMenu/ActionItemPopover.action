@@ -1,0 +1,19 @@
+{
+	"PopoverItems": [
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://bar-code",
+			"OnPress": "/Mahlwerk_Sales/Actions/BarcodeScan/OpenBarcodeScan.action",
+			"Visible": true,
+			"Title": "Scan Barcode"
+		},
+		{
+			"Enabled": true,
+			"Icon": "sap-icon://add-employee",
+			"OnPress": "/Mahlwerk_Sales/Actions/Customers/NavToCustomers_Create.action",
+			"Visible": true,
+			"Title": "Add Customer"
+		}
+	],
+	"_Type": "Action.Type.PopoverMenu"
+}

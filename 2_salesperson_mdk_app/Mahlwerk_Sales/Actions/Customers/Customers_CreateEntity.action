@@ -1,0 +1,31 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateCustomer"
+	},
+	"OnFailure": {
+		"Name": "/Mahlwerk_Sales/Actions/Others/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Failed to create new customer {#ActionResults:CreateCustomer/error}",
+			"Title": "Creating Customer"
+		}
+	},
+	"Target": {
+		"EntitySet": "CustomerSet",
+		"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+	},
+	"Properties": {
+		"CompanyName": "#Page:CreateNewCustomer/#Control:FCCreateCustomerCompanyName/#Value",
+		"Email": "#Page:CreateNewCustomer/#Control:FCCreateCustomerEmail/#Value",
+		"Name": "#Page:CreateNewCustomer/#Control:FCCreateCustomerName/#Value",
+		"Phone": "#Page:CreateNewCustomer/#Control:FCCreateCustomerPhone/#Value",
+		"Address": {
+			"Country": "#Page:CreateNewCustomer/#Control:FCCreateCustomerCountry/#Value",
+			"HouseNumber": "#Page:CreateNewCustomer/#Control:FCCreateCustomerHouseNo/#Value",
+			"PostalCode": "#Page:CreateNewCustomer/#Control:FCCreateCustomerPostalCode/#Value",
+			"Street": "#Page:CreateNewCustomer/#Control:FCCreateCustomerStreet/#Value",
+			"Town": "#Page:CreateNewCustomer/#Control:FCCreateCustomerTown/#Value"
+		}
+	},
+	"OnSuccess": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Complete.action"
+}

@@ -1,0 +1,61 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ProfileHeader": {
+						"DetailImageIsCircular": true,
+						"Headline": "{Name}",
+						"Subheadline": "Company: {CompanyName}",
+						"ActivityItems": [
+							{
+								"_Name": "SectionContactCell0ActivityItems0",
+								"ActivityType": "Phone",
+								"ActivityValue": "{Phone}"
+							},
+							{
+								"_Name": "SectionContactCell0ActivityItems1",
+								"ActivityType": "Email",
+								"ActivityValue": "{Email}"
+							},
+							{
+								"_Name": "SectionContactCell0ActivityItems2",
+								"ActivityType": "Message",
+								"ActivityValue": "{Phone}"
+							}
+						]
+					},
+					"_Type": "Section.Type.ProfileHeader",
+					"_Name": "SectionProfileHeader0",
+					"Visible": true
+				}
+			]
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Address",
+					"Image": "sap-icon://addresses",
+					"PageToOpen": "/Mahlwerk_Sales/Pages/Customers/Customers_Address.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Machines",
+					"Image": "sap-icon://machine",
+					"PageToOpen": "/Mahlwerk_Sales/Pages/Customers/Customers_Machine.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Top"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customers_tab",
+	"Caption": "Details"
+}

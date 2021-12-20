@@ -1,0 +1,50 @@
+{
+	"Caption": "Activity Log",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Enable Logging",
+							"IsEditable": true,
+							"OnValueChange": "/Mahlwerk_Sales/Rules/Logging/ToggleLogging.js",
+							"Value": false,
+							"_Name": "EnableLogSwitch",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"AllowMultipleSelection": false,
+							"Caption": "Log Level",
+							"IsEditable": false,
+							"IsSearchEnabled": false,
+							"OnValueChange": "/Mahlwerk_Sales/Rules/Logging/SetUserLogLevel.js",
+							"PickerItems": "/Mahlwerk_Sales/Rules/Logging/LogLevels.js",
+							"_Name": "LogLevelListPicker",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsPickerDismissedOnSelection": true
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"OnPress": "/Mahlwerk_Sales/Actions/Logging/UploadLogProgress.action",
+							"TextAlignment": "center",
+							"Title": "Send Activity Log",
+							"_Name": "Send",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"OnLoaded": "/Mahlwerk_Sales/Rules/Logging/UserLogSetting.js",
+	"_Name": "UserActivityLog",
+	"_Type": "Page"
+}

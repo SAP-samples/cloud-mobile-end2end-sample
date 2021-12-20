@@ -12,51 +12,149 @@ MDK 6.1 or higher
 
 ## Setup & Run
 
-1. Goto your SAP Business Application Studio space.
+#### Configure a new MDK application in Mobile Services cockpit
+1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
+2. On the home screen, select **Create new app**.
+    ![MDK](./Screenshots/img-1.png)
+3. In **Basic Info** step, provide the required information and click **Next**.
+
+    | Field | Value |
+    |----|----|
+    | `ID` | com.sap.mdk.salesperson |
+    | `Name` | SAP MDK Demo App |
+
+    ![MDK](./Screenshots/img-2.png)
+
+    > If you are configuring this app in a trial account, make sure to select **License Type** as *lite*.
+
+4. In **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown and then click **Finish**.
+
+    ![MDK](./Screenshots/img-3.png)
+
+    >If you see a _Confirm Finish_ window, click **OK**.
+
+    Once you have created your application, you see a list of default features have been automatically assigned to the app.
+
+    ![MDK](./Screenshots/img-4.png)
+
+
+#### Create a new destination to your MDK Mobile application
+
+1. Click **Mobile Connectivity**.  
+
+    ![MDK](./Screenshots/img-5.png)
+
+2. Click the **Create** icon to add a new destination.
+
+    ![MDK](./Screenshots/img-6.png)
+
+3. In **Basic Info** step, provide the required information and click **Next**.
+
+    | Field | Value |
+    |----|----|
+    | `Destination Name` | Mahlwerk |
+    | `URL` | Your backend OData Service URL generated in [previous exercise](/1_backend_odata_service) |
+
+    ![MDK](./Screenshots/img-7.png)
+
+4. For this tutorial, there is no Custom Headers, Annotations required. Click **Next** to navigate to further steps.
+
+5. Since the current implementation of the OData service doesn't provide any authentication, keep the default **SSO Mechanism** in **Destination Configuration** step as *No Authentication*, click **Next** and then click **Finish**.   
+
+
+#### Clone Git repository in your SAP Business Application Studio space and deploy MDK project
+
+1. Go to your SAP Business Application Studio space.
 
 2. Clone git repository and upload this folder to SAP's Business Apllication Studio's workspace.
 
-3. Click on Bottom left of the window & select your mobile services organization.
-![Mobile Services Organization](Images/1.png)
+3. Right click `Application.app` in `2_salesperson_mdk_app` folder and select `MDK:Deploy`. 
+    ![MDK](./Screenshots/img-8.png)
 
-4. Select Space.
-![Mobile Services Space](Images/2.png)
+4. Select deploy target as **Mobile Services**.
 
-5. Go to *View*  in the menu section, and click on command Palette.
-![See Command Palette](Images/3.png)
+   MDK editor will deploy the metadata to Mobile Services.
 
-6. Search *MDK* and select *MDK : Deploy* . 
-![Run MDK Deploy](Images/4.png)
+    ![MDK](./Screenshots/img-9.png)
 
-7. Select the application to deploy.
-![Select application](Images/5.png)
+5. Select Mobile Services landscape, Application id of the application from Mobile services that you created in Mobile Services for this application.
 
-8. Select *Mobile Services* as the target.
-![Select target](Images/6.png)
+ 6. Wait for deploy to finish.
 
-9. Select application id of the application from Mobile services that you created in Mobile Services for this application.
-![Select APP Id from Mobile Services](Images/7.png)
+ #### Display the QR code for onboarding the Mobile app
 
-10. Wait for deploy to finish.
-![Deploying to Mobile Services](Images/8.png)
+ SAP Business Application Studio has a feature to generate QR code for onboarding the mobile app.
 
-11. Finally, go to your Mobile Services Space and then go to *APIs Tab* and scan the QR code from the Mobile Services application on your device.
-![App QR Code](Images/9.png)
+Click the `Application.app` to open it in MDK Application Editor and click **Application QR Code** icon.
 
-## Screens
-![Coffee Machines](Images/screens/1.jpeg)
-![Machine Details](Images/screens/2.jpeg)
-![New Order > Select a customer](Images/screens/3.jpeg)
-![Configuration > Select a color](Images/screens/4.jpeg)
-![Configuration > Select the Max Pressure](Images/screens/5.jpeg)
-![Order Summary](Images/screens/6.jpeg)
-![Order being created](Images/screens/7.jpeg)
-![Customers](Images/screens/8.jpeg)
-![Customer machines](Images/screens/9.jpeg)
-![Customer Machine Details](Images/screens/10.jpeg)
-![User Settings](Images/screens/11.jpeg)
-![User Actions](Images/screens/12.jpeg)
-![Scanner result](Images/screens/13.jpeg)
-![New Customer](Images/screens/14.jpeg)
+
+ #### Test the application
+1. **Download and install:** **SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+
+2. Follow the steps to on-board the MDK client on [Android device](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) or [iOS device](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md).
+
+
+## Screenshots
+*Coffee Machines* 
+
+![Coffee Machines](./Screenshots/img-10.png)
+
+*Machine Details* 
+
+![Machine Details](./Screenshots/img-11.png)
+
+*New Order > Select a customer*
+
+ ![New Order > Select a customer](./Screenshots/img-12.png)
+ 
+*Configuration > Select a color* 
+
+![Configuration > Select a color](./Screenshots/img-13.png)
+
+*Configuration > Select the Max Pressure*
+
+ ![Configuration > Select the Max Pressure](./Screenshots/img-14.png)
+ 
+*Order Summary*
+
+ ![Order Summary](./Screenshots/img-15.png)
+ 
+*Order being created*
+
+ ![Order being created](./Screenshots/img-16.png)
+ 
+*Customers*
+
+ ![Customers](./Screenshots/img-17.png)
+ 
+*Customer Details and Address*
+
+ ![Customer Details](./Screenshots/img-18.png)
+ 
+*Customer Machines*
+
+ ![Customer Machine](./Screenshots/img-19.png)
+ 
+*Machine Details*
+
+ ![Customer Machine](./Screenshots/img-20.png)
+ 
+*User Settings*
+
+ ![User Settings](./Screenshots/img-21.png)
+ 
+*User Actions*
+
+ ![User Actions](./Screenshots/img-22.png)
+ 
+*New Customer*
+
+ ![New Customer](./Screenshots/img-24.png)
+ 
+*Scan a barcode*
+
+ ![Scanner result](./Screenshots/img-23.png)
+ 
+
 
 

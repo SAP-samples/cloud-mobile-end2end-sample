@@ -1,0 +1,124 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerCompanyName",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Company Name",
+							"PlaceHolder": "Enter the Company Name",
+							"Value": "test company"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerName",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Name",
+							"PlaceHolder": "First Name and Last Name",
+							"Value" : "test user"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerEmail",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "E-Mail",
+							"PlaceHolder": "email@gmail.com",
+							"Value": "email@gmail.com"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerPhone",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Phone",
+							"PlaceHolder": "0123456789",
+							"Value": "0123456789"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerHouseNo",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "House No.",
+							"PlaceHolder": "7",
+							"Value": "8"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerStreet",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Street",
+							"PlaceHolder": "Dietmer Hopp Str.",
+							"Value": "Lutherst."
+
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerTown",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "City",
+							"PlaceHolder": "Walldorf",
+							"Value": "Walldorf"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerPostalCode",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Postal Code",
+							"PlaceHolder": "123456",
+							"Value" : "123456"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerCountry",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "County",
+							"PlaceHolder": "Germany",
+							"Value": "Germany"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CreateNewCustomer",
+	"Caption": "New Customer",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Save",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Mahlwerk_Sales/Actions/Customers/Customers_CreateEntity.action"
+				
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

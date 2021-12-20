@@ -1,6 +1,0 @@
-{
-	"Message": "Failed to delete customer {#ActionResults:DeleteCONFIG/error}",
-	"OKCaption": "OK",
-	"Title": "Deleting Machine Configuration",
-	"_Type": "Action.Type.Message"
-}
