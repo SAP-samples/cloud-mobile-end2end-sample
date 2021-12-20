@@ -96,35 +96,65 @@ Click the `Application.app` to open it in MDK Application Editor and click **App
 
 ## Screenshots
 *Coffee Machines* 
+
 ![Coffee Machines](./Screenshots/img-10.png)
+
 *Machine Details* 
+
 ![Machine Details](./Screenshots/img-11.png)
+
 *New Order > Select a customer*
+
  ![New Order > Select a customer](./Screenshots/img-12.png)
+ 
 *Configuration > Select a color* 
+
 ![Configuration > Select a color](./Screenshots/img-13.png)
+
 *Configuration > Select the Max Pressure*
+
  ![Configuration > Select the Max Pressure](./Screenshots/img-14.png)
+ 
 *Order Summary*
+
  ![Order Summary](./Screenshots/img-15.png)
+ 
 *Order being created*
+
  ![Order being created](./Screenshots/img-16.png)
+ 
 *Customers*
+
  ![Customers](./Screenshots/img-17.png)
+ 
 *Customer Details and Address*
+
  ![Customer Details](./Screenshots/img-18.png)
+ 
 *Customer Machines*
+
  ![Customer Machine](./Screenshots/img-19.png)
+ 
 *Machine Details*
+
  ![Customer Machine](./Screenshots/img-20.png)
+ 
 *User Settings*
+
  ![User Settings](./Screenshots/img-21.png)
+ 
 *User Actions*
+
  ![User Actions](./Screenshots/img-22.png)
+ 
 *New Customer*
+
  ![New Customer](./Screenshots/img-24.png)
+ 
 *Scan a barcode*
+
  ![Scanner result](./Screenshots/img-23.png)
+ 
 
 
 
