@@ -13,12 +13,11 @@
 					},
 					"_Name": "SectionImageCollection0",
 					"Header": {
-						"_Name": "SectionHeader1",
 						"UseTopPadding": false
 					},
 					"Visible": true,
 					"EmptySection": {
-						"Caption": "No Coffee Machine is available!",
+						"Caption": "No Coffee Machines available",
 						"FooterVisible": false
 					},
 					"ImageCell": {
