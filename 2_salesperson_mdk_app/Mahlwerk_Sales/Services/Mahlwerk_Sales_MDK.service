@@ -1,5 +1,5 @@
 {
-	"DestinationName": "com.sap.mdk.sales.mahlwerk",
+	"DestinationName": "Mahlwerk",
 	"OfflineEnabled": true,
 	"SourceType": "Mobile"
 }
