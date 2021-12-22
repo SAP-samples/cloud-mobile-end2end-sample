@@ -1,28 +1,28 @@
 PODS:
-  - SAPCommon (5.1.13)
-  - SAPFiori (5.1.13):
-    - SAPCommon (= 5.1.13)
-  - SAPFioriFlows (5.1.13):
-    - SAPCommon (= 5.1.13)
-    - SAPFiori (= 5.1.13)
-    - SAPFoundation (= 5.1.13)
-  - SAPFoundation (5.1.13):
-    - SAPCommon (= 5.1.13)
-  - SAPOData (5.1.13):
-    - SAPCommon (= 5.1.13)
-    - SAPFoundation (= 5.1.13)
-  - SAPOfflineOData (5.1.13):
-    - SAPCommon (= 5.1.13)
-    - SAPFoundation (= 5.1.13)
-    - SAPOData (= 5.1.13)
+  - SAPCommon (6.1.11)
+  - SAPFiori (6.1.11):
+    - SAPCommon (= 6.1.11)
+  - SAPFioriFlows (6.1.11):
+    - SAPCommon (= 6.1.11)
+    - SAPFiori (= 6.1.11)
+    - SAPFoundation (= 6.1.11)
+  - SAPFoundation (6.1.11):
+    - SAPCommon (= 6.1.11)
+  - SAPOData (6.1.11):
+    - SAPCommon (= 6.1.11)
+    - SAPFoundation (= 6.1.11)
+  - SAPOfflineOData (6.1.11):
+    - SAPCommon (= 6.1.11)
+    - SAPFoundation (= 6.1.11)
+    - SAPOData (= 6.1.11)
 
 DEPENDENCIES:
-  - SAPCommon (~> 5.1)
-  - SAPFiori (~> 5.1)
-  - SAPFioriFlows (~> 5.1)
-  - SAPFoundation (~> 5.1)
-  - SAPOData (~> 5.1)
-  - SAPOfflineOData (~> 5.1)
+  - SAPCommon (~> 6.1)
+  - SAPFiori (~> 6.1)
+  - SAPFioriFlows (~> 6.1)
+  - SAPFoundation (~> 6.1)
+  - SAPOData (~> 6.1)
+  - SAPOfflineOData (~> 6.1)
 
 SPEC REPOS:
   https://github.com/SAP-samples/cloud-sdk-ios-specs:
@@ -34,13 +34,13 @@ SPEC REPOS:
     - SAPOfflineOData
 
 SPEC CHECKSUMS:
-  SAPCommon: e0a26fa9e9c6926320ff61805bfa4091ba558ca8
-  SAPFiori: e1bece73a5a8a3c997c85ba7fb2477cde2cc18b1
-  SAPFioriFlows: 3b848e0d6ff4ab6adfd19a656c79ff529b8afc79
-  SAPFoundation: 46c304a741afb01162c3e232e1f1038e2568c5c1
-  SAPOData: 2f127133459259663def65df4a97b4b5469fcb95
-  SAPOfflineOData: a1f06cd39da32bc1d9626e25b49bcb286e5ed8fe
+  SAPCommon: 31dc7ac2557026465b61b69cc691784c3d2c0db2
+  SAPFiori: bbd9c67604e9b2f81d0a0c89ca21dd82a4fedf5f
+  SAPFioriFlows: a2495c4b50291cf7010223ffb13b6bfe60b45243
+  SAPFoundation: 0c23732fc739c68ed1acf68fd796ed3bd240d8c7
+  SAPOData: 29375977b94aa3f11de3c744b1b9c934a5aee87b
+  SAPOfflineOData: 07349ee1d0a8d6584ad2f95e3420b93ba2567590
 
-PODFILE CHECKSUM: a94b0a0e6ac271a276e7c5dbb8857555930d4b99
+PODFILE CHECKSUM: 1f1252bda1d255270f87bc2b5e69cffb89441bb0
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
