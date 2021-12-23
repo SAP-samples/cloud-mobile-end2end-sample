@@ -4,10 +4,10 @@ platform :ios, '14.0'
 use_frameworks!
 
 target 'Mahlwerk' do
-  pod 'SAPCommon', '~> 5.1'
-  pod 'SAPFoundation', '~> 5.1'
-  pod 'SAPFiori', '~> 5.1'
-  pod 'SAPFioriFlows', '~> 5.1'
-  pod 'SAPOfflineOData', '~> 5.1'
-  pod 'SAPOData', '~> 5.1'
+  pod 'SAPCommon', '~> 6.1'
+  pod 'SAPFoundation', '~> 6.1'
+  pod 'SAPFiori', '~> 6.1'
+  pod 'SAPFioriFlows', '~> 6.1'
+  pod 'SAPOfflineOData', '~> 6.1'
+  pod 'SAPOData', '~> 6.1'
 end

@@ -259,7 +259,7 @@ extension MapViewController: UITableViewDataSource {
         if let taskStatus = TaskStatus.init(rawValue: task.taskStatusID!) {
             cell.headlineText = "\(task.title ?? "")"
             cell.subheadlineText = "\(task.address?.town ?? ""), \(task.address?.street ?? "") \(task.address?.houseNumber ?? "")"
-            cell.footnoteText = "Due on \(task.order?.dueDate?.utc().format() ?? "")"
+            cell.footnoteText = "Due on \(task.order?.dueDate?.utc()?.format() ?? "")"
             cell.statusText = taskStatus.text
             cell.detailImage = FUIIconLibrary.map.marker.job.withRenderingMode(.alwaysTemplate)
             cell.detailImageView.tintColor = .white

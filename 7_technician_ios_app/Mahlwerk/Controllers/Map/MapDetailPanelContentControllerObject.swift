@@ -33,7 +33,7 @@ class MapDetailPanelContentControllerObject: NSObject {
     var subheadlineText: String? {
        var dueDate = ""
         if task.order != nil{
-            dueDate = (task.order?.dueDate?.utc().format())!
+            dueDate = (task.order?.dueDate?.utc()?.format())!
         }
        return "Due on \( dueDate)"
     }
