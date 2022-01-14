@@ -105,5 +105,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/SAPOfflineOData/SAPOfflineOData.xcframework" "SAPOfflineOData" "framework" "ios-x86_64-maccatalyst" "ios-x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/SAPOfflineOData/SAPOfflineOData.xcframework" "SAPOfflineOData" "framework" "ios-arm64_x86_64-maccatalyst" "ios-arm64" "ios-arm64_x86_64-simulator"
 

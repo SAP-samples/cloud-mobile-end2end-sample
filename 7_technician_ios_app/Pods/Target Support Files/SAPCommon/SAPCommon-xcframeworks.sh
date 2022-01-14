@@ -105,5 +105,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/SAPCommon/SAPCommon.xcframework" "SAPCommon" "framework" "ios-arm64" "ios-x86_64-simulator" "ios-x86_64-maccatalyst"
+install_xcframework "${PODS_ROOT}/SAPCommon/SAPCommon.xcframework" "SAPCommon" "framework" "ios-arm64_x86_64-maccatalyst" "ios-arm64" "ios-arm64_x86_64-simulator"
 
