@@ -30,8 +30,8 @@ class CellCreationHelper {
         return cell
     }
 
-    static func cellForProperty(tableView: UITableView, indexPath: IndexPath, entity: EntityValue, property: Property, value: String, editingIsAllowed: Bool = false, changeHandler: @escaping ((String) -> Bool)) -> UITableViewCell {
-        let cell: UITableViewCell!
+    static func cellForProperty(tableView: UITableView, indexPath: IndexPath, entity: EntityValue, property: Property, value: String, editingIsAllowed: Bool = false, changeHandler: @escaping ((String) -> Bool)) -> FUIBaseTableViewCell {
+        let cell: FUIBaseTableViewCell!
 
         if property.dataType.isBasic {
             // The property is a key or we are creating new entity

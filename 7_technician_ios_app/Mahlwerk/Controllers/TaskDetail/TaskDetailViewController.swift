@@ -62,6 +62,7 @@ class TaskDetailViewController: UITableViewController, Refreshable, NavigationBa
         self.tableView.register(FUITableViewHeaderFooterView.self,
                                 forHeaderFooterViewReuseIdentifier: FUITableViewHeaderFooterView.reuseIdentifier)
         self.tableView.register(FUINoteFormCell.self, forCellReuseIdentifier: FUINoteFormCell.reuseIdentifier)
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
         
         activityIndicator.center = self.view.center
         view.addSubview(activityIndicator)
@@ -347,7 +348,7 @@ class TaskDetailViewController: UITableViewController, Refreshable, NavigationBa
         return UITableView.automaticDimension
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> FUIBaseTableViewCell {
         let section = indexPath.section
         switch segmentedControlState {
         case .jobs:
@@ -386,7 +387,7 @@ class TaskDetailViewController: UITableViewController, Refreshable, NavigationBa
                 }
                 return cell
             } else {
-                let cell = self.tableView.dequeueReusableCell(withIdentifier: "CustomerCell")!
+                let cell = self.tableView.dequeueReusableCell(withIdentifier: "CustomerCell") as! FUIBaseTableViewCell
                 return cell
             }
         }

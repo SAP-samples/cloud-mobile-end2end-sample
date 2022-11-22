@@ -68,6 +68,7 @@ class MapViewController: UIViewController {
         DispatchQueue.global(qos: .background).async {
             self.addAnnotations()
         }
+        mapView.backgroundColor =  UIColor.preferredFioriColor(forStyle: .header)
         
         setupDetailPanel()
         setupToolbar()

@@ -9,7 +9,7 @@
 import UIKit
 import SAPFiori
 
-class TaskHistoryViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate {
+class TaskHistoryViewController: FUIFormTableViewController, UISearchResultsUpdating, UISearchBarDelegate {
 
     var historyTasks: [Task] = []
     var filteredTasks = [Task]()
@@ -20,6 +20,7 @@ class TaskHistoryViewController: UITableViewController, UISearchResultsUpdating,
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,13 +53,14 @@ class TaskHistoryViewController: UITableViewController, UISearchResultsUpdating,
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> FUIBaseTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
         if isSearching() {
             cell.task = filteredTasks[indexPath.row]
         } else {
             cell.task = historyTasks[indexPath.row]
         }
+        
         return cell
     }
     

@@ -14,7 +14,7 @@ import SAPFioriFlows
 import SAPOData
 import SAPOfflineOData
 
-class TasksViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate,
+class TasksViewController: FUIFormTableViewController, UISearchResultsUpdating, UISearchBarDelegate,
 UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
     
     var tasks = [Task]()
@@ -46,6 +46,9 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
                                 forHeaderFooterViewReuseIdentifier: FUITableViewHeaderFooterView.reuseIdentifier)
         self.tableView.register(UINib.init(nibName: "MapButtonCell", bundle: nil), forCellReuseIdentifier: "MapButtonCell")
         self.tableView.tableFooterView = UIView()
+    
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
+       
         
         self.tabBarController?.tabBar.items?[0].image = FUIIconLibrary.system.check
         self.tabBarController?.tabBar.items?[1].image = FUIIconLibrary.system.listView
@@ -251,12 +254,11 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> FUIBaseTableViewCell {
         let task: Task?
         if isSearching() {
             task = filteredTasks[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
-            cell.task = task
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
             return cell
         }
         switch Section(rawValue: indexPath.section) {
@@ -268,16 +270,19 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
             return cell
         case .myTasks:
             task = activeTasks[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
+            cell.headlineText = task?.title
+            return cell
+
         case .openTasks:
             task = openTasks[indexPath.row]
         case .historyButton:
-            return tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath)
+            return tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! FUIBaseTableViewCell
         default:
-            return UITableViewCell()
+            return FUIBaseTableViewCell()
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
-        cell.task = task
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
         return cell
     }
     

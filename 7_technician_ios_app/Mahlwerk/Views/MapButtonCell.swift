@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import SAPFiori
 
-class MapButtonCell: UITableViewCell, MKMapViewDelegate {
+class MapButtonCell: FUIBaseTableViewCell, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: FUIMKMapView!
     

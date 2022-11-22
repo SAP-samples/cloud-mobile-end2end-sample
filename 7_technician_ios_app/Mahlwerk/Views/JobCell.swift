@@ -9,11 +9,11 @@
 import UIKit
 import SAPFiori
 
-class JobCell: UITableViewCell {
+class JobCell: FUIBaseTableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var predictionLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var titleLabel: FUILabel!
+    @IBOutlet weak var predictionLabel: FUILabel!
+    @IBOutlet weak var statusLabel: FUILabel!
     
     var job: Job? {
         didSet {
@@ -30,8 +30,8 @@ class JobCell: UITableViewCell {
                 }
                 switch jobStatus {
                 case .done:
-                    titleLabel.textColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.primary3)
-                    predictionLabel.textColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.primary3)
+                    titleLabel.textColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.tertiaryLabel)
+                    predictionLabel.textColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.tertiaryLabel)
                 default:
                     break
                 }

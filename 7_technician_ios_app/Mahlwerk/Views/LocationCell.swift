@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SAPFiori
 
-class LocationCell: UITableViewCell {
+class LocationCell: FUIObjectTableViewCell {
 
-    @IBOutlet weak var streetLabel: UILabel!
-    @IBOutlet weak var townLabel: UILabel!
-    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var streetLabel: FUILabel!
+    @IBOutlet weak var townLabel: FUILabel!
+    @IBOutlet weak var countryLabel: FUILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
