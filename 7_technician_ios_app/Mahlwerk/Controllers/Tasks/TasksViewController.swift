@@ -258,7 +258,7 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
         let task: Task?
         if isSearching() {
             task = filteredTasks[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
+            let cell = returnTaskCell(task: task!, indexPath: indexPath)
             return cell
         }
         switch Section(rawValue: indexPath.section) {
@@ -270,14 +270,19 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
             return cell
         case .myTasks:
             task = activeTasks[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
-            cell.headlineText = task?.title
+            let cell = returnTaskCell(task: task!, indexPath: indexPath)
+            
             return cell
 
         case .openTasks:
             task = openTasks[indexPath.row]
+            let cell = returnTaskCell(task: task!, indexPath: indexPath)
+            return cell
         case .historyButton:
-            return tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! FUIBaseTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! FUIObjectTableViewCell
+            cell.headlineText = "Tasks History"
+            cell.accessoryType = .disclosureIndicator
+            return cell
         default:
             return FUIBaseTableViewCell()
         }
@@ -481,6 +486,23 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
                 return taskStatus == .done
             })
         }
+    }
+    
+    func returnTaskCell(task: Task, indexPath: IndexPath) -> FUIObjectTableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
+        cell.headlineText = task.title
+    
+        if let address = task.address {
+            cell.descriptionText = "\(address.town ?? ""), \(address.street ?? "") \(address.houseNumber ?? "")"
+        }
+        let taskStatus = TaskStatus.init(rawValue: (task.taskStatusID)!)
+        cell.statusText = taskStatus?.text
+        cell.statusLabel.textColor = taskStatus?.color
+        cell.footnoteText = "Due on \(task.order?.dueDate?.utc()?.format() ?? "")"
+
+        cell.showDescriptionInCompact = true
+        cell.accessoryType = .disclosureIndicator
+        return cell
     }
     
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {

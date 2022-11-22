@@ -54,14 +54,19 @@ class TaskHistoryViewController: FUIFormTableViewController, UISearchResultsUpda
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> FUIBaseTableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
+   
         if isSearching() {
-            cell.task = filteredTasks[indexPath.row]
+            let task = filteredTasks[indexPath.row]
+            return  returnTaskCell(task: task, indexPath: indexPath)
+
         } else {
-            cell.task = historyTasks[indexPath.row]
+            let task = historyTasks[indexPath.row]
+            return  returnTaskCell(task: task, indexPath: indexPath)
+
         }
         
-        return cell
+       
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -75,6 +80,22 @@ class TaskHistoryViewController: FUIFormTableViewController, UISearchResultsUpda
         }
 
         navigationController?.pushViewController(taskDetailViewController, animated: true)
+    }
+    func returnTaskCell(task: Task, indexPath: IndexPath) -> FUIObjectTableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
+        cell.headlineText = task.title
+    
+        if let address = task.address {
+            cell.descriptionText = "\(address.town ?? ""), \(address.street ?? "") \(address.houseNumber ?? "")"
+        }
+        let taskStatus = TaskStatus.init(rawValue: (task.taskStatusID)!)
+        cell.statusText = taskStatus?.text
+        cell.statusLabel.textColor = taskStatus?.color
+        cell.footnoteText = "Due on \(task.order?.dueDate?.utc()?.format() ?? "")"
+
+        cell.showDescriptionInCompact = true
+        cell.accessoryType = .disclosureIndicator
+        return cell
     }
     
     func isSearching() -> Bool {

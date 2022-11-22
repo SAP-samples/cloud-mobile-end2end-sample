@@ -18,70 +18,21 @@
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JobCell" editingAccessoryType="detailButton" rowHeight="80" id="A0S-VX-fOD" customClass="JobCell" customModule="Mahlwerk" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JobCell" editingAccessoryType="detailButton" rowHeight="80" id="A0S-VX-fOD" customClass="FUIObjectTableViewCell" customModule="SAPFiori">
                                 <rect key="frame" x="0.0" y="55.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A0S-VX-fOD" id="1ZU-8F-hPP">
                                     <rect key="frame" x="0.0" y="0.0" width="383.5" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Prediction" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fes-e5-i3k" userLabel="Prediction Label">
-                                            <rect key="frame" x="20" y="48.5" width="82" height="15"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="predictionLabel"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo7-an-WwW">
-                                            <rect key="frame" x="331.5" y="11" width="44" height="18"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Job Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GG-5P-yUA">
-                                            <rect key="frame" x="20" y="16" width="78.5" height="25"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Fes-e5-i3k" secondAttribute="bottom" constant="5.5" id="2WH-tS-a7G"/>
-                                        <constraint firstItem="4GG-5P-yUA" firstAttribute="leading" secondItem="1ZU-8F-hPP" secondAttribute="leadingMargin" id="73E-X6-RC9"/>
-                                        <constraint firstItem="4GG-5P-yUA" firstAttribute="leading" secondItem="1ZU-8F-hPP" secondAttribute="leadingMargin" id="G8b-8k-vIU"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Fes-e5-i3k" secondAttribute="bottom" constant="5.5" id="JcG-pU-ZnY"/>
-                                        <constraint firstItem="Fes-e5-i3k" firstAttribute="leading" secondItem="1ZU-8F-hPP" secondAttribute="leadingMargin" id="K1V-3D-cV7"/>
-                                        <constraint firstItem="Fo7-an-WwW" firstAttribute="top" secondItem="1ZU-8F-hPP" secondAttribute="topMargin" id="POi-pN-z2q"/>
-                                        <constraint firstItem="Fes-e5-i3k" firstAttribute="leading" secondItem="1ZU-8F-hPP" secondAttribute="leadingMargin" id="Y4c-GA-XPF"/>
-                                        <constraint firstItem="Fes-e5-i3k" firstAttribute="top" secondItem="4GG-5P-yUA" secondAttribute="bottom" constant="7.5" id="eIx-42-j1e"/>
-                                        <constraint firstItem="4GG-5P-yUA" firstAttribute="top" secondItem="1ZU-8F-hPP" secondAttribute="topMargin" constant="5" id="t2n-5q-vhA"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Fo7-an-WwW" secondAttribute="trailing" id="tg9-ax-xhh"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <connections>
-                                    <outlet property="predictionLabel" destination="Fes-e5-i3k" id="Ur9-tC-LTt"/>
-                                    <outlet property="statusLabel" destination="Fo7-an-WwW" id="Qw6-r3-Nrs"/>
-                                    <outlet property="titleLabel" destination="4GG-5P-yUA" id="byD-Xd-Om9"/>
-                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CustomerCell" editingAccessoryType="detailButton" textLabel="w8s-tp-0LY" style="IBUITableViewCellStyleDefault" id="hEJ-1g-sbI" customClass="FUIBaseTableViewCell" customModule="SAPFiori">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CustomerCell" editingAccessoryType="detailButton" id="hEJ-1g-sbI" customClass="FUIObjectTableViewCell" customModule="SAPFiori">
                                 <rect key="frame" x="0.0" y="135.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hEJ-1g-sbI" id="5rP-Ox-dd1" customClass="HistoryCell" customModule="Mahlwerk" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="383.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w8s-tp-0LY" customClass="FUILabel" customModule="SAPFiori">
-                                            <rect key="frame" x="20" y="0.0" width="355.5" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier=" "/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>

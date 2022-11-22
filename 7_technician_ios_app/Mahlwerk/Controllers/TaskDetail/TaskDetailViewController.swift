@@ -352,14 +352,14 @@ class TaskDetailViewController: UITableViewController, Refreshable, NavigationBa
         let section = indexPath.section
         switch segmentedControlState {
         case .jobs:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "JobCell", for: indexPath) as! JobCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "JobCell", for: indexPath) as! FUIObjectTableViewCell
             if section == 0 {
                 let job = jobs[indexPath.row]
-                cell.job = job
+                let cell = returnJobCell(job: job, indexPath: indexPath)
                 return cell
             } else {
                 let job = suggestedJobs[indexPath.row]
-                cell.job = job
+                let cell = returnJobCell(job: job, indexPath: indexPath)
                 return cell
             }
         case .information:
@@ -387,7 +387,9 @@ class TaskDetailViewController: UITableViewController, Refreshable, NavigationBa
                 }
                 return cell
             } else {
-                let cell = self.tableView.dequeueReusableCell(withIdentifier: "CustomerCell") as! FUIBaseTableViewCell
+                let cell = self.tableView.dequeueReusableCell(withIdentifier: "CustomerCell") as! FUIObjectTableViewCell
+                cell.headlineText = "Customer"
+                cell.accessoryType = .disclosureIndicator
                 return cell
             }
         }
@@ -419,6 +421,32 @@ class TaskDetailViewController: UITableViewController, Refreshable, NavigationBa
             let customerViewController = segue.destination as! CustomerViewController
             customerViewController.customer = task.order!.customer!
         }
+    }
+    func returnJobCell(job: Job, indexPath: IndexPath) -> FUIObjectTableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JobCell", for: indexPath) as! FUIObjectTableViewCell
+        cell.headlineText = job.title
+
+        cell.footnoteText = "Predicted Time: \(job.predictedWorkHours ?? 0) hrs"
+        if let jobStatus = JobStatus.init(rawValue: job.jobStatusID!) {
+            if (job.suggested)! {
+                cell.statusLabel.alpha = 0
+            } else {
+                cell.statusLabel.alpha = 1
+                cell.statusLabel.text = jobStatus.text
+                cell.statusLabel.textColor = jobStatus.color
+            }
+            switch jobStatus {
+            case .done:
+                cell.headlineLabel.textColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.tertiaryLabel)
+                cell.footnoteLabel.textColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.tertiaryLabel)
+            default:
+                break
+            }
+        }
+
+        cell.showDescriptionInCompact = true
+        cell.accessoryType = .disclosureIndicator
+        return cell
     }
 }
 

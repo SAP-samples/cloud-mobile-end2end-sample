@@ -30,21 +30,12 @@
                                 <accessibility key="accessibilityConfiguration" identifier=" "/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" editingAccessoryType="detailButton" style="IBUITableViewCellStyleDefault" id="nMl-4Q-Pky" customClass="FUIBaseTableViewCell" customModule="SAPFiori">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HistoryCell" editingAccessoryType="detailButton" id="nMl-4Q-Pky" customClass="FUIObjectTableViewCell" customModule="SAPFiori">
                                 <rect key="frame" x="0.0" y="145.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nMl-4Q-Pky" id="HIt-Rj-prh" customClass="HistoryCell" customModule="Mahlwerk" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="383.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tasks History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CMC-f2-0E6">
-                                            <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier=" "/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -117,66 +108,15 @@
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="TaskCell" editingAccessoryType="disclosureIndicator" rowHeight="90" id="hvC-WM-dVv" customClass="TaskCell" customModule="Mahlwerk" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="TaskCell" editingAccessoryType="disclosureIndicator" rowHeight="90" id="hvC-WM-dVv" customClass="FUIObjectTableViewCell" customModule="SAPFiori">
                                 <rect key="frame" x="0.0" y="55.5" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hvC-WM-dVv" id="bmW-Sr-ZAQ">
                                     <rect key="frame" x="0.0" y="0.0" width="383.5" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Due on 01.01.2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9T-77-xhT">
-                                            <rect key="frame" x="20" y="64" width="111" height="16"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-pb-tsP">
-                                            <rect key="frame" x="20" y="34" width="48.5" height="27"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="addressLabel"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-hc-paF">
-                                            <rect key="frame" x="20" y="10" width="35" height="21"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="titleLabel"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDa-wr-gqw" customClass="FUILabel" customModule="SAPFIORI">
-                                            <rect key="frame" x="324" y="10" width="46" height="12"/>
-                                            <accessibility key="accessibilityConfiguration" identifier="statusLabel"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="46" id="A5R-l7-ffY"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="EDa-wr-gqw" secondAttribute="trailing" constant="5.5" id="24E-0f-5sG"/>
-                                        <constraint firstItem="K9T-77-xhT" firstAttribute="leading" secondItem="bmW-Sr-ZAQ" secondAttribute="leading" constant="20" id="7g3-lG-AmS"/>
-                                        <constraint firstItem="BY9-pb-tsP" firstAttribute="top" secondItem="2Dl-hc-paF" secondAttribute="bottom" constant="3" id="KKa-yv-r6s"/>
-                                        <constraint firstItem="2Dl-hc-paF" firstAttribute="leading" secondItem="bmW-Sr-ZAQ" secondAttribute="leading" constant="20" id="NER-z6-3cE"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="EDa-wr-gqw" secondAttribute="bottom" constant="57" id="NWA-Rf-u5S"/>
-                                        <constraint firstAttribute="bottom" secondItem="K9T-77-xhT" secondAttribute="bottom" constant="10" id="Qh9-Rg-TyE"/>
-                                        <constraint firstItem="2Dl-hc-paF" firstAttribute="top" secondItem="bmW-Sr-ZAQ" secondAttribute="top" constant="10" id="Spm-9M-tT3"/>
-                                        <constraint firstItem="EDa-wr-gqw" firstAttribute="top" secondItem="2Dl-hc-paF" secondAttribute="top" id="ToI-Zr-F2I"/>
-                                        <constraint firstItem="BY9-pb-tsP" firstAttribute="leading" secondItem="bmW-Sr-ZAQ" secondAttribute="leading" constant="20" id="fL0-1e-jlh"/>
-                                        <constraint firstItem="K9T-77-xhT" firstAttribute="top" secondItem="BY9-pb-tsP" secondAttribute="bottom" constant="3" id="r9Q-go-28m"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier=" "/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <connections>
-                                    <outlet property="addressLabel" destination="BY9-pb-tsP" id="ZtL-70-pOY"/>
-                                    <outlet property="dateLabel" destination="K9T-77-xhT" id="mn6-10-nsh"/>
-                                    <outlet property="statusLabel" destination="EDa-wr-gqw" id="BRL-We-4qG"/>
-                                    <outlet property="titleLabel" destination="2Dl-hc-paF" id="ree-TA-TLr"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
