@@ -118,7 +118,7 @@ public class OnboardingFlowProvider: OnboardingFlowProviding {
     // MARK: – Step configuration
 
     private func configuredWelcomeScreenStep() -> WelcomeScreenStep {
-        let discoveryConfigurationTransformer = DiscoveryServiceConfigurationTransformer(applicationID: "com.sap.mahlwerk.native.technician", authenticationPath: "com.sap.mahlwerk.native.technician")
+        let discoveryConfigurationTransformer = DiscoveryServiceConfigurationTransformer(applicationID: "<appID>", authenticationPath: "<destinationName>")
         let welcomeScreenStep = WelcomeScreenStep(transformer: discoveryConfigurationTransformer, providers: [FileConfigurationProvider()])
 
         welcomeScreenStep.welcomeScreenCustomizationHandler = { welcomeStepUI in

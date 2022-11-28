@@ -28,8 +28,6 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 2. Put the *App ID* into the highlighted place in *OnboardingFlowProvider.swift*:
 ![OnboardingFlowProvider.swift](images/OFP.png)
 
-3. Copy the *App Id* (see first step) & *Server URL* (from API Tab) from Mobile services cockpit and paste it in *ODataOnBoardingStep.swift*.
-![ODataOnBoardingStep.swift](images/OOS.png)
 
 4. Update the the *AppId, Redirect URL, Authorization End Point, Client Id, Token EndPoint* to your application credentials in *ConfigurationProvider.plist*.
 ![Mobile Services Security Tab](images/Authorization.png)
