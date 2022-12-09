@@ -28,7 +28,7 @@ This application consumes Mahlwerk's Backend's Odata Service for fetching the ta
 2. Copy the Destination Name (used as *Destination ID*) from the Mobile Connectivity feature of your app in Mobile services cockpit:
 ![OnboardingFlowProvider.swift](images/Destination.png)
 
-3. Set the *App ID* as value for the field *Application Identifier* and *Destination ID* in *Destinations > Technician* of *AppParameters.plist* file:
+3. Set the *App ID* as value for the field *Application Identifier* and *Destination ID* for *Destinations > Technician* of *AppParameters.plist* file:
 ![OnboardingFlowProvider.swift](images/AppParameters.png)
 
 4. Update the *Redirect URL, Authorization End Point, Client Id, Token EndPoint* to your application credentials in *ConfigurationProvider.plist*.
