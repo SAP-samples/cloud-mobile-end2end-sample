@@ -17,20 +17,20 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "SAPOData.xcframework/watchos-arm64_arm64_32")
-    echo ""
-    ;;
-  "SAPOData.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "SAPOData.xcframework/ios-arm64")
     echo ""
+    ;;
+  "SAPOData.xcframework/watchos-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "SAPOData.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "SAPOData.xcframework/watchos-arm64_x86_64-simulator")
+  "SAPOData.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
+    ;;
+  "SAPOData.xcframework/watchos-arm64_arm64_32")
+    echo ""
     ;;
   esac
 }
@@ -38,20 +38,20 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "SAPOData.xcframework/watchos-arm64_arm64_32")
-    echo "arm64 arm64_32"
-    ;;
-  "SAPOData.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "SAPOData.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "SAPOData.xcframework/watchos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "SAPOData.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
-  "SAPOData.xcframework/watchos-arm64_x86_64-simulator")
+  "SAPOData.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
+    ;;
+  "SAPOData.xcframework/watchos-arm64_arm64_32")
+    echo "arm64 arm64_32"
     ;;
   esac
 }
@@ -135,5 +135,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/SAPOData/SAPOData.xcframework" "SAPOData" "framework" "ios-arm64_x86_64-simulator" "ios-arm64" "ios-arm64_x86_64-maccatalyst"
+install_xcframework "${PODS_ROOT}/SAPOData/SAPOData.xcframework" "SAPOData" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
 
