@@ -118,7 +118,11 @@ public class OnboardingFlowProvider: OnboardingFlowProviding {
     // MARK: – Step configuration
 
     private func configuredWelcomeScreenStep() -> WelcomeScreenStep {
-        let discoveryConfigurationTransformer = DiscoveryServiceConfigurationTransformer(applicationID: "<appID>", authenticationPath: "<destinationName>")
+        let applicationID = FileConfigurationProvider("AppParameters").provideConfiguration().configuration["Application Identifier"]
+        let destinations = FileConfigurationProvider("AppParameters").provideConfiguration().configuration["Destinations"] as! NSDictionary
+        let destinationID =  destinations.value(forKey: "Technician")
+        
+        let discoveryConfigurationTransformer = DiscoveryServiceConfigurationTransformer(applicationID: (applicationID as! String), authenticationPath: (destinationID as! String))
         let welcomeScreenStep = WelcomeScreenStep(transformer: discoveryConfigurationTransformer, providers: [FileConfigurationProvider()])
 
         welcomeScreenStep.welcomeScreenCustomizationHandler = { welcomeStepUI in
