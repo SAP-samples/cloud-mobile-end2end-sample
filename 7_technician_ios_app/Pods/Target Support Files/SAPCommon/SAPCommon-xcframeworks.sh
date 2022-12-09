@@ -20,17 +20,17 @@ variant_for_slice()
   "SAPCommon.xcframework/watchos-arm64_arm64_32")
     echo ""
     ;;
+  "SAPCommon.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   "SAPCommon.xcframework/ios-arm64")
     echo ""
     ;;
-  "SAPCommon.xcframework/ios-arm64_x86_64-simulator")
+  "SAPCommon.xcframework/watchos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "SAPCommon.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
-    ;;
-  "SAPCommon.xcframework/watchos-arm64_x86_64-simulator")
-    echo "simulator"
     ;;
   esac
 }
@@ -41,16 +41,16 @@ archs_for_slice()
   "SAPCommon.xcframework/watchos-arm64_arm64_32")
     echo "arm64 arm64_32"
     ;;
-  "SAPCommon.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
   "SAPCommon.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "SAPCommon.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "arm64 x86_64"
+  "SAPCommon.xcframework/ios-arm64")
+    echo "arm64"
     ;;
   "SAPCommon.xcframework/watchos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "SAPCommon.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
   esac
@@ -135,5 +135,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/SAPCommon/SAPCommon.xcframework" "SAPCommon" "framework" "ios-arm64" "ios-arm64_x86_64-simulator" "ios-arm64_x86_64-maccatalyst"
+install_xcframework "${PODS_ROOT}/SAPCommon/SAPCommon.xcframework" "SAPCommon" "framework" "ios-arm64_x86_64-simulator" "ios-arm64" "ios-arm64_x86_64-maccatalyst"
 

@@ -17,14 +17,8 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "SAPFoundation.xcframework/watchos-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "SAPFoundation.xcframework/ios-arm64")
     echo ""
-    ;;
-  "SAPFoundation.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
     ;;
   "SAPFoundation.xcframework/watchos-arm64_arm64_32")
     echo ""
@@ -32,25 +26,31 @@ variant_for_slice()
   "SAPFoundation.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
+  "SAPFoundation.xcframework/watchos-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "SAPFoundation.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
 archs_for_slice()
 {
   case "$1" in
-  "SAPFoundation.xcframework/watchos-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "SAPFoundation.xcframework/ios-arm64")
     echo "arm64"
-    ;;
-  "SAPFoundation.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
     ;;
   "SAPFoundation.xcframework/watchos-arm64_arm64_32")
     echo "arm64 arm64_32"
     ;;
   "SAPFoundation.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
+    ;;
+  "SAPFoundation.xcframework/watchos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "SAPFoundation.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -135,5 +135,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/SAPFoundation/SAPFoundation.xcframework" "SAPFoundation" "framework" "ios-arm64" "ios-arm64_x86_64-simulator" "ios-arm64_x86_64-maccatalyst"
+install_xcframework "${PODS_ROOT}/SAPFoundation/SAPFoundation.xcframework" "SAPFoundation" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
 
