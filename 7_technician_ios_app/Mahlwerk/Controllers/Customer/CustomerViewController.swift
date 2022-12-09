@@ -36,6 +36,8 @@ class CustomerViewController: UITableViewController, FUIActivityControlDelegate,
         self.tableView.register(FUITableViewHeaderFooterView.self,
                                 forHeaderFooterViewReuseIdentifier: FUITableViewHeaderFooterView.reuseIdentifier)
         
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
+        
         createObjectHeader()
         
         guard let odataService = OnboardingSessionManager.shared.onboardingSession?.odataController.odataService else {
@@ -47,6 +49,7 @@ class CustomerViewController: UITableViewController, FUIActivityControlDelegate,
                 odataService.loadProperty(Customer.address, into: customer, completionHandler: completionHandler)
             }
         }
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
         loadCustomer = fetchCustomer
         
         updateTable()

@@ -9,12 +9,12 @@
 import UIKit
 import SAPFiori
 
-class TaskCell: UITableViewCell {
+class TaskCell: FUIBaseTableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var titleLabel: FUILabel!
+    @IBOutlet weak var addressLabel: FUILabel!
+    @IBOutlet weak var dateLabel: FUILabel!
+    @IBOutlet weak var statusLabel: FUILabel!
     
     
     

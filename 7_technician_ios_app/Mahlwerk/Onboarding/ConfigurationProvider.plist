@@ -5,28 +5,26 @@
 	<key>auth</key>
 	<array>
 		<dict>
-			<key>type</key>
-			<string>oauth2</string>
 			<key>config</key>
 			<dict>
 				<key>oauth2.clients</key>
 				<array>
 					<dict>
 						<key>clientID</key>
-						<string></string>
+						<string>&lt;clientID&gt;</string>
 						<key>redirectURL</key>
-						<string></string>
+						<string>&lt;redirectURL&gt;</string>
 						<key>grantType</key>
 						<string>authorization_code</string>
 					</dict>
 				</array>
-				<key>oauth2.endUserUI</key>
-				<string></string>
 				<key>oauth2.authorizationEndpoint</key>
-				<string></string>
+				<string>&lt;authorizationEndpoint&gt;</string>
 				<key>oauth2.tokenEndpoint</key>
-				<string></string>
+				<string>&lt;tokenEndpoint&gt;</string>
 			</dict>
+			<key>type</key>
+			<string>oauth2</string>
 			<key>requireOtp</key>
 			<false/>
 		</dict>
@@ -34,10 +32,6 @@
 	<key>protocol</key>
 	<string>https</string>
 	<key>host</key>
-	<string></string>
-	<key>port</key>
-	<integer>443</integer>
-	<key>appID</key>
-	<string>demo.mahlwerk.technician</string>
+	<string>&lt;host&gt;</string>
 </dict>
 </plist>

@@ -8,14 +8,37 @@
 
 import UIKit
 import SAPFiori
+import SAPFoundation
+import SAPCommon
+import SAPFioriFlows
 
-class ProfileViewController: UITableViewController {
+class ProfileViewController: FUIFormTableViewController {
+    var userName: String = ""
+    var email: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadRegistrationInfo()
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
         
         configureNavigationBar()
-        createObjectHeader()
+        
+    }
+    
+    func loadRegistrationInfo() {
+        let settingsParameters = OnboardingSessionManager.shared.onboardingSession?.settingsParameters!
+        let urlSession = OnboardingSessionManager.shared.onboardingSession?.sapURLSession
+        let userRoles = SAPcpmsUserRoles(sapURLSession: urlSession!, settingsParameters: settingsParameters!)
+      var data = [String: Any]()
+      data["DeviceId"] = SAPcpmsSettingsParameters.defaultDeviceID
+        userRoles.load { [self] userInfo, error in
+            userName = userInfo?.userName ?? ""
+            email = userInfo?.emails?.first?.first?.value as! String
+            DispatchQueue.main.async { [self] in
+                createObjectHeader()
+            }
+        }
+  
     }
     
     private func configureNavigationBar() {
@@ -27,9 +50,9 @@ class ProfileViewController: UITableViewController {
     private func createObjectHeader() {
         let header = FUIProfileHeader()
         //TODO replace with account name
-        header.headlineText = "Sam Miller"
+        header.headlineText = userName
         //TODO replace with account phone number / account email
-        header.descriptionText = "Phone: +49 179 1829022\nEmail: sam.miller@service-company.de"
+        header.descriptionText = "Email: \(email)"
         
         self.tableView.addSubview(header)
     }
@@ -37,12 +60,14 @@ class ProfileViewController: UITableViewController {
     @IBAction func changeNotificationSetting(_ sender: UISwitch) {
         //TODO implement
         if sender.isOn {
+            
         } else {
         }
     }
     
     @IBAction func signOutClicked(_ sender: Any) {
         //TODO implement
+        
     }
     
     

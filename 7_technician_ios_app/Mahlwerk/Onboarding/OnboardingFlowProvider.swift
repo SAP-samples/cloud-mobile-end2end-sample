@@ -72,7 +72,8 @@ public class OnboardingFlowProvider: OnboardingFlowProviding {
         return [
             self.configuredWelcomeScreenStep(),
             CompositeStep(steps: SAPcpmsDefaultSteps.configuration),
-            OAuth2AuthenticationStep(),
+            OAuth2AuthenticationStep(presenter: FioriWKWebViewPresenter(webViewDelegate: self)),
+            NUIStyleSheetApplyStep(),
             CompositeStep(steps: SAPcpmsDefaultSteps.settingsDownload),
             CompositeStep(steps: SAPcpmsDefaultSteps.applyDuringOnboard),
             self.configuredUserConsentStep(),
@@ -88,6 +89,7 @@ public class OnboardingFlowProvider: OnboardingFlowProviding {
             CompositeStep(steps: SAPcpmsDefaultSteps.configuration),
             // allow offline onboarding
             self.configuredOAuth2AuthenticationStep(needsServerValidation: false),
+            NUIStyleSheetApplyStep(),
             //CompositeStep(steps: SAPcpmsDefaultSteps.settingsDownload),
             CompositeStep(steps: SAPcpmsDefaultSteps.applyDuringRestore.map { ($0 as? PasscodePolicyApplyStep)?.defaultPasscodePolicy = nil; return $0 }),
             ODataOnboardingStep(),
@@ -116,7 +118,11 @@ public class OnboardingFlowProvider: OnboardingFlowProviding {
     // MARK: – Step configuration
 
     private func configuredWelcomeScreenStep() -> WelcomeScreenStep {
-        let discoveryConfigurationTransformer = DiscoveryServiceConfigurationTransformer(applicationID: "<AppId>", authenticationPath: "<AppId>")
+        let applicationID = FileConfigurationProvider("AppParameters").provideConfiguration().configuration["Application Identifier"]
+        let destinations = FileConfigurationProvider("AppParameters").provideConfiguration().configuration["Destinations"] as! NSDictionary
+        let destinationID =  destinations.value(forKey: "Technician")
+        
+        let discoveryConfigurationTransformer = DiscoveryServiceConfigurationTransformer(applicationID: (applicationID as! String), authenticationPath: (destinationID as! String))
         let welcomeScreenStep = WelcomeScreenStep(transformer: discoveryConfigurationTransformer, providers: [FileConfigurationProvider()])
 
         welcomeScreenStep.welcomeScreenCustomizationHandler = { welcomeStepUI in

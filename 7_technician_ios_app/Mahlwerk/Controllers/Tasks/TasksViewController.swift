@@ -14,7 +14,7 @@ import SAPFioriFlows
 import SAPOData
 import SAPOfflineOData
 
-class TasksViewController: UITableViewController, UISearchResultsUpdating, UISearchBarDelegate,
+class TasksViewController: FUIFormTableViewController, UISearchResultsUpdating, UISearchBarDelegate,
 UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
     
     var tasks = [Task]()
@@ -46,6 +46,9 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
                                 forHeaderFooterViewReuseIdentifier: FUITableViewHeaderFooterView.reuseIdentifier)
         self.tableView.register(UINib.init(nibName: "MapButtonCell", bundle: nil), forCellReuseIdentifier: "MapButtonCell")
         self.tableView.tableFooterView = UIView()
+    
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .header)
+       
         
         self.tabBarController?.tabBar.items?[0].image = FUIIconLibrary.system.check
         self.tabBarController?.tabBar.items?[1].image = FUIIconLibrary.system.listView
@@ -251,12 +254,11 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> FUIBaseTableViewCell {
         let task: Task?
         if isSearching() {
             task = filteredTasks[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
-            cell.task = task
+            let cell = returnTaskCell(task: task!, indexPath: indexPath)
             return cell
         }
         switch Section(rawValue: indexPath.section) {
@@ -268,16 +270,24 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
             return cell
         case .myTasks:
             task = activeTasks[indexPath.row]
+            let cell = returnTaskCell(task: task!, indexPath: indexPath)
+            
+            return cell
+
         case .openTasks:
             task = openTasks[indexPath.row]
+            let cell = returnTaskCell(task: task!, indexPath: indexPath)
+            return cell
         case .historyButton:
-            return tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! FUIObjectTableViewCell
+            cell.headlineText = "Tasks History"
+            cell.accessoryType = .disclosureIndicator
+            return cell
         default:
-            return UITableViewCell()
+            return FUIBaseTableViewCell()
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
-        cell.task = task
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
         return cell
     }
     
@@ -476,6 +486,23 @@ UIPopoverPresentationControllerDelegate, Refreshable, SAPFioriLoadingIndicator {
                 return taskStatus == .done
             })
         }
+    }
+    
+    func returnTaskCell(task: Task, indexPath: IndexPath) -> FUIObjectTableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! FUIObjectTableViewCell
+        cell.headlineText = task.title
+    
+        if let address = task.address {
+            cell.descriptionText = "\(address.town ?? ""), \(address.street ?? "") \(address.houseNumber ?? "")"
+        }
+        let taskStatus = TaskStatus.init(rawValue: (task.taskStatusID)!)
+        cell.statusText = taskStatus?.text
+        cell.statusLabel.textColor = taskStatus?.color
+        cell.footnoteText = "Due on \(task.order?.dueDate?.utc()?.format() ?? "")"
+
+        cell.showDescriptionInCompact = true
+        cell.accessoryType = .disclosureIndicator
+        return cell
     }
     
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {

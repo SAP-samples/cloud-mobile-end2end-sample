@@ -74,6 +74,7 @@
 		4DF0CA9B22F848D6008315EE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF0CA9A22F848D6008315EE /* Profile.storyboard */; };
 		4DF5A33322DF199200A8DD71 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF5A33222DF199200A8DD71 /* TaskCell.swift */; };
 		4DF5A33922DF3B5300A8DD71 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF5A33822DF3B5300A8DD71 /* TaskDetailViewController.swift */; };
+		59C00DF32922B1260023D89C /* AppParameters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59C00DF22922B1260023D89C /* AppParameters.plist */; };
 		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
 		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
 		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
@@ -163,6 +164,7 @@
 		4DF0CA9A22F848D6008315EE /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4DF5A33222DF199200A8DD71 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		4DF5A33822DF3B5300A8DD71 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		59C00DF22922B1260023D89C /* AppParameters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppParameters.plist; sourceTree = "<group>"; };
 		7A1315B51D4B982000A5DA56 /* Mahlwerk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mahlwerk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				4D2803E222F96A29009E2E78 /* ApplicationUIManager.swift */,
 				4D2803E122F96A29009E2E78 /* OnboardingErrorHandler.swift */,
 				4D2803E322F96A29009E2E78 /* OnboardingFlowProvider.swift */,
+				59C00DF22922B1260023D89C /* AppParameters.plist */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				4D36FA5F22E0CB8400FAF580 /* Map.storyboard in Resources */,
 				45D9F52023F6EC57004BA708 /* ConfigurationProvider.plist in Resources */,
 				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				59C00DF32922B1260023D89C /* AppParameters.plist in Resources */,
 				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
 				4DF0CA9B22F848D6008315EE /* Profile.storyboard in Resources */,
 				4D36FA5D22E0C8F300FAF580 /* Tasks.storyboard in Resources */,

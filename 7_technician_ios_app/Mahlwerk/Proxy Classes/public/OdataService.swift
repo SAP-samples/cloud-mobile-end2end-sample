@@ -3,7 +3,7 @@
 import Foundation
 import SAPOData
 
-open class OdataService<Provider: DataServiceProvider>: DataService<Provider> {
+open class OdataService<Provider: DataServiceProvider>: LegacyDataService<Provider>  {
     public override init(provider: Provider) {
         super.init(provider: provider)
         self.provider.metadata = OdataServiceMetadata.document

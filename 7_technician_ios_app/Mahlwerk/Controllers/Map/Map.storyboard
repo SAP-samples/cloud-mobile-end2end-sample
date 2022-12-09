@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59L-zO-seL">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59L-zO-seL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
             <objects>
                 <navigationController id="59L-zO-seL" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iIv-YA-6nq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -34,18 +32,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsCompass="NO" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WC-0q-VY5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WC-0q-VY5">
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gh6-t9-xe9"/>
                         <constraints>
                             <constraint firstItem="3WC-0q-VY5" firstAttribute="trailing" secondItem="Gh6-t9-xe9" secondAttribute="trailing" id="OuY-0s-Iev"/>
                             <constraint firstItem="3WC-0q-VY5" firstAttribute="top" secondItem="Gh6-t9-xe9" secondAttribute="top" id="hPH-4e-4Yu"/>
                             <constraint firstAttribute="bottom" secondItem="3WC-0q-VY5" secondAttribute="bottom" id="w7t-YI-aoo"/>
                             <constraint firstItem="3WC-0q-VY5" firstAttribute="leading" secondItem="Gh6-t9-xe9" secondAttribute="leading" id="zII-2J-o7p"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gh6-t9-xe9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="Xyz-Sz-uRD">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="stop" id="wFJ-8w-Zp7">
