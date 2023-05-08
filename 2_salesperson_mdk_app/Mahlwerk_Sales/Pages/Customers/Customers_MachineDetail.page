@@ -1,90 +1,85 @@
 {
 	"Caption": "Machine Details",
-	"Controls": [{
-		"Sections": [{
-				"EmptySection": {
-					"FooterVisible": false
-				},
-				"ImageCell": {
-					"Image": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{MachineTyp/@odata.readLink}/$value",
-					"ImageIsCircular": false,
-					"Title": "{MachineTyp/Name}"
-				},
-				"Layout": {
-					"LayoutType": "HorizontalFit"
-				},
-				"Target": {
-					"EntitySet": "{@odata.readLink}/MachineConfiguration",
-					"_QueryOptions": "$expand=MachineTyp,MachineColors&$filter=MachineColorsID eq {#Page:CustomerSet_MachineDetail/#ClientData/CurrentMachineColorsID}",
-					"QueryOptions": "$expand=MachineTyp,MachineColors",
-					"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
-				},
-				"Visible": true,
-				"_Name": "SectionImageCollection2",
-				"_Type": "Section.Type.ImageCollection"
-			},
-			{
-				"DataSubscriptions": [
-					"MachineConfigurationSet",
-					"MachineSet"
-				],
-				"KeyAndValues": [
-					{
-						"KeyName": "Model Nr.",
-
-						"Value": "{MachineTyp/MachineID}",
-						"Visible": true
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
 					},
-					
-					{
-						"KeyName": "Serial Number",
-
-						"Value": "{MachineConfigurationID}",
-						"Visible": true
+					"ImageCell": {
+						"Image": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{MachineTyp/@odata.readLink}/$value",
+						"ImageIsCircular": false,
+						"Title": "{MachineTyp/Name}"
 					},
-					{
-						"KeyName": "Color",
-
-						"Value": "{MachineColors/colorName}",
-						"Visible": true
+					"Layout": {
+						"LayoutType": "HorizontalFit"
 					},
-					{
-						"KeyName": "Pressure (in Bar)",
-
-						"Value": "{Pressure}",
-						"Visible": true
+					"Target": {
+						"EntitySet": "{@odata.readLink}/MachineConfiguration",
+						"_QueryOptions": "$expand=MachineTyp,MachineColors&$filter=MachineColorsID eq {#Page:CustomerSet_MachineDetail/#ClientData/CurrentMachineColorsID}",
+						"QueryOptions": "$expand=MachineTyp,MachineColors",
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
 					},
-					{
-						"KeyName": "Description",
-
-						"Value": "{MachineTyp/Description}",
-						"Visible": true
-					}
-				],
-				"Layout": {
-					"NumberOfColumns": 2
+					"Visible": true,
+					"_Name": "SectionImageCollection2",
+					"_Type": "Section.Type.ImageCollection"
 				},
-				"MaxItemCount": 1,
-				"Target": {
-					"EntitySet": "{@odata.readLink}/MachineConfiguration",
-					"QueryOptions": "$expand=MachineColors,MachineTyp",
-					"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
-				},
-				"Visible": true,
-				"_Name": "SectionKeyValue4",
-				"_Type": "Section.Type.KeyValue"
-			}
-		],
-
-		"_Name": "SectionedTable",
-		"_Type": "Control.Type.SectionedTable"
-	}],
+				{
+					"DataSubscriptions": [
+						"MachineConfigurationSet",
+						"MachineSet"
+					],
+					"KeyAndValues": [
+						{
+							"KeyName": "Model Nr.",
+							"Value": "{MachineTyp/MachineID}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Serial Number",
+							"Value": "{MachineConfigurationID}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Color",
+							"Value": "{MachineColors/colorName}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Pressure (in Bar)",
+							"Value": "{Pressure}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Description",
+							"Value": "{MachineTyp/Description}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Target": {
+						"EntitySet": "{@odata.readLink}/MachineConfiguration",
+						"QueryOptions": "$expand=MachineColors,MachineTyp",
+						"Service": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service"
+					},
+					"Visible": true,
+					"_Name": "SectionKeyValue4",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
 	"DataSubscriptions": [
 		"MachineSet",
 		"MachineConfigurationSet"
 	],
-
-
 	"_Name": "CustomerSet_MachineDetail",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

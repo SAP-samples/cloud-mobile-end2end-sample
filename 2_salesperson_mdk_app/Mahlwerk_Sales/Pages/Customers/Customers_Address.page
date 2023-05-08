@@ -84,5 +84,6 @@
 		"MachineConfigurationSet"
 	],
 	"_Name": "CustomerSet_Address",
-	"Caption": "Customers_Address"
+	"Caption": "Customers_Address",
+	"PrefersLargeCaption": true
 }

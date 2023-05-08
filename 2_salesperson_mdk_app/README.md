@@ -8,7 +8,7 @@ Mahlwerk Sales Person application is a cross platform mobile application built u
 This application fetches data using the OData end points form Mahlwerk's Mobile Backend. SAP Mobile Services handles the user Authentication and Identitiy management for this application
 
 ### MDK Client Version
-MDK 6.1 or higher
+MDK 23.4 or higher
 
 ## Setup & Run
 
@@ -16,7 +16,7 @@ MDK 6.1 or higher
 1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 2. On the home screen, select **Create new app**.
     ![MDK](./Screenshots/img-1.png)
-3. In **Basic Info** step, provide the required information and click **Next**.
+3. In the **Basic Info** step, provide the required information and click **Next**.
 
     | Field | Value |
     |----|----|
@@ -27,7 +27,13 @@ MDK 6.1 or higher
 
     > If you are configuring this app in a trial account, make sure to select **License Type** as *lite*.
 
-4. In **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown and then click **Finish**.
+
+4. In the **XSUAA Settings** step, continue with the default settings and click **Next** to navigate to further steps.
+
+    ![MDK](./Screenshots/img-2.1.png)
+
+
+4. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown and then click **Finish**.
 
     ![MDK](./Screenshots/img-3.png)
 
@@ -66,7 +72,7 @@ MDK 6.1 or higher
 
 1. Go to your SAP Business Application Studio space.
 
-2. Clone git repository and upload this folder to SAP's Business Apllication Studio's workspace.
+2. Clone git repository and upload this folder to SAP's Business Application Studio's workspace.
 
 3. Right click `Application.app` in `2_salesperson_mdk_app` folder and select `MDK:Deploy`. 
     ![MDK](./Screenshots/img-8.png)
@@ -77,15 +83,22 @@ MDK 6.1 or higher
 
     ![MDK](./Screenshots/img-9.png)
 
-5. Select Mobile Services landscape, Application id of the application from Mobile services that you created in Mobile Services for this application.
+5. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
- 6. Wait for deploy to finish.
+    ![MDK](./Screenshots/img-9.1.png)
+
+    You should see **Deploy to Mobile Services successfully!** message.
+
+    ![MDK](./Screenshots/img-9.2.png)
+
 
  #### Display the QR code for onboarding the Mobile app
 
- SAP Business Application Studio has a feature to generate QR code for onboarding the mobile app.
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
 
-Click the `Application.app` to open it in MDK Application Editor and click **Application QR Code** icon.
+Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+
+>Leave the Onboarding dialog box open for the next step.
 
 
  #### Test the application

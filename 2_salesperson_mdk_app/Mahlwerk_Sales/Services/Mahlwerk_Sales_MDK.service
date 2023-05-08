@@ -1,5 +1,4 @@
 {
 	"DestinationName": "Mahlwerk",
-	"OfflineEnabled": true,
-	"SourceType": "Mobile"
+	"OfflineEnabled": true
 }

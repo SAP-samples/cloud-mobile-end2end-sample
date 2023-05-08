@@ -4,9 +4,9 @@
 			{
 				"IsIconCircular": false,
 				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Complete.action",
-				"Position": "right",
+				"Position": "Right",
 				"SystemItem": "Done",
-				"Text": "Done",
+				"Caption": "Done",
 				"Visible": true
 			}
 		]
@@ -26,13 +26,13 @@
 						{
 							"KeyName": "Current User",
 							"Target": "",
-							"Value": "#Application/#ClientData/UserId",
+							"Value": "#Application/#AppData/UserId",
 							"Visible": true
 						},
 						{
 							"KeyName": "Device",
 							"Target": "",
-							"Value": "#Application/#ClientData/DeviceId",
+							"Value": "#Application/#AppData/DeviceId",
 							"Visible": true
 						}
 					],
@@ -97,12 +97,12 @@
 					"_Type": "Section.Type.KeyValue"
 				}
 			],
-			"Target": "",
 			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
 	"Target": "",
 	"_Name": "About",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

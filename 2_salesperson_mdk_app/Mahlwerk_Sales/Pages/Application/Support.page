@@ -69,9 +69,8 @@
 	"ActionBar": {
 		"Items": [
 			{
-				"Text": "Done",
 				"_Name": "ActionBarItem0",
-				"Caption": "",
+				"Caption": "Done",
 				"SystemItem": "Done",
 				"Position": "Right",
 				"IsIconCircular": false,
@@ -80,5 +79,6 @@
 			}
 		],
 		"_Name": "ActionBar0"
-	}
+	},
+	"PrefersLargeCaption": true
 }
