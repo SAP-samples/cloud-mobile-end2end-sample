@@ -8,6 +8,6 @@
 	"Styles": "/Mahlwerk_Sales/Styles/Styles.less",
 	"Version": "/Mahlwerk_Sales/Globals/Application/AppDefinition_Version.global",
 	"Localization": "/Mahlwerk_Sales/i18n/i18n.properties",
-	"_SchemaVersion": "6.1",
+	"_SchemaVersion": "23.4",
 	"_Name": "Mahlwerk_Sales"
 }

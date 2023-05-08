@@ -1,5 +1,5 @@
 {
-		"ActionBar": {
+	"ActionBar": {
 		"Items": [
 			{
 				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action",
@@ -27,8 +27,14 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"DetailImage": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{@odata.readLink}/$value",
-						"DetailImageIsCircular": true,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{@odata.readLink}/$value"
+								}
+							],
+							"ImageIsCircular": true
+						},
 						"OnPress": "/Mahlwerk_Sales/Rules/Orders/SaveSelectedColorGOTHIRD.js",
 						"PreserveIconStackSpacing": false,
 						"Title": "{colorName}"
@@ -43,12 +49,11 @@
 					"_Type": "Section.Type.ObjectCollection"
 				}
 			],
-			
 			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
-	
 	"_Name": "Wizard_SECOND",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

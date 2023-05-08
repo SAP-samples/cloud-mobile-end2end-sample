@@ -1,5 +1,4 @@
 {
-	
 	"ActionBar": {
 		"Items": [
 			{
@@ -10,7 +9,7 @@
 				"Caption": "Item",
 				"Visible": true
 			},
-				{
+			{
 				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action",
 				"Position": "Left",
 				"SystemItem": "Cancel",
@@ -62,7 +61,7 @@
 							"Caption": "Delivery & Installation",
 							"IsEditable": true,
 							"IsVisible": true,
-							"Mode": "date",
+							"Mode": "Date",
 							"Value": "Date",
 							"_Name": "FormCellDatePicker0",
 							"_Type": "Control.Type.FormCell.DatePicker"

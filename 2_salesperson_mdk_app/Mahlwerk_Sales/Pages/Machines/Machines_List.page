@@ -35,5 +35,6 @@
 	],
 	"_Type": "Page",
 	"_Name": "CoffeeMachine",
-	"Caption": "Coffee Machines"
+	"Caption": "Coffee Machines",
+	"PrefersLargeCaption": true
 }

@@ -31,10 +31,12 @@
 					"Controls": [
 						{
 							"OnPress": "/Mahlwerk_Sales/Actions/Logging/UploadLogProgress.action",
-							"TextAlignment": "center",
+							"Alignment": "Center",
 							"Title": "Send Activity Log",
 							"_Name": "Send",
-							"_Type": "Control.Type.FormCell.Button"
+							"_Type": "Control.Type.FormCell.Button",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
 						}
 					],
 					"Visible": true

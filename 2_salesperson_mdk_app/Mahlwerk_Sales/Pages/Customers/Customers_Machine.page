@@ -29,12 +29,17 @@
 					},
 					"ObjectCell": {
 						"ContextMenu": {
-							"Items": [
-							],
+							"Items": [],
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{MachineConfiguration/MachineTyp/Name}",
-						"DetailImage": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{MachineConfiguration/MachineTyp/@odata.readLink}/$value",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/Mahlwerk_Sales/Services/Mahlwerk_Sales_MDK.service/{MachineConfiguration/MachineTyp/@odata.readLink}/$value"
+								}
+							]
+						},
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "disclosureIndicator",
 						"OnPress": "/Mahlwerk_Sales/Actions/Customers/NavToCustomers_MachineDetail.action"
@@ -50,5 +55,6 @@
 		"MachineConfigurationSet"
 	],
 	"_Name": "CustomerSet_Machine",
-	"Caption": "Customer Machines"
+	"Caption": "Customer Machines",
+	"PrefersLargeCaption": true
 }

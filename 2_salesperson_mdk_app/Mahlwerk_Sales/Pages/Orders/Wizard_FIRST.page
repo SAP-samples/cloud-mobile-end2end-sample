@@ -27,7 +27,9 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"ImageIsCircular": false
+						},
 						"OnPress": "/Mahlwerk_Sales/Rules/Orders/SaveSelectedCustomerGOSCND.js",
 						"PreserveIconStackSpacing": false,
 						"Title": "{Name}",
@@ -51,5 +53,6 @@
 		}
 	],
 	"_Name": "Wizard_FIRST",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }

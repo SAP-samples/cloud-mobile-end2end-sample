@@ -1,5 +1,5 @@
 {
-		"ActionBar": {
+	"ActionBar": {
 		"Items": [
 			{
 				"OnPress": "/Mahlwerk_Sales/Actions/Others/CloseModalPage_Cancel.action",
@@ -24,7 +24,9 @@
 					},
 					"ObjectCell": {
 						"AccessoryType": "disclosureIndicator",
-						"DetailImageIsCircular": false,
+						"AvatarStack": {
+							"ImageIsCircular": false
+						},
 						"OnPress": "/Mahlwerk_Sales/Rules/Orders/SaveSelectedPressureGOEND.js",
 						"PreserveIconStackSpacing": false,
 						"Title": "{pressure}"
@@ -38,12 +40,11 @@
 					"_Type": "Section.Type.ObjectTable"
 				}
 			],
-			
 			"_Name": "SectionedTable0",
 			"_Type": "Control.Type.SectionedTable"
 		}
 	],
-	
 	"_Name": "Wizard_THIRD",
-	"_Type": "Page"
+	"_Type": "Page",
+	"PrefersLargeCaption": true
 }
